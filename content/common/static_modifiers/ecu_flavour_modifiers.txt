@@ -1,0 +1,73 @@
+# Crowded Spacelanes
+# Vertical Sprawl
+# Unstable Climate
+
+ef_crowded_spacelanes ={
+	trade_value_mult = -0.2
+    pop_growth_from_immigration = -0.25
+
+	icon = "gfx/interface/icons/planet_modifiers/ef_crowded_spacelanes.dds"
+	icon_frame = 3
+}
+
+ef_vertical_sprawl ={
+    planet_building_build_speed_mult = -0.5
+
+	icon = "gfx/interface/icons/planet_modifiers/ef_vertical_sprawl.dds"
+	icon_frame = 3
+}
+
+ef_unstable_climate ={
+	pop_environment_tolerance = -0.2
+
+	icon = "gfx/interface/icons/planet_modifiers/ef_unstable_climate.dds"
+	icon_frame = 3
+}
+
+# Deep Levels
+ef_deep_levels_1 ={
+	job_ef_deep_dweller_per_pop = 0.05
+	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
+	icon_frame = 2
+}
+ef_deep_levels_2 ={
+	job_ef_deep_dweller_per_pop = 0.05
+	planet_amenities_mult= -0.1
+	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
+	icon_frame = 2
+}
+ef_deep_levels_3 ={
+	job_ef_deep_dweller_per_pop = 0.05
+	planet_structures_upkeep_mult = 0.1
+	planet_amenities_mult= -0.15
+	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
+	icon_frame = 2
+}
+ef_deep_levels_4 ={
+	job_ef_deep_dweller_per_pop = 0.05
+	planet_structures_upkeep_mult = 0.25
+	planet_amenities_mult= -0.20
+	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
+	icon_frame = 2
+}
+ef_deep_levels_5 ={
+	job_ef_deep_dweller_per_pop = 0.05
+	job_ef_hive_ganger_per_pop = 0.05
+	planet_structures_upkeep_mult =0.25
+	planet_amenities_mult= -0.25
+	icon = "gfx/interface/icons/planet_modifiers/pm_arcology_project.dds"
+	icon_frame = 2
+}
+
+ef_financial_hub = {
+	trade_value_mult = 0.15
+	icon = "gfx/interface/icons/planet_modifiers/ef_financial_hub.dds"
+	icon_frame = 1
+}
+
+ef_marketplace = {
+	trade_value_mult = 0.10
+	planet_crime_mult = 0.25
+	icon = "gfx/interface/icons/planet_modifiers/ef_marketplace.dds"
+	icon_frame = 1
+}

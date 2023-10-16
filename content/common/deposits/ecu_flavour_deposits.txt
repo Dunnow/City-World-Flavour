@@ -1,0 +1,133 @@
+d_ef_ventilation_system = {
+	is_for_colonizable = yes
+	use_for_min_max_adjustments = yes
+
+	category = deposit_cat_rare
+
+	planet_modifier = {
+		planet_max_districts_add = 1
+		job_ef_vent_tribal_add = 1
+	}
+
+	drop_weight = {
+		weight = 0 # Only added by decision
+	}
+}
+
+d_ef_subterranean_habitation_zones = {
+	is_for_colonizable = yes
+	use_for_min_max_adjustments = yes
+
+	category = deposit_cat_rare
+
+	planet_modifier = {
+		planet_max_districts_add = 1
+		job_ef_surface_smuggler_add = 1
+	}
+
+	drop_weight = {
+		weight = 0 # Only added by decision
+	}
+}
+
+d_ef_underground_tramways= {
+	is_for_colonizable = yes
+	use_for_min_max_adjustments = yes
+	icon = "d_mining_tunnels"
+
+	category = deposit_cat_rare
+
+	planet_modifier = {
+		planet_max_districts_add = 1
+		job_ef_hive_ganger_add = 1
+	}
+
+	drop_weight = {
+		weight = 0 # Only added by decision
+	}
+}
+
+d_ef_deep_level_districts= {
+	is_for_colonizable = yes
+	use_for_min_max_adjustments = yes
+	icon = "d_tradestation_interior"
+
+	category = deposit_cat_rare
+
+	planet_modifier = {
+		planet_max_districts_add = 1
+		job_ef_deep_dweller_add = 1
+	}
+
+	drop_weight = {
+		weight = 0 # Only added by decision
+	}
+}
+
+d_ef_spaceport= {
+	is_for_colonizable = yes
+	use_for_min_max_adjustments = yes
+	icon = "d_station_cargo"
+
+	category = deposit_cat_rare
+
+	planet_modifier = {
+		job_ef_freighter_pilot_add = 2
+		planet_max_districts_add = -1
+	}
+
+	drop_weight = {
+		weight = 0 # Only added by decision
+	}
+}
+
+d_ef_orbital_control_network= {
+	is_for_colonizable = yes
+	use_for_min_max_adjustments = yes
+	icon = "d_satellite_in_orbit"
+
+	category = deposit_cat_rare
+
+	planet_modifier = {
+		job_ef_satellite_operator_add = 2
+		planet_max_districts_add = -1
+	}
+
+	drop_weight = {
+		weight = 0 # Only added by decision
+	}
+}
+
+d_ef_climate_management_centre= {
+	is_for_colonizable = yes
+	use_for_min_max_adjustments = yes
+	icon = "unused/d_engineering_research"
+
+	category = deposit_cat_rare
+
+	planet_modifier = {
+		job_ef_habitation_technician_add = 2
+		planet_max_districts_add = -1
+	}
+
+	drop_weight = {
+		weight = 0 # Only added by decision
+	}
+}
+
+d_ef_seismic_stabilization_stations= {
+	is_for_colonizable = yes
+	use_for_min_max_adjustments = yes
+	icon = "d_station_reactor"
+
+	category = deposit_cat_rare
+
+	planet_modifier = {
+		job_ef_deep_level_engineer_add = 2
+		planet_max_districts_add = -1
+	}
+
+	drop_weight = {
+		weight = 0 # Only added by decision
+	}
+}

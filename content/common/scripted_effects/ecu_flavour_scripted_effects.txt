@@ -1,0 +1,65 @@
+# I'd like to have these added by event later with more flavour, but for now just slapping them on is fine.
+# Planet scope
+ef_add_ecu_terraformed_modifiers = {
+    add_modifier = { modifier = ef_crowded_spacelanes days = -1 }
+    add_modifier = { modifier = ef_unstable_climate days = -1 }
+    add_modifier = { modifier = ef_vertical_sprawl days = -1 }
+}
+
+# Planet Scope
+ef_set_deep_levels_modifier= {
+    remove_modifier = ef_deep_levels_1
+    remove_modifier = ef_deep_levels_2
+    remove_modifier = ef_deep_levels_3
+    remove_modifier = ef_deep_levels_4
+    remove_modifier = ef_deep_levels_5
+    # Minor Deep Levels
+    if = {
+        limit = {
+            check_variable_arithmetic = {
+                which = ef_deep_level_count
+                divide = trigger:planet_size
+                value < 0.25
+            }
+        }
+        add_modifier = { modifier = ef_deep_levels_1 days = -1 }
+    }
+    # Moderate Deep Levels
+    else_if = {
+        limit = {
+            check_variable_arithmetic = {
+                which = ef_deep_level_count
+                divide = trigger:planet_size
+                value < 0.5
+            }
+        }
+        add_modifier = { modifier = ef_deep_levels_2 days = -1 }
+    }
+    # Major Deep Levels
+    else_if = {
+        limit = {
+            check_variable_arithmetic = {
+                which = ef_deep_level_count
+                divide = trigger:planet_size
+                value < 0.75
+            }
+        }
+        add_modifier = { modifier = ef_deep_levels_3 days = -1 }
+    }
+    # Enormous Deep Levels
+    else_if = {
+        limit = {
+            check_variable_arithmetic = {
+                which = ef_deep_level_count
+                divide = trigger:planet_size
+                value < 1
+            }
+        }
+        add_modifier = { modifier = ef_deep_levels_4 days = -1 }
+
+    }
+    # Sprawling
+    else = {
+        add_modifier = { modifier = ef_deep_levels_5 days = -1 }
+    }
+}
