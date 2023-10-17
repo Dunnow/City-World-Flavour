@@ -101,7 +101,7 @@ d_ef_orbital_control_network= {
 d_ef_climate_management_centre= {
 	is_for_colonizable = yes
 	use_for_min_max_adjustments = yes
-	icon = "unused/d_engineering_research"
+	icon = "d_engineering_research"
 
 	category = deposit_cat_rare
 
