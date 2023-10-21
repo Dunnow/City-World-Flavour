@@ -71,3 +71,15 @@ ef_marketplace = {
 	icon = "gfx/interface/icons/planet_modifiers/ef_marketplace.dds"
 	icon_frame = 1
 }
+
+ef_glitchy_machines = {
+	trade_value_mult = -0.10
+	icon = "gfx/interface/icons/planet_modifiers/pm_synth_sabotage.dds"
+	icon_frame = 3
+}
+
+ef_ai_insight = { = {
+	planet_jobs_physics_research_produces_mult = 0.1
+	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"
+	icon_frame = 1
+}

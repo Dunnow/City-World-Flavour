@@ -8,7 +8,7 @@ planet_event = {
 
 	immediate = {
 		random_list = {
-			95 = { }
+			95 = { } # Approximately a new event every 20 years or so. (Ideally)
 			5 = {
 				random_list = {
 					1 = { planet_event = { id = ef_flavour.10 }}
@@ -16,6 +16,7 @@ planet_event = {
 					1 = { planet_event = { id = ef_flavour.30 }}
 					1 = { planet_event = { id = ef_flavour.40 }}
 					1 = { planet_event = { id = ef_flavour.50 }}
+					1 = { planet_event = { id = ef_flavour.60 }}
 				}
 			}
 		}
@@ -24,22 +25,6 @@ planet_event = {
 	}
 
 }
-
-# Archaeological Dig # TODO
-#planet_event = {
-#	id = ef_flavour.1
-#	title = ef_flavour.1.name
-#	desc = "ef_flavour.1.desc"
-#	picture  = GFX_evt_archaeological_dig
-#	location = root
-#	is_triggered_only = yes
-
-
-#	option = {
-#		name = ef_flavour.1.a
-#		# pass
-#	}
-#}
 
 # Deep Levels Survey
 planet_event = {
@@ -389,3 +374,114 @@ planet_event = {
 		name = ef_flavour.50.b
 	}
 }
+
+# Illegal AI Core
+planet_event = {
+	id = ef_flavour.60
+	title = ef_flavour.60.name
+	desc = "ef_flavour.60.desc"
+	picture  = GFX_evt_glitchy_matrix
+	location = root
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			NOT = {
+				has_country_flag = ef_illegal_ai_core_has_happened
+			}
+		}
+	}
+	immediate = {
+		owner = { set_country_flag = ef_illegal_ai_core_has_happened }
+	}
+
+	# Investigate
+	option = {
+		name = ef_flavour.60.a
+        allow = {
+			owner = {
+				resource_stockpile_compare = { resource = influence value >= 50 }
+			}
+		}
+		owner = {
+			add_resource = { influence = -50 }
+		}
+		add_modifier = { modifier = ef_glitchy_machines days = 270 }
+		hidden_effect = {
+			planet_event = {
+				id = ef_flavour.62
+				days = 270
+			}
+		}
+	}
+	# Ignore (leads to a bad event  in a few months)
+	option = {
+		name = ef_flavour.60.b
+		add_modifier = { modifier = ef_glitchy_machines days = 270 }
+		hidden_effect = {
+			planet_event = {
+				id = ef_flavour.61
+				days = 270
+			}
+		}
+	}
+}
+
+# Bad outcome
+planet_event = {
+	id = ef_flavour.61
+	title = ef_flavour.61.name
+	desc = "ef_flavour.61.desc"
+	picture  = GFX_evt_glitchy_matrix
+	location = root
+	is_triggered_only = yes
+
+	immediate = {
+		add_planet_devastation = 10
+		add_modifier = { modifier = ef_glitchy_machines days = 1800 }
+	}
+
+	option = {
+		name = ef_flavour.61.a
+	}
+}
+
+# Investigation conclusion
+planet_event = {
+	id = ef_flavour.62
+	title = ef_flavour.62.name
+	desc = "ef_flavour.62.desc"
+	picture  = GFX_evt_glitchy_matrix
+	location = root
+	is_triggered_only = yes
+
+	# Scrap it
+	option = {
+		name = ef_flavour.62.a
+		owner = {
+			add_resource = { alloys = 1000 }
+		}
+
+	}
+	# Use it
+	option = {
+		name = ef_flavour.62.b
+		add_modifier = { modifier = ef_ai_insight years = 30 }
+	}
+}
+
+# Archaeological Dig # TODO
+#planet_event = {
+#	id = ef_flavour.1
+#	title = ef_flavour.1.name
+#	desc = "ef_flavour.1.desc"
+#	picture  = GFX_evt_archaeological_dig
+#	location = root
+#	is_triggered_only = yes
+
+
+#	option = {
+#		name = ef_flavour.1.a
+#		# pass
+#	}
+#}

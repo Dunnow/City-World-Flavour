@@ -4,6 +4,10 @@
   decision_ef_expand_deep_levels_effects_short: "Increases district slots and the size of the §BDeep Levels§! network."
   decision_ef_expand_deep_levels_desc: "Through excavation and careful surveying, we can reinforce and expand the lowest levels of this world's urban sprawl."
 
+  decision_ef_block_off_deep_levels: "Block off Deep Levels"
+  decision_ef_block_off_deep_levels_effects_short: "Removes a §BDeep Level§! and the corresponding district slot."
+  decision_ef_block_off_deep_levels_desc: "The endless underground residential levels have become too unwieldy to administrate effectively. We must consolidate the population into a more manageable area."
+
   decision_ef_construct_spaceport: "Construct Spaceport"
   decision_ef_construct_spaceport_desc: "By expanding our cargo infrastructure with dedicated docking zones, we can accelerate the flow of goods and people to fuel our world."
 
@@ -120,6 +124,12 @@
   ef_marketplace: "Black Market"
   ef_marketplace_desc: "This world is infamous for its illicit markets. Anything can be bought here by anyone, no questions asked, for the right price."
 
+  ef_glitchy_machines: "Glitchy Machines"
+  ef_glitchy_machines_desc: "Scrapcode and viruses appear to be causing constant low-level disruption on this world's networks."
+
+  ef_ai_insight: "AI Insights"
+  ef_ai_insight_desc: "Novel solutions derived from artificial thought patterns."
+
   # Trait Loc
   trait_ef_mutant: "Mutant"
   trait_ef_mutant_desc: "This species is afflicted with uncontrolled mutations. Their bodies are breaking down under the pressure."
@@ -156,7 +166,7 @@
   ef_flavour.22.b: "Seize these anomalous individuals and study them."
 
   ef_flavour.30.name: "Escaped Cargo"
-  ef_flavour.30.desc: "During a routine raid on a suspected smuggler's port on [This.GetName] our security forces intercepted a group of suspicious individuals of an unknown species. Interrogations have revealed that they are members of a pre FTL civilization. They claim to have been abducted as slaves by the smugglers and shipped offworld.\n\nWe believe that we can locate their homeworld by examining the smugglers navigation data, but some of the primtives have expressed a desire to remain in our more advanced society, citing poverty and oppression back home."
+  ef_flavour.30.desc: "During a routine raid on a suspected smuggler's port on [This.GetName] our security forces intercepted a group of suspicious individuals of an unknown species. Interrogations have revealed that they are members of a pre FTL civilization. They claim to have been abducted as slaves by the smugglers and shipped offworld.\n\nWe believe that we can locate their homeworld by examining the smugglers navigation data, but some of the primitives have expressed a desire to remain in our more advanced society, citing poverty and oppression back home."
   ef_flavour.30.a: "They will stay."
   ef_flavour.30.b: "Have them returned to their homeworld."
 
@@ -168,3 +178,17 @@
   ef_flavour.50.desc: "[This.GetName] has always been a centre of trade and commerce, where all sorts of goods are available, but it is beginning to acquire a seedier reputation.\n\nCriminal elements have found that the planet's diverse array of traders and enormous financial resources provide the perfect cover for trading in illegal goods and services. If we do not take action against this growing sector soon, it may become entrenched."
   ef_flavour.50.a: "We have more pressing issues."
   ef_flavour.50.b: "Crack down on this behaviour."
+
+  ef_flavour.60.name: "Ghost in the System"
+  ef_flavour.60.desc: "Irregularities have begun to crop up on the computer systems of [This.GetName]. Machines shut down for nonexistent maintenance cycles and fraudulent database entries have been causing constant disruption across the planet.\n\nThere is little evidence of who the intruders are, but there is enough to form a trail. Somebody with significant capabilities is trying to get into our systems. They have caused serious disruptions in the process."
+  ef_flavour.60.a: "Wait and see what happens."
+  ef_flavour.60.b: "This requires a full investigation immediately."
+
+  ef_flavour.61.name: "Runaway Machines"
+  ef_flavour.61.desc: "Chaos erupted on [This.GetName] as computer systems across the planet went haywire, causing a great deal of damage. It seems that the initial cause of the intrusion originated from a disused warehouse in the lower levels of the city.\n\nThe authorities were unable to determine the culprits, but they did discover a crude AI core, bearing significant damage. The perpetrators may have escaped, but their weapon is no longer available."
+  ef_flavour.61.a: "Regrettable"
+
+  ef_flavour.62.name: "A Failed Invention"
+  ef_flavour.62.desc: "Our investigation on [This.GetName] has borne fruit. It appears that a minor criminal syndicate was attempting to develop a homegrown artificial intelligence.\n\nUnfortunately for the criminals, they were unable to achieve a fully functional intelligence. The program performed poorly and left telltale traces on public systems when used, allowing our investigators to follow the tracks.\n\nAlthough the criminal's work was shoddy, there are some novel solutions they developed that certain members of our scientific community are interested in."
+  ef_flavour.62.a: "Scrap it."
+  ef_flavour.62.b: "Allow our researchers to examine it."
