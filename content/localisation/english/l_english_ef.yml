@@ -181,8 +181,8 @@
 
   ef_flavour.60.name: "Ghost in the System"
   ef_flavour.60.desc: "Irregularities have begun to crop up on the computer systems of [This.GetName]. Machines shut down for nonexistent maintenance cycles and fraudulent database entries have been causing constant disruption across the planet.\n\nThere is little evidence of who the intruders are, but there is enough to form a trail. Somebody with significant capabilities is trying to get into our systems. They have caused serious disruptions in the process."
-  ef_flavour.60.a: "Wait and see what happens."
-  ef_flavour.60.b: "This requires a full investigation immediately."
+  ef_flavour.60.a: "This requires a full investigation immediately."
+  ef_flavour.60.b: "Wait and see what happens."
 
   ef_flavour.61.name: "Runaway Machines"
   ef_flavour.61.desc: "Chaos erupted on [This.GetName] as computer systems across the planet went haywire, causing a great deal of damage. It seems that the initial cause of the intrusion originated from a disused warehouse in the lower levels of the city.\n\nThe authorities were unable to determine the culprits, but they did discover a crude AI core, bearing significant damage. The perpetrators may have escaped, but their weapon is no longer available."

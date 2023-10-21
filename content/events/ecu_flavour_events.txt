@@ -409,7 +409,7 @@ planet_event = {
 		add_modifier = { modifier = ef_glitchy_machines days = 270 }
 		hidden_effect = {
 			planet_event = {
-				id = ef_flavour.62
+				id = ef_flavour.61
 				days = 270
 			}
 		}
@@ -420,7 +420,7 @@ planet_event = {
 		add_modifier = { modifier = ef_glitchy_machines days = 270 }
 		hidden_effect = {
 			planet_event = {
-				id = ef_flavour.61
+				id = ef_flavour.62
 				days = 270
 			}
 		}
