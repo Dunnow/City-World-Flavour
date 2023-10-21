@@ -1,7 +1,7 @@
 decision_ef_expand_deep_levels = {
 	owned_planets_only = yes
 
-	enactment_time = 180
+	enactment_time = 360
 	resources = {
 		category = decisions
 		cost = {
@@ -57,6 +57,62 @@ decision_ef_expand_deep_levels = {
 			factor = 2
 			num_free_districts = { type = any value = 0}
 		}
+	}
+}
+
+decision_ef_block_off_deep_levels = {
+	owned_planets_only = yes
+
+	enactment_time = 360
+	resources = {
+		category = decisions
+		cost = {
+			influence = 100
+			consumer_goods = 750
+			minerals = 2500
+		}
+	}
+
+	potential = {
+		is_planet_class = pc_city
+		OR = {
+			has_modifier = ef_deep_levels_1
+			has_modifier = ef_deep_levels_2
+			has_modifier = ef_deep_levels_3
+			has_modifier = ef_deep_levels_4
+			has_modifier = ef_deep_levels_5
+		}
+	}
+
+	effect = {
+		custom_tooltip = decision_ef_block_off_deep_levels_effects_short
+		hidden_effect = {
+			if = {
+				limit = { has_deposit = d_ef_ventilation_system }
+				remove_deposit = d_ef_ventilation_system
+			}
+			else_if = {
+				limit = { has_deposit = d_ef_underground_tramways }
+				remove_deposit = d_ef_underground_tramways
+			}
+			else_if = {
+				limit = { has_deposit = d_ef_deep_level_districts }
+				remove_deposit = d_ef_deep_level_districts
+			}
+			else_if = {
+				limit = { has_deposit = d_ef_subterranean_habitation_zones }
+				remove_deposit = d_ef_subterranean_habitation_zones
+			}
+			change_variable = {
+				which = ef_deep_level_count
+				value = -1
+			}
+			ef_set_deep_levels_modifier= yes
+		}
+	}
+
+	ai_weight = {
+		weight = 0
 	}
 }
 
