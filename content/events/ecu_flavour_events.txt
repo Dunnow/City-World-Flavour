@@ -7,16 +7,20 @@ planet_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		random_list = {
-			95 = { } # Approximately a new event every 20 years or so. (Ideally)
-			5 = {
-				random_list = {
-					1 = { planet_event = { id = ef_flavour.10 }}
-					1 = { planet_event = { id = ef_flavour.20 }}
-					1 = { planet_event = { id = ef_flavour.30 }}
-					1 = { planet_event = { id = ef_flavour.40 }}
-					1 = { planet_event = { id = ef_flavour.50 }}
-					1 = { planet_event = { id = ef_flavour.60 }}
+		# Don't waste events on empty ecus for whatever reason.
+		if = {
+			limit = { is_colony = yes }
+			random_list = {
+				95 = { } # Approximately a new event every 20 years or so. (Ideally)
+				5 = {
+					random_list = {
+						1 = { planet_event = { id = ef_flavour.10 }}
+						1 = { planet_event = { id = ef_flavour.20 }}
+						1 = { planet_event = { id = ef_flavour.30 }}
+						1 = { planet_event = { id = ef_flavour.40 }}
+						1 = { planet_event = { id = ef_flavour.50 }}
+						1 = { planet_event = { id = ef_flavour.60 }}
+					}
 				}
 			}
 		}
