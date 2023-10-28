@@ -20,6 +20,10 @@
   decision_ef_construct_seismic_stabilization_stations: "Construct Seismic Stabilization Stations"
   decision_ef_construct_seismic_stabilization_stations_desc: "To enable layers upon layers of urban sprawl, careful load and structural management must be a priority."
 
+  decision_ef_choose_path: "Choose a Planetary Specialization"
+  #decision_ef_choose_path_effects_short: ""
+  decision_ef_choose_path_desc: "Embark on a program of investment and construction to focus this world's output."
+
   # Deposits
   d_ef_ventilation_system: "Ventilation Systems"
   d_ef_ventilation_system_desc: "A massive system of ducts and fans provide breathable atmosphere to the denizens of the under city."
@@ -192,3 +196,14 @@
   ef_flavour.62.desc: "Our investigation on [This.GetName] has borne fruit. It appears that a minor criminal syndicate was attempting to develop a homegrown artificial intelligence.\n\nUnfortunately for the criminals, they were unable to achieve a fully functional intelligence. The program performed poorly and left telltale traces on public systems when used, allowing our investigators to follow the tracks.\n\nAlthough the criminal's work was shoddy, there are some novel solutions they developed that certain members of our scientific community are interested in."
   ef_flavour.62.a: "Scrap it."
   ef_flavour.62.b: "Allow our researchers to examine it."
+
+  ef_path.1.name: "[This.GetName] at the Crossroads"
+  ef_path.1.desc: "As [This.GetName] grows in size and influence, more and more talent is being attracted to the bustling world. We have a unique opportunity to reap the benefits of specialisation by encouraging a particular path of development.\n\nAs one of the galaxy's greatest population centres, [This.GetName] naturally has a great deal of cultural weight. With deliberate outreach programs and sponsorship, we can develop the planet's reputation as a centre of culture and politics in the galaxy.\n\nAs a major source of labour and already well integrated into our logistics networks, [This.GetName] has enormous potential as a manufacturing hub. All it requries is a relatively minor investment.\n\nThe tremendous consumer markets of [This.GetName] have also drawn the attention of numerous conglomerates, who are eager to get their [This.Owner.GetSpeciesHandName]s on the planet's lucrative trade routes."
+  ef_path.1.a: "[This.GetName] has the potential to become a centre of galactic affairs."
+  ef_path.1.a.tooltip: "Unlocks the §BPolitics§! special effects\n\n§RThis decision is permanent§!"
+  ef_path.1.b: "Industrial might will bring us prosperity."
+  ef_path.1.b.tooltip: "Unlocks the §BIndustry§! special effects\n\n§RThis decision is permanent§!"
+  ef_path.1.c: "Commerce and trade is the path forwards."
+  ef_path.1.c.tooltip: "Unlocks the §BCommerce§! special effects\n\n§RThis decision is permanent§!"
+  ef_path.1.d: "Not at this time."
+  ef_path.1.d.tooltip: "§HWe will have the ability to reconsider at a later date.§!"

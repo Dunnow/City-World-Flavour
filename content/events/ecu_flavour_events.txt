@@ -474,6 +474,31 @@ planet_event = {
 	}
 }
 
+# Property bought up by rivals
+# TODO
+planet_event = {
+	id = ef_flavour.70
+	title = ef_flavour.70.name
+	desc = "ef_flavour.70.desc"
+	picture  = GFX_evt_bribery
+	location = root
+	is_triggered_only = yes
+
+	# Scrap it
+	option = {
+		name = ef_flavour.62.a
+		owner = {
+			add_resource = { alloys = 1000 }
+		}
+
+	}
+	# Use it
+	option = {
+		name = ef_flavour.62.b
+		add_modifier = { modifier = ef_ai_insight years = 30 }
+	}
+}
+
 # Archaeological Dig # TODO
 #planet_event = {
 #	id = ef_flavour.1

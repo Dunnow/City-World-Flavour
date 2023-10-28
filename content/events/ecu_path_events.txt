@@ -1,0 +1,50 @@
+namespace = ef_path
+
+# Planet specialisation event
+# TODO: Needs ai weights
+planet_event = {
+	id = ef_path.1
+	title = ef_path.1.name
+	desc = "ef_path.1.desc"
+	picture  = GFX_evt_enclave_overlord
+	location = root
+	is_triggered_only = yes
+
+    immediate = {
+        set_planet_flag = ef_planet_specialisation_options_available
+    }
+
+	option = {
+		name = ef_path.1.a
+		allow = { owner = { resource_stockpile_compare = { resource = influence value >= 500 } } }
+		owner = { add_resource = { influence = -500 } }
+
+		custom_tooltip = ef_path.1.a.tooltip
+		remove_planet_flag = ef_planet_specialisation_options_available
+		set_planet_flag = ef_diplomacy_specialisation
+	}
+    option = {
+		name = ef_path.1.b
+		allow = { owner = { resource_stockpile_compare = { resource = influence value >= 500 } } }
+		owner = { add_resource = { influence = -500 } }
+
+		custom_tooltip = ef_path.1.b.tooltip
+		remove_planet_flag = ef_planet_specialisation_options_available
+		set_planet_flag = ef_industry_specialisation
+
+	}
+    option = {
+		name = ef_path.1.c
+		allow = { owner = { resource_stockpile_compare = { resource = influence value >= 500 } } }
+		owner = { add_resource = { influence = -500 } }
+
+		custom_tooltip = ef_path.1.c.tooltip
+		remove_planet_flag = ef_planet_specialisation_options_available
+		set_planet_flag = ef_trade_specialisation
+
+	}
+    option = {
+		name = ef_path.1.d
+		custom_tooltip = ef_path.1.d.tooltip
+	}
+}
