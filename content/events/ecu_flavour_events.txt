@@ -30,6 +30,22 @@ planet_event = {
 
 }
 
+# Check if a planet has changed to become a city world and apply the flavour modifier. I don't really care if we double apply it.
+planet_event = {
+	id = ef_flavour.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = { ef_is_ecu = yes }
+			ef_add_ecu_terraformed_modifiers = yes
+			planet_event = { id = ef_flavour.0 days = 360}
+		}
+	}
+
+}
+
 # Deep Levels Survey
 planet_event = {
 	id = ef_flavour.10
