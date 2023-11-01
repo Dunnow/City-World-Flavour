@@ -1,9 +1,13 @@
 # I'd like to have these added by event later with more flavour, but for now just slapping them on is fine.
 # Planet scope
 ef_add_ecu_terraformed_modifiers = {
-    add_modifier = { modifier = ef_crowded_spacelanes days = -1 }
-    add_modifier = { modifier = ef_unstable_climate days = -1 }
-    add_modifier = { modifier = ef_vertical_sprawl days = -1 }
+    # I'd rather keep these focused on the narrative of vanilla city worlds, so non vanilla types don't have these.
+    if = {
+        limit = { is_planet_class = pc_city }
+        add_modifier = { modifier = ef_crowded_spacelanes days = -1 }
+        add_modifier = { modifier = ef_unstable_climate days = -1 }
+        add_modifier = { modifier = ef_vertical_sprawl days = -1 }
+    }
 }
 
 # Planet Scope
