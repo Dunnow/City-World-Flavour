@@ -1,27 +1,4 @@
+# We use this as so we can overwrite it for the PD compatibility patch
 ef_is_ecu = {
-    OR = {
-        is_planet_class = pc_city
-        AND = {
-            # This deliberately excludes gestalt ecus
-            has_global_flag = "planetarydiversity"
-            OR = {
-                is_planet_class = pc_necropolis
-                is_planet_class = pc_capitalarc
-                is_planet_class = pc_palacearc
-                is_planet_class = pc_milarc
-                is_planet_class = pc_ecocity
-                is_planet_class = pc_shroudcity
-                is_planet_class = pc_shroudecocity
-                is_planet_class = pc_shroudcapitalarc
-                is_planet_class = pc_shroudpalacearc
-                is_planet_class = pc_shroudmilarc
-                is_planet_class = pc_corpoarc
-                is_planet_class = pc_shroudcorpoarc
-            }
-        }
-        AND = {
-            has_global_flag = "planetarydiversityarcs"
-            is_planet_class = pc_pd_techno_arc
-        }
-    }
+    is_planet_class = pc_city
 }
