@@ -12,7 +12,7 @@ decision_ef_expand_deep_levels = {
 	}
 
 	potential = {
-		is_planet_class = pc_city
+		ef_is_ecu = yes
 	}
 
 	allow = {
@@ -74,7 +74,7 @@ decision_ef_block_off_deep_levels = {
 	}
 
 	potential = {
-		is_planet_class = pc_city
+		ef_is_ecu = yes
 		OR = {
 			has_modifier = ef_deep_levels_1
 			has_modifier = ef_deep_levels_2
@@ -132,7 +132,7 @@ decision_ef_construct_spaceport = {
 	}
 
 	potential = {
-		is_planet_class = pc_city
+		ef_is_ecu = yes
 		NOT = { has_deposit = d_ef_spaceport}
 	}
 
@@ -162,7 +162,7 @@ decision_ef_construct_orbital_control_network = {
 	}
 
 	potential = {
-		is_planet_class = pc_city
+		ef_is_ecu = yes
 		NOT = { has_deposit = d_ef_orbital_control_network}
 	}
 
@@ -192,7 +192,7 @@ decision_ef_establish_climate_regulation_systems = {
 	}
 
 	potential = {
-		is_planet_class = pc_city
+		ef_is_ecu = yes
 		NOT = { has_deposit = d_ef_climate_management_centre}
 	}
 
@@ -223,7 +223,7 @@ decision_ef_construct_seismic_stabilization_stations = {
 	}
 
 	potential = {
-		is_planet_class = pc_city
+		ef_is_ecu = yes
 		NOT = { has_deposit = d_ef_seismic_stabilization_stations}
 	}
 
