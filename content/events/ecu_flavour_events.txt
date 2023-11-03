@@ -23,6 +23,42 @@ planet_event = {
 					}
 				}
 			}
+			switch = {
+				trigger = has_planet_flag
+				# Diplo events
+				ef_diplomacy_specialisation = {
+					random_list = {
+						95 = { } # Approximately a new event every 20 years or so. (Ideally)
+						5 = {
+							random_list = {
+								#1 = { planet_event = { id = ef_flavour.10 }}
+							}
+						}
+					}
+				}
+				# Industry events
+				ef_industry_specialisation = {
+					random_list = {
+						95 = { } # Approximately a new event every 20 years or so. (Ideally)
+						5 = {
+							random_list = {
+								#1 = { planet_event = { id = ef_flavour.10 }}
+							}
+						}
+					}
+				}
+				# Trade events
+				ef_trade_specialisation = {
+					random_list = {
+						95 = { } # Approximately a new event every 20 years or so. (Ideally)
+						5 = {
+							random_list = {
+								#1 = { planet_event = { id = ef_flavour.10 }}
+							}
+						}
+					}
+				}
+			}
 		}
 		# Loop the event
 		planet_event = { id = ef_flavour.0 days = 360 }

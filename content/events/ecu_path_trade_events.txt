@@ -1,0 +1,21 @@
+namespace = ef_trade
+
+# Stock market goes up. Repeatable
+planet_event = {
+	id = ef_trade.10
+	title = ef_trade.10.name
+	desc = "ef_trade.10.desc"
+	picture  = GFX_evt_financial_instruments
+	location = root
+	is_triggered_only = yes
+
+	option = {
+		name = ef_trade.10.a
+		hidden_effect = {
+			planet_event = {
+				id = ef_flavour.62
+				days = 270
+			}
+		}
+	}
+}
