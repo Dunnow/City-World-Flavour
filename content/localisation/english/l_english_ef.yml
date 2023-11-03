@@ -134,6 +134,21 @@
   ef_ai_insight: "AI Insights"
   ef_ai_insight_desc: "Novel solutions derived from artificial thought patterns."
 
+  ef_stock_market_1: "Stock Market: Collapse"
+  ef_stock_market_1_desc: "The financial markets of this world are in free fall. Industries and businesses are facing severe challenges."
+
+  ef_stock_market_2: "Stock Market: Downturn"
+  ef_stock_market_2_desc: "This world's financial markets have contracted sharply. Trade and commerce has suffered accordingly."
+
+  ef_stock_market_3: "Stock Market: Stagnation"
+  ef_stock_market_3_desc: "The value of financial assets on this world is unattractive to would-be investors."
+
+  ef_stock_market_4: "Stock Market: Growth"
+  ef_stock_market_4_desc: "The businesses and industries of this world are enjoying steady growth and strong financial performances."
+
+  ef_stock_market_5: "Stock Market: Prosperity"
+  ef_stock_market_5_desc: "The economic performance of this world is spectacular. Its commerce and trade is bustling, vibrant and very lucrative."
+
   # Trait Loc
   trait_ef_mutant: "Mutant"
   trait_ef_mutant_desc: "This species is afflicted with uncontrolled mutations. Their bodies are breaking down under the pressure."
