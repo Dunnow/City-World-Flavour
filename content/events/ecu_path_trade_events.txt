@@ -19,3 +19,222 @@ planet_event = {
 		}
 	}
 }
+
+# Tax Irregularites
+planet_event = {
+	id = ef_trade.20
+	title = ef_trade.20.name
+	desc = "ef_trade.20.desc"
+	picture  = GFX_evt_financial_instruments
+	location = root
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			NOT = {
+				has_country_flag = ef_tax_irregularities_has_happened
+			}
+		}
+	}
+
+	immediate = {
+		owner = { set_country_flag = ef_tax_irregularities_has_happened }
+	}
+
+	option = {
+		name = ef_trade.20.investigate
+		allow = {
+			owner = {
+				resource_stockpile_compare = { resource = influence value >= 50 }
+			}
+		}
+		owner = {
+			add_resource = { influence = -50 }
+		}
+		hidden_effect = {
+			planet_event = {
+				id = ef_trade.21
+				days = 2#70 # Test
+			}
+		}
+	}
+
+	option = {
+		name = ef_trade.20.ignore
+		add_modifier = {
+			modifier = ef_embedded_corruption
+			years = 10
+		}
+	}
+}
+
+# Tax Irregularites: Conspiracy Uncovered
+planet_event = {
+	id = ef_trade.21
+	title = ef_trade.21.name
+	desc = "ef_trade.21.desc"
+	picture  = GFX_evt_gunrunning
+	location = root
+	is_triggered_only = yes
+
+	option = {
+		name = ef_trade.21.conclude
+		# 50% chance your governor is associated with crime.
+		hidden_effect = {
+			if = {
+				limit = { exists = leader }
+				random_list = {
+					10 = {}
+					10 = {
+						planet_event = {
+							id = ef_trade.22
+							days = 2#70 # TEST
+						}
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = ef_trade.21.investigate_further
+		hidden_effect = {
+			planet_event = {
+				id = ef_trade.23
+				days = 2# 70 TEST
+			}
+		}
+	}
+}
+
+# Tax Irregularites: Governor implicated
+planet_event = {
+	id = ef_trade.22
+	title = ef_trade.22.name
+	desc = "ef_trade.22.desc"
+	picture  = GFX_evt_bribery
+	location = root
+	is_triggered_only = yes
+
+	immediate = {
+		leader = {
+			save_event_target_as = ef_corrupt_governor
+		}
+	}
+
+	option = {
+		name = ef_trade.22.imprison
+		leader = { kill_leader = { show_notification = yes fire = yes } }
+	}
+	option = {
+		name = ef_trade.22.leave
+		leader = {
+			add_trait = leader_trait_corrupt_2
+		}
+	}
+}
+
+# Tax Irregularites: Ringleaders caught
+# Mutually exclusive with governor outcome
+planet_event = {
+	id = ef_trade.23
+	title = ef_trade.23.name
+	desc = "ef_trade.23.desc"
+	picture  = GFX_evt_cover_blown
+	location = root
+	is_triggered_only = yes
+
+	immediate = {
+		remove_modifier = ef_embedded_corruption
+	}
+
+	# Round them up
+	option = {
+		name = ef_trade.23.round_them_up
+		add_modifier = {
+			modifier = ef_robust_law_enforcement
+			years = 10
+		}
+		add_modifier = {
+			modifier = ef_financial_chaos
+			months = 36
+		}
+	}
+	# Let it slide
+	option = {
+		name = ef_trade.23.let_it_slide
+		add_modifier = {
+			modifier = ef_corrupt_collusion
+			years = 20
+		}
+	}
+}
+
+# Megacorp Merger
+# Repeatable
+planet_event = {
+	id = ef_trade.30
+	title = ef_trade.30.name
+	desc = "ef_trade.30.desc"
+	picture = GFX_evt_financial_instruments
+	location = root
+	is_triggered_only = yes
+
+	option = {
+		name = ef_trade.30.allow_merger
+		add_modifier = {
+			modifier = ef_corporate_monopoly
+			years = 10
+		}
+	}
+
+	option = {
+		name = ef_trade.30.deny_merger
+		owner = {
+			add_resource = { energy = 5000 }
+		}
+		add_modifier = {
+			modifier = ef_embedded_corruption
+			years = 10
+		}
+	}
+}
+
+# Corporate Espionage
+# Repeatable
+planet_event = {
+	id = ef_trade.40
+	title = ef_trade.40.name
+	desc = "ef_trade.40.desc"
+	picture  = GFX_evt_operative_chase
+	location = root
+	is_triggered_only = yes
+
+	option = {
+		name = ef_trade.40.fine_the_offender
+		ef_decrease_stock_market = yes
+	}
+
+	option = {
+		name = ef_trade.40.let_them_dispute_it
+		random_list = {
+			50 = {}
+			50 = { planet_event = { id = ef_trade.50 days = 180 }}
+		}
+	}
+}
+
+# Corporate War
+planet_event = {
+	id = ef_trade.50
+	title = ef_trade.50.name
+	desc = "ef_trade.50.desc"
+	picture  = GFX_evt_interior_battle
+	show_sound = event_ground_battle
+	location = root
+	is_triggered_only = yes
+
+	option = {
+		name = ef_trade.50.a
+		ef_decrease_stock_market = yes
+	}
+}

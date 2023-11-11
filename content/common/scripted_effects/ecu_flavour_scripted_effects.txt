@@ -75,3 +75,12 @@ ef_set_deep_levels_modifier= {
         }
     }
 }
+
+# I could always do this as a situation, but I think it's fine and less obstructive like this.
+# Actually do it as a situation
+ef_increase_stock_market = {
+    # TODO
+}
+ef_decrease_stock_market = {
+    # TODO
+}

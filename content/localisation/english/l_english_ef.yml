@@ -21,6 +21,7 @@
   decision_ef_construct_seismic_stabilization_stations_desc: "To enable layers upon layers of urban sprawl, careful load and structural management must be a priority."
 
   decision_ef_choose_path: "Choose a Planetary Specialization"
+  # TODO
   #decision_ef_choose_path_effects_short: ""
   decision_ef_choose_path_desc: "Embark on a program of investment and construction to focus this world's output."
 
@@ -149,6 +150,21 @@
   ef_stock_market_5: "Stock Market: Prosperity"
   ef_stock_market_5_desc: "The economic performance of this world is spectacular. Its commerce and trade is bustling, vibrant and very lucrative."
 
+  ef_embedded_corruption: "Embedded Corruption"
+  ef_embedded_corruption_desc: "Corruption and bribery have become endemic to the business environment of this world."
+
+  ef_corrupt_collusion: "Corrupt Collusion"
+  ef_corrupt_collusion_desc: "The authorities of this world have turned a blind eye to profitable criminal enterprises."
+
+  ef_robust_law_enforcement: "Robust Law Enforcement"
+  ef_robust_law_enforcement_desc: "The legal authorities of this world are efficient and well run, bringing stability and security to its people."
+
+  ef_financial_chaos: "Financial Chaos"
+  ef_financial_chaos_desc: "A recent event has caused total disruption of this world's economy. Traders and businesses are scrambling to adapt."
+
+  ef_corporate_monopoly: "Corporate Monopoly"
+  ef_corporate_monopoly_desc: "A handful of powerful conglomerates and megacorporations wield almost all power on this world."
+
   # Trait Loc
   trait_ef_mutant: "Mutant"
   trait_ef_mutant_desc: "This species is afflicted with uncontrolled mutations. Their bodies are breaking down under the pressure."
@@ -222,3 +238,37 @@
   ef_path.1.c.tooltip: "Unlocks the §BCommerce§! special effects\n\n§RThis decision is permanent§!"
   ef_path.1.d: "Not at this time."
   ef_path.1.d.tooltip: "§HWe will have the ability to reconsider at a later date.§!"
+
+  ef_trade.20.name: "Financial Anomalies"
+  ef_trade.20.desc: "Accounting regulators on [This.GetName] have been reporting irregularities in the planetary government's balance sheets. Multiple departments have reporting higher than expected expenses while tax revenue appears to have fallen.\n\nSeveral prominent megacorporations on [This.GetName] have contributed very little to the public coffers, yet they have been reporting record profits over the last financial cycle.\n\nSomething unusual is going on."
+  ef_trade.20.investigate: "We must investigate immediately."
+  ef_trade.20.ignore: "It's likely nothing."
+
+  ef_trade.21.name: "A Grand Conspiracy"
+  ef_trade.21.desc: "Our investigators on [This.GetName] have uncovered evidence of a sweeping conspiracy between major corporate entities and the local government.\n\nNumerous government officials appear to have accepted bribes in exchange for issuing tax reductions or ignoring them outright.\n\nThe most prominent conspirators have been arrested, but the rot appears to have spread deep. We still have several likely leads to pursue before we get to the bottom of this criminal conspiracy."
+  ef_trade.21.conclude: "A successful effort."
+  ef_trade.21.investigate_further: "Follow up and investigate the loose ends."
+
+  ef_trade.22.name: "Rotten to the Core"
+  ef_trade.22.desc: "Our investigation into corruption on [This.GetName] has led to a startling revelation. [ef_corrupt_governor.GetName], the planetary governor of [This.GetName] was in collusion with the conspirators!\n\nWe have been presented with undeniable evidence of [ef_corrupt_governor.GetName]'s knowledge of the conspiracy, but it appears that [ef_corrupt_governor.GetHerHis] direct involvement was limited to accepting payments to ignore the problem.\n\nIt may be politically inconvenient to directly charge the governor and perhaps we could arrange for the whole debacle to be swept under the rug."
+  ef_trade.22.imprison: "[ef_corrupt_governor.GetName] must go."
+  ef_trade.22.leave: "We cannot afford to fire [ef_corrupt_governor.GetHerHim]."
+
+  ef_trade.23.name: "A Matter of Clout"
+  ef_trade.23.desc: "Our ongoing anti-corruption investigation on [This.GetName] has borne fruit. We now possess a comprehensive list of the individuals and entities involved in a grand plan to defraud the planetary government.\n\nAlthough many of the conspirators have been arrested, there are several individuals involved who possess substantial political and financial connections.\n\nWe could proceed with prosecuting these conspirators, but their removal may cause a major disruption in the economy of [This.GetName]."
+  ef_trade.23.round_them_up: "We must round them up, whatever the potential consequences."
+  ef_trade.23.let_it_slide: "It suits our interests to allow this to slide."
+
+  ef_trade.30.name: "Corporate Consolidation"
+  ef_trade.30.desc: "One of the major corporations on [This.GetName] has fallen on hard times recently. One of their biggest competitors has made moves to acquire the failing megacorp, but the potential merger would result in an extremely dominant market share.\n\nSeveral of the competing megacorporations on [This.GetName] have petitioned the government to disallow the merger, claiming that it would result in a de-facto monopoly. They have quietly promised to contribute a sign of their appreciation, should we come around to their perspective."
+  ef_trade.30.allow_merger: "No, the deal goes ahead."
+  ef_trade.30.deny_merger: "These detractors make a very convincing "argument"."
+
+  ef_trade.40.name: "Corporate Consolidation"
+  ef_trade.40.desc: "One of the major corporations on [This.GetName] has fallen on hard times recently. One of their biggest competitors has made moves to acquire the failing megacorp, but the potential merger would result in an extremely dominant market share.\n\nSeveral of the competing megacorporations on [This.GetName] have petitioned the government to disallow the merger, claiming that it would result in a de-facto monopoly. They have quietly promised to contribute a sign of their appreciation, should we come around to their perspective."
+  ef_trade.40.allow_merger: "No, the deal goes ahead."
+  ef_trade.40.deny_merger: "These detractors make a very convincing "argument"."
+
+  ef_trade.50.name: "Competition by Other Means"
+  ef_trade.50.desc: "Rival corporations on [This.GetName] have broken into low-level warfare against one another. A string of bombings and high profile assassinations have swept over the world as various competitors maneuver to take advantage of the sudden chaos. Without a swift resolution, this conflict seems set to escalate."
+  ef_trade.50.a: "We must take action!."
