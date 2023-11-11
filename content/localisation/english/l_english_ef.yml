@@ -270,5 +270,5 @@
   ef_trade.40.deny_merger: "These detractors make a very convincing "argument"."
 
   ef_trade.50.name: "Competition by Other Means"
-  ef_trade.50.desc: "Rival corporations on [This.GetName] have broken into low-level warfare against one another. A string of bombings and high profile assassinations have swept over the world as various competitors maneuver to take advantage of the sudden chaos. Without a swift resolution, this conflict seems set to escalate."
-  ef_trade.50.a: "We must take action!."
+  ef_trade.50.desc: "Irreconcilable tensions between rival corporations on [This.GetName] have boiled over, resulting in low-level warfare against one another.\n\nA string of bombings and high profile assassinations have swept over the world as various competitors maneuver to take advantage of the sudden chaos. Without a swift resolution, this conflict seems set to escalate."
+  ef_trade.50.a: "We must take action!"
