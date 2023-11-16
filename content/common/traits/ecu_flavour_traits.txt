@@ -12,7 +12,7 @@ trait_ef_mutant = {
 	allowed_archetypes = { BIOLOGICAL LITHOID }
 	modifier = {
 		pop_job_amenities_mult = -0.20
-        leader_age = -25
+        leader_lifespan_add = -25
 	}
 
 	ai_weight = {
