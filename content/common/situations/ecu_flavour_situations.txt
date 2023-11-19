@@ -1,0 +1,143 @@
+ef_situation_corpo_war = {
+	picture = GFX_evt_news_room
+	complete_icon_frame = GFX_situation_outcome_frame_blue
+	complete_icon = GFX_situation_outcome_unknown
+
+	# Progress has reached 0%. Order restored
+	on_fail = {
+		# TODO: yay you fixed it
+		destroy_situation = this
+	}
+
+	# Progress has reached 100%. Anarchy reigns
+	on_progress_complete = {
+		# TODO: oh no the burger king militia has taken over
+		destroy_situation = this
+	}
+	start_value = 50
+	fail_category = positive
+	complete_category = negative
+	stages = {
+		ef_stage_corpo_skirmishes = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_blue
+			end = 25
+			modifier = {
+				planet_stability_add = -10
+				planet_crime_add = 25
+				trade_value_mult = -0.15
+			}
+			custom_tooltip = ef_stage_corpo_war_1
+		}
+		ef_stage_shadow_war = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_blue
+			end = 75
+			modifier = {
+				planet_stability_add = -20
+				planet_crime_add = 50
+				trade_value_mult = -0.25
+			}
+			custom_tooltip = ef_stage_corpo_war_2
+		}
+		ef_stage_open_anarchy = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_blue
+			end = 100
+			modifier = {
+				planet_stability_add = -50
+				planet_crime_add = 100
+				trade_value_mult = -0.5
+			}
+			on_first_enter = {
+				situation_event = { id = situation.165 }
+			}
+			custom_tooltip = ef_stage_corpo_war_3
+		}
+	}
+	approach = {
+		name = ef_situation_hands_off
+		icon = GFX_situation_approach_shrug
+		icon_background = GFX_situation_approach_bg_yellow
+		allow = {
+			always = yes
+		}
+		on_select = {
+			custom_tooltip = approach_outcome_tooltip
+		}
+		 # Accepting bribes - maybe make it a trade modifier?
+		resources = {
+			category = situations
+			produces = {
+				energy = 25
+			}
+		}
+	}
+	approach = {
+		name = ef_situation_normal_operations
+		icon = GFX_situation_approach_scales
+		icon_background = GFX_situation_approach_bg_yellow
+		default = yes
+		allow = {
+			always = yes
+		}
+		on_select = {
+			custom_tooltip = approach_outcome_tooltip
+		}
+		resources = {
+			category = situations
+			upkeep = {
+				energy = 50
+				alloys = 25
+			}
+		}
+	}
+	approach = {
+		name = ef_situation_severe_response
+		icon = GFX_situation_approach_fist
+		icon_background = GFX_situation_approach_bg_yellow
+		allow = {
+			always = yes
+		}
+		on_select = {
+			custom_tooltip = approach_outcome_tooltip
+		}
+		resources = {
+			category = situations
+			upkeep = {
+				energy = 100
+				alloys = 50
+			}
+		}
+	}
+	on_monthly = {
+		random_events = {
+			120 = 0 # TODO: Add some corpo war shit here
+			# The events will naturally progress the situation
+		}
+	}
+	monthly_progress = {
+		base = 0
+		modifier = {
+			add = 5
+			desc = ef_situation_hands_off_tt
+			current_situation_approach = ef_situation_hands_off
+		}
+		modifier = {
+			add = -2.5
+			desc = ef_situation_normal_operations_tt
+			current_situation_approach = ef_situation_normal_operations
+		}
+		modifier = {
+			add = -5
+			desc = ef_situation_severe_response_tt
+			current_situation_approach = ef_situation_severe_response
+		}
+	}
+	abort_trigger = {
+		OR = {
+			NOT = { exists = target.owner }
+			target.owner = { NOT = { is_same_value = root.owner } }
+		}
+	}
+}

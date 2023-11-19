@@ -236,5 +236,6 @@ planet_event = {
 	option = {
 		name = ef_trade.50.a
 		ef_decrease_stock_market = yes
+		owner = { start_situation = { type = ef_situation_corpo_war target = root } }
 	}
 }
