@@ -12,10 +12,7 @@ planet_event = {
 	option = {
 		name = ef_trade.10.a
 		hidden_effect = {
-			planet_event = {
-				id = ef_flavour.62
-				days = 270
-			}
+			ef_increase_stock_market = yes
 		}
 	}
 }
@@ -204,7 +201,7 @@ planet_event = {
 planet_event = {
 	id = ef_trade.40
 	title = ef_trade.40.name
-	desc = "ef_trade.40.desc"
+	desc = ef_trade.40.desc
 	picture  = GFX_evt_operative_chase
 	location = root
 	is_triggered_only = yes
@@ -216,9 +213,10 @@ planet_event = {
 
 	option = {
 		name = ef_trade.40.let_them_dispute_it
+		custom_tooltip = ef_trade.40.dispute_warning_tt
 		random_list = {
 			50 = {}
-			50 = { planet_event = { id = ef_trade.50 days = 180 }}
+			25 = { planet_event = { id = ef_trade.50 days = 180 }}
 		}
 	}
 }
@@ -227,7 +225,7 @@ planet_event = {
 planet_event = {
 	id = ef_trade.50
 	title = ef_trade.50.name
-	desc = "ef_trade.50.desc"
+	desc = ef_trade.50.desc
 	picture  = GFX_evt_interior_battle
 	show_sound = event_ground_battle
 	location = root
@@ -235,7 +233,108 @@ planet_event = {
 
 	option = {
 		name = ef_trade.50.a
-		ef_decrease_stock_market = yes
 		owner = { start_situation = { type = ef_situation_corpo_war target = root } }
+		ef_decrease_stock_market = yes
+	}
+}
+
+# Corporate War - Public Shootout
+planet_event = {
+	id = ef_trade.51
+	title = ef_trade.51.name
+	desc = ef_trade.51.desc
+	picture  = GFX_evt_emergency_work
+	location = root
+	is_triggered_only = yes
+
+	option = {
+		name = ef_trade.51.a
+		add_planet_devastation = 10
+		ef_decrease_stock_market = yes
+	}
+}
+
+# Corporate War - Bombing
+planet_event = {
+	id = ef_trade.52
+	title = ef_trade.52.name
+	desc = ef_trade.52.desc
+	picture  = GFX_evt_night_raid
+	location = root
+	is_triggered_only = yes
+
+	option = {
+		name = ef_trade.52.a
+		add_planet_devastation = 10
+		random_owned_pop = { kill_pop = yes }
+		ef_decrease_stock_market = yes
+	}
+}
+
+# Corporate War - Break ins / Rising Chaos
+planet_event = {
+	id = ef_trade.53
+	title = ef_trade.53.name
+	desc = ef_trade.53.desc
+	picture  = GFX_evt_operative_chase
+	location = root
+	is_triggered_only = yes
+
+	option = {
+		name = ef_trade.53.a
+		add_modifier = { modifier = ef_financial_chaos years = 2 }
+		ef_decrease_stock_market = yes
+	}
+}
+
+# Corporate War - No go zones
+planet_event = {
+	id = ef_trade.54
+	title = ef_trade.54.name
+	desc = ef_trade.54.desc
+	picture  = GFX_evt_burning_city
+	location = root
+	is_triggered_only = yes
+
+	option = {
+		name = ef_trade.54.a
+		add_planet_devastation = 25
+		random_owned_pop = { kill_pop = yes }
+		ef_decrease_stock_market = yes
+	}
+}
+
+# Corporate War - A Victor
+planet_event = {
+	id = ef_trade.55
+	title = ef_trade.55.name
+	desc = ef_trade.55.desc
+	picture  = GFX_evt_burning_city
+	location = root
+	is_triggered_only = yes
+
+	option = {
+		name = ef_trade.55.a
+		add_modifier = { modifier = ef_corporate_monopoly years = 30 }
+		add_modifier = { modifier = ef_shattered_economy years = 10 }
+		ef_increase_stock_market = yes
+	}
+}
+
+# Corporate War - Order restored
+planet_event = {
+	id = ef_trade.56
+	title = ef_trade.56.name
+	desc = "ef_trade.56.desc"
+	picture  = GFX_evt_enclave_overlord
+	location = root
+	is_triggered_only = yes
+
+	option = {
+		name = ef_trade.56.a
+		add_modifier = { modifier = ef_robust_law_enforcement years = 10 }
+		add_modifier = { modifier = ef_rebuilding years = 5 }
+		ef_increase_stock_market = yes
+		ef_increase_stock_market = yes
 	}
 }

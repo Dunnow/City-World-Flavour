@@ -77,10 +77,49 @@ ef_set_deep_levels_modifier= {
 }
 
 # I could always do this as a situation, but I think it's fine and less obstructive like this.
-# Actually do it as a situation
+# Actually really ought to do it as a situation
 ef_increase_stock_market = {
-    # TODO
+    switch = {
+        trigger = has_modifier
+        ef_stock_market_1 = {
+            remove_modifier = ef_stock_market_1
+            add_modifier = { modifier = ef_stock_market_2 days = -1 }
+        }
+        ef_stock_market_2 = {
+            remove_modifier = ef_stock_market_2
+            add_modifier = { modifier = ef_stock_market_3 days = -1 }
+        }
+        ef_stock_market_3 = {
+            remove_modifier = ef_stock_market_3
+            add_modifier = { modifier = ef_stock_market_4 days = -1 }
+        }
+        ef_stock_market_4 = {
+            remove_modifier = ef_stock_market_4
+            add_modifier = { modifier = ef_stock_market_5 days = -1 }
+        }
+        # TODO: Would be nice to have a bubble effect for when the stock market goes > 5
+        # NOTE: This would be another good reason to shift it over to a situation instead
+    }
 }
+
 ef_decrease_stock_market = {
-    # TODO
+    switch = {
+        trigger = has_modifier
+        ef_stock_market_5 = {
+            remove_modifier = ef_stock_market_5
+            add_modifier = { modifier = ef_stock_market_4 days = -1 }
+        }
+        ef_stock_market_4 = {
+            remove_modifier = ef_stock_market_4
+            add_modifier = { modifier = ef_stock_market_3 days = -1 }
+        }
+        ef_stock_market_3 = {
+            remove_modifier = ef_stock_market_3
+            add_modifier = { modifier = ef_stock_market_2 days = -1 }
+        }
+        ef_stock_market_2 = {
+            remove_modifier = ef_stock_market_2
+            add_modifier = { modifier = ef_stock_market_1 days = -1 }
+        }
+    }
 }

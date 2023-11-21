@@ -41,6 +41,8 @@ planet_event = {
 		custom_tooltip = ef_path.1.c.tooltip
 		remove_planet_flag = ef_planet_specialisation_options_available
 		set_planet_flag = ef_trade_specialisation
+		# Init the stock market
+		hidden_effect = { add_modifier = { modifier = ef_stock_market_4 days = -1 } }
 
 	}
     option = {

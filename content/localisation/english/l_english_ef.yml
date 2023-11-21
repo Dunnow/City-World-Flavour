@@ -101,6 +101,7 @@
   # Situation Loc
   ef_situation_corpo_war: "Corporate War"
   ef_situation_corpo_war_desc: "Rival corporate entities are battling for influence on [Root.GetName] in an undeclared shadow war. Without intervention, the situation has the potential to spiral out of control."
+  ef_situation_corpo_war_type: "Corporate War"
   ef_situation_corpo_war_monthly_change_tooltip: "Our security forces are working to restore order on this world. The better funded their §Yapproach§!, the more effective they are likely to be."
   ef_situation_hands_off: "Hands Off"
   ef_situation_hands_off_tt: "Minimal Intervention"
@@ -182,6 +183,12 @@
   ef_corporate_monopoly: "Corporate Monopoly"
   ef_corporate_monopoly_desc: "A handful of powerful conglomerates and megacorporations wield almost all power on this world."
 
+  ef_rebuilding: "Reconstruction Efforts"
+  ef_rebuilding_desc: "Major restoration works on this world have prompted a construction boom, at the cost of some of its citizen's convenience."
+
+  ef_shattered_economy: "Shattered Economy"
+  ef_shattered_economy_desc: "This world's economy has been devastated by a recent event leaving its people destitute and hungry."
+
   # Trait Loc
   trait_ef_mutant: "Mutant"
   trait_ef_mutant_desc: "This species is afflicted with uncontrolled mutations. Their bodies are breaking down under the pressure."
@@ -256,6 +263,11 @@
   ef_path.1.d: "Not at this time."
   ef_path.1.d.tooltip: "§HWe will have the ability to reconsider at a later date.§!"
 
+  # TODO
+  ef_trade.10.name: ""
+  ef_trade.10.desc: ""
+  ef_trade.10.a: ""
+
   ef_trade.20.name: "Financial Anomalies"
   ef_trade.20.desc: "Accounting regulators on [This.GetName] have been reporting irregularities in the planetary government's balance sheets. Multiple departments have reporting higher than expected expenses while tax revenue appears to have fallen.\n\nSeveral prominent megacorporations on [This.GetName] have contributed very little to the public coffers, yet they have been reporting record profits over the last financial cycle.\n\nSomething unusual is going on."
   ef_trade.20.investigate: "We must investigate immediately."
@@ -277,15 +289,40 @@
   ef_trade.23.let_it_slide: "It suits our interests to allow this to slide."
 
   ef_trade.30.name: "Corporate Consolidation"
-  ef_trade.30.desc: "One of the major corporations on [This.GetName] has fallen on hard times recently. One of their biggest competitors has made moves to acquire the failing megacorp, but the potential merger would result in an extremely dominant market share.\n\nSeveral of the competing megacorporations on [This.GetName] have petitioned the government to disallow the merger, claiming that it would result in a de-facto monopoly. They have quietly promised to contribute a sign of their appreciation, should we come around to their perspective."
+  ef_trade.30.desc: "A major corporation on [This.GetName] has fallen on hard times recently. One of their biggest competitors has made moves to acquire the failing megacorp, but the potential merger would result in an extremely dominant market share.\n\nSeveral of the competing megacorporations on [This.GetName] have petitioned the government to disallow the merger, claiming that it would result in a de-facto monopoly. They have quietly promised to contribute a sign of their appreciation, should we come around to their perspective."
   ef_trade.30.allow_merger: "No, the deal goes ahead."
   ef_trade.30.deny_merger: "These detractors make a very convincing "argument"."
 
-  ef_trade.40.name: "Corporate Consolidation"
-  ef_trade.40.desc: "One of the major corporations on [This.GetName] has fallen on hard times recently. One of their biggest competitors has made moves to acquire the failing megacorp, but the potential merger would result in an extremely dominant market share.\n\nSeveral of the competing megacorporations on [This.GetName] have petitioned the government to disallow the merger, claiming that it would result in a de-facto monopoly. They have quietly promised to contribute a sign of their appreciation, should we come around to their perspective."
-  ef_trade.40.allow_merger: "No, the deal goes ahead."
-  ef_trade.40.deny_merger: "These detractors make a very convincing "argument"."
+  ef_trade.40.name: "Caught in the Act"
+  ef_trade.40.desc: "A recent breakin at "
+  ef_trade.40.dispute_warning_tt: "§RThis may lead to further escalation.§!"
+  ef_trade.40.fine_the_offender: "Force the offender to pay a fine."
+  ef_trade.40.let_them_dispute_it: "Let them dispute it amongst themselves."
 
   ef_trade.50.name: "Competition by Other Means"
   ef_trade.50.desc: "Irreconcilable tensions between rival corporations on [This.GetName] have boiled over, resulting in low-level warfare against one another.\n\nA string of bombings and high profile assassinations have swept over the world as various competitors maneuver to take advantage of the sudden chaos. Without a swift resolution, this conflict seems set to escalate."
   ef_trade.50.a: "We must take action!"
+
+  ef_trade.51.name: "Public Gunfights on [This.GetName]"
+  ef_trade.51.desc: "As the intractable conflict between rival corporations grinds on across [This.GetName], the engagements of this shadow war have become increasingly brazen.\n\nA major incident between mercenary groups affiliated with the rival sides has left hundreds dead and a large swathe of cityscape badly damaged. Local authorities are completely overwhelmed."
+  ef_trade.51.a: "This is escalating."
+
+  ef_trade.52.name: "Bombing Wave on [This.GetName]"
+  ef_trade.52.desc: "The undeclared conflict between rival megacorporations on [This.GetName] has escalated recently as a wave of bombings have swept over the world.\n\nWarehouses, factories and research facilities across the planet have been destroyed in the initial wave and the retaliation attacks that followed."
+  ef_trade.52.a: "This is absurd!"
+
+  ef_trade.53.name: "Rising Chaos on [This.GetName]"
+  ef_trade.53.desc: "[This.GetName] has seen a recent string of high profile break-ins and kidnappings. Although primarily concentrated between the rival parties of the planet's growing corporate war, third parties have been increasingly involved.\n\nInvestors and conglomerates have begun to re-evaluate their association with [This.GetName] in response to the authorities' apparent inability to resolve the crisis."
+  ef_trade.53.a: "A worrying trend."
+
+  ef_trade.54.name: "Breakdown of Order"
+  ef_trade.54.desc: "The Shadow War on [This.GetName] has grown completely out of hand. Large areas of the planet have descended into complete lawlessness as local authorities are forced out by heavily armed mercenary groups. A handful of orbital engagements and a constant terror bombing campaign perpetrated by both sides against one another have led to a collapse of the world's economy."
+  ef_trade.54.a: "An unmitigated disaster."
+
+  ef_trade.55.name: "To the Victors the Spoils"
+  ef_trade.55.desc: "The Shadow on [This.GetName] has come to an end as one of the rival megacorporations has collapsed completely. Many of the surviving leadership have fled, while the corporation's assets and employed have been forcibly acquired by the victor.\n\nThe period of conflict and instability on [This.GetName] appears to have come to an end, but the damage has been done. It will take years to rebuild what was destroyed and the victorious conglomerates will be sure to seek their cut."
+  ef_trade.55.a: "Time to rebuild."
+
+  ef_trade.56.name: "Order Restored on [This.GetName]"
+  ef_trade.56.desc: "Local authorities have succeeded in bringing the Shadow War on [This.GetName] to an end. With most of the senior leadership of both parties either arrested or on the run, the feuding corporations have largely fallen apart and seen their assets seized or snapped up by competitors.\n\nWith the end of the Shadow War, peace and stability has largely returned to [This.GetName]. Although it will take time, rebuilding efforts have already begun across the planet and investors have found new confidence in the world's prospects."
+  ef_trade.56.a: "Peace at last."

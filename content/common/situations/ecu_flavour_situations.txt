@@ -12,6 +12,7 @@ ef_situation_corpo_war = {
 	# Progress has reached 100%. Anarchy reigns
 	on_progress_complete = {
 		# TODO: oh no the burger king militia has taken over
+		#ef_trade.55
 		destroy_situation = this
 	}
 	start_value = 50
