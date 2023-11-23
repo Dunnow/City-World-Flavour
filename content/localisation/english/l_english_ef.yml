@@ -300,7 +300,7 @@
   ef_trade.30.deny_merger: "These detractors make a very convincing "argument"."
 
   ef_trade.40.name: "Caught in the Act"
-  ef_trade.40.desc: "A recent breakin at "
+  ef_trade.40.desc: "A recent burglary at a major corporate research facility on [This.GetName] has led to outcry among the planet's commercial leadership.\n\nThe facility's owners have accused one of their main competitors of being behind the break in, in an attempt to steal sensitive trade secrets. The accused have fervently denied the allegations."
   ef_trade.40.dispute_warning_tt: "§RThis may lead to further escalation.§!"
   ef_trade.40.fine_the_offender: "Force the offender to pay a fine."
   ef_trade.40.let_them_dispute_it: "Let them dispute it amongst themselves."
@@ -309,24 +309,24 @@
   ef_trade.50.desc: "Irreconcilable tensions between rival corporations on [This.GetName] have boiled over, resulting in low-level warfare against one another.\n\nA string of bombings and high profile assassinations have swept over the world as various competitors maneuver to take advantage of the sudden chaos. Without a swift resolution, this conflict seems set to escalate."
   ef_trade.50.a: "We must take action!"
 
-  ef_trade.51.name: "Public Gunfights on [This.GetName]"
-  ef_trade.51.desc: "As the intractable conflict between rival corporations grinds on across [This.GetName], the engagements of this shadow war have become increasingly brazen.\n\nA major incident between mercenary groups affiliated with the rival sides has left hundreds dead and a large swathe of cityscape badly damaged. Local authorities are completely overwhelmed."
+  ef_trade.51.name: "Public Gunfights on [Target.GetName]"
+  ef_trade.51.desc: "As the intractable conflict between rival corporations grinds on across [Target.GetName], the engagements of this shadow war have become increasingly brazen.\n\nA major incident between mercenary groups affiliated with the rival sides has left hundreds dead and a large swathe of cityscape badly damaged. Local authorities are completely overwhelmed."
   ef_trade.51.a: "This is escalating."
 
-  ef_trade.52.name: "Bombing Wave on [This.GetName]"
-  ef_trade.52.desc: "The undeclared conflict between rival megacorporations on [This.GetName] has escalated recently as a wave of bombings have swept over the world.\n\nWarehouses, factories and research facilities across the planet have been destroyed in the initial wave and the retaliation attacks that followed."
+  ef_trade.52.name: "Bombing Wave on [Target.GetName]"
+  ef_trade.52.desc: "The undeclared conflict between rival megacorporations on [Target.GetName] has escalated recently as a wave of bombings have swept over the world.\n\nWarehouses, factories and research facilities across the planet have been destroyed in the initial wave and the retaliation attacks that followed."
   ef_trade.52.a: "This is absurd!"
 
-  ef_trade.53.name: "Rising Chaos on [This.GetName]"
-  ef_trade.53.desc: "[This.GetName] has seen a recent string of high profile break-ins and kidnappings. Although primarily concentrated between the rival parties of the planet's growing corporate war, third parties have been increasingly involved.\n\nInvestors and conglomerates have begun to re-evaluate their association with [This.GetName] in response to the authorities' apparent inability to resolve the crisis."
+  ef_trade.53.name: "Rising Chaos on [Target.GetName]"
+  ef_trade.53.desc: "[Target.GetName] has seen a recent string of high profile break-ins and kidnappings. Although primarily concentrated between the rival parties of the planet's growing corporate war, third parties have been increasingly involved.\n\nInvestors and conglomerates have begun to re-evaluate their association with [Target.GetName] in response to the authorities' apparent inability to resolve the crisis."
   ef_trade.53.a: "A worrying trend."
 
   ef_trade.54.name: "Breakdown of Order"
-  ef_trade.54.desc: "The Shadow War on [This.GetName] has grown completely out of hand. Large areas of the planet have descended into complete lawlessness as local authorities are forced out by heavily armed mercenary groups. A handful of orbital engagements and a constant terror bombing campaign perpetrated by both sides against one another have led to a collapse of the world's economy."
+  ef_trade.54.desc: "The Shadow War on [Target.GetName] has grown completely out of hand. Large areas of the planet have descended into complete lawlessness as local authorities are forced out by heavily armed mercenary groups. A handful of orbital engagements and a constant terror bombing campaign perpetrated by both sides against one another have led to a collapse of the world's economy."
   ef_trade.54.a: "An unmitigated disaster."
 
   ef_trade.55.name: "To the Victors the Spoils"
-  ef_trade.55.desc: "The Shadow on [This.GetName] has come to an end as one of the rival megacorporations has collapsed completely. Many of the surviving leadership have fled, while the corporation's assets and employed have been forcibly acquired by the victor.\n\nThe period of conflict and instability on [This.GetName] appears to have come to an end, but the damage has been done. It will take years to rebuild what was destroyed and the victorious conglomerates will be sure to seek their cut."
+  ef_trade.55.desc: "The Shadow War on [This.GetName] has come to an end as one of the rival megacorporations has collapsed completely. Many of the surviving leadership have fled, while the corporation's assets and employed have been forcibly acquired by the victor.\n\nThe period of conflict and instability on [This.GetName] appears to have come to an end, but the damage has been done. It will take years to rebuild what was destroyed and the victorious conglomerates will be sure to seek their cut."
   ef_trade.55.a: "Time to rebuild."
 
   ef_trade.56.name: "Order Restored on [This.GetName]"
