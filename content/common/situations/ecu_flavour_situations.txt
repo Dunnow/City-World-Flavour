@@ -5,14 +5,15 @@ ef_situation_corpo_war = {
 
 	# Progress has reached 0%. Order restored
 	on_fail = {
-		# TODO: yay you fixed it
+		# Yay you fixed it
+		hidden_effect = { target = { planet_event = { id = ef_trade.56} } }
 		destroy_situation = this
 	}
 
 	# Progress has reached 100%. Anarchy reigns
 	on_progress_complete = {
-		# TODO: oh no the burger king militia has taken over
-		#ef_trade.55
+		# Oh no the burger king militia has taken over
+		hidden_effect = { target = { planet_event = { id = ef_trade.55} } }
 		destroy_situation = this
 	}
 	start_value = 50
@@ -49,9 +50,6 @@ ef_situation_corpo_war = {
 				planet_stability_add = -50
 				planet_crime_add = 100
 				trade_value_mult = -0.5
-			}
-			on_first_enter = {
-				situation_event = { id = situation.165 }
 			}
 			custom_tooltip = ef_stage_corpo_war_3
 		}
@@ -135,6 +133,15 @@ ef_situation_corpo_war = {
 			current_situation_approach = ef_situation_severe_response
 		}
 	}
+	on_monthly = { #Note: technically, this is an on_action called test_situation. So don't call your situation "on_monthly_pulse"!
+ 		random_events = {
+			200 = 0 # A 1 in 3 chance of an event every month
+			25 = ef_trade.51
+			25 = ef_trade.52
+			25 = ef_trade.53
+			25 = ef_trade.54
+ 		}
+ 	}
 	abort_trigger = {
 		OR = {
 			NOT = { exists = target.owner }

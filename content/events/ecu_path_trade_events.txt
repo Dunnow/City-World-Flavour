@@ -260,68 +260,78 @@ planet_event = {
 }
 
 # Corporate War - Public Shootout
-planet_event = {
+situation_event = {
 	id = ef_trade.51
 	title = ef_trade.51.name
 	desc = ef_trade.51.desc
-	picture  = GFX_evt_emergency_work
-	location = root
+	picture  = GFX_evt_emergency_workers
+	location = target
 	is_triggered_only = yes
 
 	option = {
 		name = ef_trade.51.a
-		add_planet_devastation = 10
-		ef_decrease_stock_market = yes
+		target = {
+			add_planet_devastation = 10
+			ef_decrease_stock_market = yes
+		}
 	}
 }
 
 # Corporate War - Bombing
-planet_event = {
+situation_event = {
 	id = ef_trade.52
 	title = ef_trade.52.name
 	desc = ef_trade.52.desc
 	picture  = GFX_evt_night_raid
-	location = root
+	location = target
 	is_triggered_only = yes
 
 	option = {
 		name = ef_trade.52.a
-		add_planet_devastation = 10
-		random_owned_pop = { kill_pop = yes }
-		ef_decrease_stock_market = yes
+		target = {
+			add_planet_devastation = 10
+			random_owned_pop = { kill_pop = yes }
+			ef_decrease_stock_market = yes
+		}
 	}
 }
 
 # Corporate War - Break ins / Rising Chaos
-planet_event = {
+situation_event = {
 	id = ef_trade.53
 	title = ef_trade.53.name
 	desc = ef_trade.53.desc
 	picture  = GFX_evt_operative_chase
-	location = root
+	location = target
 	is_triggered_only = yes
 
 	option = {
 		name = ef_trade.53.a
-		add_modifier = { modifier = ef_financial_chaos years = 2 }
-		ef_decrease_stock_market = yes
+		target = {
+			add_modifier = { modifier = ef_financial_chaos years = 2 }
+			ef_decrease_stock_market = yes
+		}
 	}
 }
 
-# Corporate War - No go zones
-planet_event = {
+# Corporate War - Breakdown of order
+situation_event = {
 	id = ef_trade.54
 	title = ef_trade.54.name
 	desc = ef_trade.54.desc
 	picture  = GFX_evt_burning_city
-	location = root
+	location = target
 	is_triggered_only = yes
+
+	trigger = { situation_progress >= 75 }
 
 	option = {
 		name = ef_trade.54.a
-		add_planet_devastation = 25
-		random_owned_pop = { kill_pop = yes }
-		ef_decrease_stock_market = yes
+		target = {
+			add_planet_devastation = 25
+			random_owned_pop = { kill_pop = yes }
+			ef_decrease_stock_market = yes
+		}
 	}
 }
 
@@ -436,6 +446,7 @@ planet_event = {
 	# Hands off
 	option = {
 		name = ef_trade.70.b
+		custom_tooltip = ef_trade.40.dispute_warning_tt
 		hidden_effect = {
 			random_list = {
 				50 = { planet_event = { id = ef_trade.71 days = 90 } }
