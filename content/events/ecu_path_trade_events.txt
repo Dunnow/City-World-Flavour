@@ -9,11 +9,32 @@ planet_event = {
 	location = root
 	is_triggered_only = yes
 
+	trigger = {
+		NOT = { has_modifier = ef_stock_market_5}
+	}
+
 	option = {
 		name = ef_trade.10.a
-		hidden_effect = {
-			ef_increase_stock_market = yes
-		}
+		ef_increase_stock_market = yes
+	}
+}
+
+# Stock market goes down. Repeatable
+planet_event = {
+	id = ef_trade.15
+	title = ef_trade.15.name
+	desc = "ef_trade.15.desc"
+	picture  = GFX_evt_financial_instruments
+	location = root
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_modifier = ef_stock_market_1}
+	}
+
+	option = {
+		name = ef_trade.15.a
+		ef_decrease_stock_market = yes
 	}
 }
 
@@ -335,6 +356,123 @@ planet_event = {
 		add_modifier = { modifier = ef_robust_law_enforcement years = 10 }
 		add_modifier = { modifier = ef_rebuilding years = 5 }
 		ef_increase_stock_market = yes
+		ef_increase_stock_market = yes
+	}
+}
+
+# Trade conference. Repeatable
+planet_event = {
+	id = ef_trade.60
+	title = ef_trade.60.name
+	desc = "ef_trade.60.desc"
+	picture  = GFX_evt_diplomatic_visit
+	location = root
+	is_triggered_only = yes
+
+	option = {
+		name = ef_trade.60.a
+		hidden_effect = {
+			random_list = {
+				75 = { planet_event = { id = ef_trade.61 days = 90 } }
+				25 = { planet_event = { id = ef_trade.62 days = 90 } }
+			}
+		}
+	}
+}
+
+# Trade conference. Things went great!
+planet_event = {
+	id = ef_trade.61
+	title = ef_trade.61.name
+	desc = "ef_trade.61.desc"
+	picture  = GFX_evt_tradedeal
+	location = root
+	is_triggered_only = yes
+
+	option = {
+		name = ef_trade.60.a
+		add_modifier = { modifier = ef_economic_boom years = 5 }
+	}
+}
+
+# Trade conference. Things went poorly
+planet_event = {
+	id = ef_trade.62
+	title = ef_trade.62.name
+	desc = "ef_trade.62.desc"
+	picture  = GFX_evt_alien_segregation
+	location = root
+	is_triggered_only = yes
+
+	option = {
+		name = ef_trade.62.a
+	}
+}
+
+# Escalating corporate rivalry. Repeatable
+planet_event = {
+	id = ef_trade.70
+	title = ef_trade.70.name
+	desc = "ef_trade.70.desc"
+	picture  = GFX_evt_news_room
+	location = root
+	is_triggered_only = yes
+
+	# Take bribes
+	option = {
+		name = ef_trade.70.a
+		owner = {
+			add_resource = { energy = 5000 }
+		}
+		add_modifier = { modifier = ef_corrupt_collusion years = 5 }
+		hidden_effect = {
+			random_list = {
+				40 = { planet_event = { id = ef_trade.71 days = 90 } }
+				10 = { planet_event = { id = ef_trade.50 days = 90 } }
+			}
+		}
+	}
+
+	# Hands off
+	option = {
+		name = ef_trade.70.b
+		hidden_effect = {
+			random_list = {
+				50 = { planet_event = { id = ef_trade.71 days = 90 } }
+				25 = { planet_event = { id = ef_trade.50 days = 90 } }
+			}
+		}
+	}
+
+	# Harsh crackdown
+	option = {
+		name = ef_trade.70.c
+		allow = {
+			owner = {
+				resource_stockpile_compare = { resource = influence value >= 50 }
+			}
+		}
+		owner = {
+			add_resource = { influence = -50 }
+		}
+
+		hidden_effect = {
+			planet_event = { id = ef_trade.71 days = 90 }
+		}
+	}
+}
+
+# Corpo rivalry resolved
+planet_event = {
+	id = ef_trade.71
+	title = ef_trade.71.name
+	desc = "ef_trade.71.desc"
+	picture  = GFX_evt_news_room
+	location = root
+	is_triggered_only = yes
+
+	option = {
+		name = ef_trade.71.a
 		ef_increase_stock_market = yes
 	}
 }

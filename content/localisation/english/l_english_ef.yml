@@ -189,6 +189,9 @@
   ef_shattered_economy: "Shattered Economy"
   ef_shattered_economy_desc: "This world's economy has been devastated by a recent event leaving its people destitute and hungry."
 
+  ef_economic_boom: "Economic Boom"
+  ef_economic_boom_desc: "This world's economy is seeing remarkable growth in all sectors. The party seems like it will never end!"
+
   # Trait Loc
   trait_ef_mutant: "Mutant"
   trait_ef_mutant_desc: "This species is afflicted with uncontrolled mutations. Their bodies are breaking down under the pressure."
@@ -263,10 +266,13 @@
   ef_path.1.d: "Not at this time."
   ef_path.1.d.tooltip: "§HWe will have the ability to reconsider at a later date.§!"
 
-  # TODO
-  ef_trade.10.name: ""
-  ef_trade.10.desc: ""
-  ef_trade.10.a: ""
+  ef_trade.10.name: "Lucrative Outcomes"
+  ef_trade.10.desc: "A recent uptick in economic activity has been reflected on the stock markets of [This.GetName]. Confidence has risen and many investors are enjoying a healthy return."
+  ef_trade.10.a: "Splendid"
+
+  ef_trade.15.name: "An Unfortunate Downswing"
+  ef_trade.15.desc: "Several recent trade reports from major conglomerates on [This.GetName] have painted a less impressive picture than expected. Worried shareholders have quickly divested their shares, prompting the whole market to move downwards. For now at least, the party has stopped."
+  ef_trade.15.a: "I'm sure this is temporary."
 
   ef_trade.20.name: "Financial Anomalies"
   ef_trade.20.desc: "Accounting regulators on [This.GetName] have been reporting irregularities in the planetary government's balance sheets. Multiple departments have reporting higher than expected expenses while tax revenue appears to have fallen.\n\nSeveral prominent megacorporations on [This.GetName] have contributed very little to the public coffers, yet they have been reporting record profits over the last financial cycle.\n\nSomething unusual is going on."
@@ -326,3 +332,25 @@
   ef_trade.56.name: "Order Restored on [This.GetName]"
   ef_trade.56.desc: "Local authorities have succeeded in bringing the Shadow War on [This.GetName] to an end. With most of the senior leadership of both parties either arrested or on the run, the feuding corporations have largely fallen apart and seen their assets seized or snapped up by competitors.\n\nWith the end of the Shadow War, peace and stability has largely returned to [This.GetName]. Although it will take time, rebuilding efforts have already begun across the planet and investors have found new confidence in the world's prospects."
   ef_trade.56.a: "Peace at last."
+
+  ef_trade.60.name: "The Grand [This.GetName] Trade Convention"
+  ef_trade.60.desc: "Local authorities on [This.GetName] have, in conjunction with several of the major corporations, arranged a grand summit of local and galactic commercial partners.\n\nWith some of the biggest names in the galaxy sending at least a token representative, this conference represents an excellent opportunity to attract further investment and deals for [This.GetName]."
+  ef_trade.60.a: "A splendid idea."
+
+  ef_trade.61.name: "Prosperity Imminent"
+  ef_trade.61.desc: "The trade summit on [This.GetName] has finally come to a close and it has been an unmitigated success. The representatives were suitably impressed with the quality and affordability of [This.GetName]'s offerings and several have already expressed interest in closer business ties.\n\nThe local authorities have already reported an increase in tax revenues and investment this cycle, with further growth anticipated."
+  ef_trade.61.a: "Marvellous news."
+
+  ef_trade.62.name: "A Futile Effort"
+  ef_trade.62.desc: "Despite the best efforts of [This.GetName]'s leadership, the trade summit has descended into a disaster. Rival corporations have spent more time bickering with another than seriously engaging with the conference.\n\nWith the representatives either uninterested or unimpressed with [This.GetName]'s offerings, the eagerly anticipated investments do not appear to be forthcoming today."
+  ef_trade.62.a: "An unfortunate outcome."
+
+  ef_trade.70.name: "Hypercompetitive Business Practices"
+  ef_trade.70.desc: "[This.GetName] is famous for its intense corporate rivalries and cutthroat business practices. However in recent months, this competition has been threatening to grow into something more sinister.\n\nNumerous warehouses and factories in the lower levels have been reporting an uptick in sabotage and mysterious break ins. Suspiciously, these incidents are confined to facilities belonging to two rival corporations.\n\nNaturally, both have blamed the other and have sought the authorities to punish the other party."
+  ef_trade.70.a: "We could be "persuaded" to a particular perspective."
+  ef_trade.70.b: "It is not our role to interfere."
+  ef_trade.70.c: "Crack down on this sort of behaviour."
+
+  ef_trade.71.name: "A Corporate Reconciliation"
+  ef_trade.71.desc: "Our firm response on [This.GetName] appears to have been heeded. Incidents of sabotage and burglary have returned to normal levels.\n\nWhile the two rival corporations continue to compete, they appear to be content to keep their rivalry in the commercial sphere alone."
+  ef_trade.71.a: "The best possible outcome."

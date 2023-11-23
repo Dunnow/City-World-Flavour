@@ -162,3 +162,10 @@ ef_shattered_economy = {
 	icon = gfx/interface/icons/planet_modifiers/pm_resources.dds
 	icon_frame = 3
 }
+
+ef_economic_boom = {
+	trade_value_mult = 0.15
+	planet_jobs_produces_mult = 0.05
+	icon = gfx/interface/icons/planet_modifiers/ef_shipping_hub.dds
+	icon_frame = 1
+}

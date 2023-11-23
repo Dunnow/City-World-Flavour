@@ -49,11 +49,26 @@ planet_event = {
 				}
 				# Trade events
 				ef_trade_specialisation = {
+					# Stock market events
+					random_list = {
+						80 = { } # Approximately a new event every 20 years or so. (Ideally)
+						20 = {
+							random_list = {
+								10 = { planet_event = { id = ef_trade.10 }}
+								10 = { planet_event = { id = ef_trade.15 }}
+							}
+						}
+					}
+					# Flavour events
 					random_list = {
 						95 = { } # Approximately a new event every 20 years or so. (Ideally)
 						5 = {
 							random_list = {
-								#1 = { planet_event = { id = ef_flavour.10 }}
+								1 = { planet_event = { id = ef_trade.20 }}
+								1 = { planet_event = { id = ef_trade.30 }}
+								1 = { planet_event = { id = ef_trade.40 }}
+								1 = { planet_event = { id = ef_trade.60 }}
+								1 = { planet_event = { id = ef_trade.70 }}
 							}
 						}
 					}
