@@ -24,7 +24,7 @@ ef_situation_corpo_war = {
 			icon = GFX_situation_stage_1
 			icon_background = GFX_situation_stage_frame_blue
 			end = 25
-			modifier = {
+			target_modifier = {
 				planet_stability_add = -10
 				planet_crime_add = 25
 				trade_value_mult = -0.15
@@ -35,7 +35,7 @@ ef_situation_corpo_war = {
 			icon = GFX_situation_stage_2
 			icon_background = GFX_situation_stage_frame_blue
 			end = 75
-			modifier = {
+			target_modifier = {
 				planet_stability_add = -20
 				planet_crime_add = 50
 				trade_value_mult = -0.25
@@ -46,7 +46,7 @@ ef_situation_corpo_war = {
 			icon = GFX_situation_stage_3
 			icon_background = GFX_situation_stage_frame_blue
 			end = 100
-			modifier = {
+			target_modifier = {
 				planet_stability_add = -50
 				planet_crime_add = 100
 				trade_value_mult = -0.5
@@ -135,11 +135,169 @@ ef_situation_corpo_war = {
 	}
 	on_monthly = { #Note: technically, this is an on_action called test_situation. So don't call your situation "on_monthly_pulse"!
  		random_events = {
-			200 = 0 # A 1 in 3 chance of an event every month
+			400 = 0 # A 1 in 3 chance of an event every month
 			25 = ef_trade.51
 			25 = ef_trade.52
 			25 = ef_trade.53
 			25 = ef_trade.54
+ 		}
+ 	}
+	abort_trigger = {
+		OR = {
+			NOT = { exists = target.owner }
+			target.owner = { NOT = { is_same_value = root.owner } }
+		}
+	}
+}
+
+ef_situation_pollution = {
+	picture = GFX_evt_mining_operations
+	complete_icon_frame = GFX_situation_outcome_frame_blue
+	complete_icon = GFX_situation_outcome_unknown
+
+	# Progress has reached 0%. Order restored
+	on_fail = {
+		# Yay you fixed it
+		#hidden_effect = { target = { planet_event = { id = ef_trade.56} } }
+		#destroy_situation = this
+	}
+
+	# Progress has reached 100%. Anarchy reigns
+	on_progress_complete = {
+		# Oh no the burger king militia has taken over
+		hidden_effect = { target = { planet_event = { id = ef_trade.55} } }
+		destroy_situation = this
+	}
+	start_value = 0
+	#fail_category = positive
+	complete_category = negative
+	stages = {
+		ef_stage_contamination_1 = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_blue
+			end = 20
+			target_modifier = {
+				pop_environment_tolerance = -0.1
+			}
+			custom_tooltip = ef_stage_contamination_1_tt
+		}
+		ef_stage_contamination_2 = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_blue
+			end = 40
+			target_modifier = {
+				pop_environment_tolerance = -0.2
+			}
+			custom_tooltip = ef_stage_contamination_2_tt
+		}
+		ef_stage_contamination_3 = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_blue
+			end = 60
+			target_modifier = {
+				pop_environment_tolerance = -0.3
+			}
+			custom_tooltip = ef_stage_contamination_3_tt
+		}
+		ef_stage_contamination_4 = {
+			icon = GFX_situation_stage_4
+			icon_background = GFX_situation_stage_frame_blue
+			end = 80
+			target_modifier = {
+				pop_environment_tolerance = -0.4
+			}
+			custom_tooltip = ef_stage_contamination_4_tt
+		}
+		ef_stage_contamination_5 = {
+			icon = GFX_situation_stage_5
+			icon_background = GFX_situation_stage_frame_blue
+			end = 100
+			target_modifier = {
+				pop_environment_tolerance = -0.5
+			}
+			custom_tooltip = ef_stage_contamination_5_tt
+		}
+	}
+
+	approach = {
+		name = ef_situation_cleanup_operations
+		icon = GFX_situation_approach_shrug
+		icon_background = GFX_situation_approach_bg_yellow
+		allow = {
+			always = yes
+		}
+		on_select = {
+			custom_tooltip = ef_situation_cleanup_operations_desc
+		}
+		 # Accepting bribes - maybe make it a trade modifier?
+		resources = {
+			category = situations
+			produces = {
+				energy = 25
+			}
+		}
+	}
+	approach = {
+		name = ef_situation_normal_production
+		icon = GFX_situation_approach_shrug
+		icon_background = GFX_situation_approach_bg_yellow
+		allow = {
+			always = yes
+		}
+		on_select = {
+			custom_tooltip = ef_situation_normal_production_desc
+		}
+		 # Accepting bribes - maybe make it a trade modifier?
+		resources = {
+			category = situations
+			produces = {
+				energy = 25
+			}
+		}
+	}
+	approach = {
+		name = ef_situation_let_it_burn
+		icon = GFX_situation_approach_scales
+		icon_background = GFX_situation_approach_bg_yellow
+		default = yes
+		allow = {
+			always = yes
+		}
+		on_select = {
+			custom_tooltip = ef_situation_let_it_burn_desc
+		}
+		resources = {
+			category = situations
+			upkeep = {
+				energy = 50
+				alloys = 25
+			}
+		}
+	}
+	on_monthly = {
+		random_events = {
+			120 = 0 # TODO: Add some corpo war shit here
+			# The events will naturally progress the situation
+		}
+	}
+	monthly_progress = {
+		base = 0
+		modifier = {
+			add = 2.5
+			desc = ef_situation_let_it_burn_tt
+			current_situation_approach = ef_situation_let_it_burn
+			situation_progress < 97.5
+		}
+		modifier = {
+			add = -1
+			desc = ef_situation_cleanup_operations_tt
+			current_situation_approach = ef_situation_cleanup_operations
+			situation_progress > 1
+		}
+	}
+	on_monthly = { #Note: technically, this is an on_action called test_situation. So don't call your situation "on_monthly_pulse"!
+ 		random_events = {
+			200 = 0 # A 1 in 3 chance of an event every month
  		}
  	}
 	abort_trigger = {

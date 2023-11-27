@@ -1,42 +1,19 @@
 namespace = ef_industry
 
-# Generic (and repeatable) event about quarterly reports being good or something
+# Introduce pollution situation
 planet_event = {
 	id = ef_industry.10
 	title = ef_industry.10.name
 	desc = "ef_industry.10.desc"
-	picture  = GFX_evt_glitchy_matrix
+	picture  = GFX_evt_mining_operations
 	location = root
 	is_triggered_only = yes
 
-	# Investigate
+	# OK
 	option = {
-		name = ef_flavour.60.a
-        allow = {
-			owner = {
-				resource_stockpile_compare = { resource = influence value >= 50 }
-			}
-		}
-		owner = {
-			add_resource = { influence = -50 }
-		}
-		add_modifier = { modifier = ef_glitchy_machines days = 270 }
-		hidden_effect = {
-			planet_event = {
-				id = ef_flavour.61
-				days = 270
-			}
-		}
-	}
-	# Ignore (leads to a bad event  in a few months)
-	option = {
-		name = ef_flavour.60.b
-		add_modifier = { modifier = ef_glitchy_machines days = 270 }
-		hidden_effect = {
-			planet_event = {
-				id = ef_flavour.62
-				days = 270
-			}
-		}
+		name = ef_industry.10.a
+		owner = { start_situation = { type = ef_situation_pollution target = root } }
 	}
 }
+# TODO: Maybe
+# Generic (and repeatable) event about quarterly reports being good or something
