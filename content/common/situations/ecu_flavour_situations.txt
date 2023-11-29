@@ -109,12 +109,7 @@ ef_situation_corpo_war = {
 			}
 		}
 	}
-	on_monthly = {
-		random_events = {
-			120 = 0 # TODO: Add some corpo war shit here
-			# The events will naturally progress the situation
-		}
-	}
+
 	monthly_progress = {
 		base = 0
 		modifier = {
@@ -155,6 +150,9 @@ ef_situation_pollution = {
 	complete_icon_frame = GFX_situation_outcome_frame_blue
 	complete_icon = GFX_situation_outcome_unknown
 
+	# NOTE: It might be a good idea to make the description of this situation refer to a scripted loc.
+	# This way the situation can be reused for non ecu planets if there's ever a good reason to.
+
 	# Progress has reached 0%. Order restored
 	on_fail = {
 		# Yay you fixed it
@@ -162,9 +160,9 @@ ef_situation_pollution = {
 		#destroy_situation = this
 	}
 
-	# Progress has reached 100%. Anarchy reigns
+	# Progress has reached 100%. Pollution reigns
 	on_progress_complete = {
-		# Oh no the burger king militia has taken over
+		# TODO: Give a nasty modifier
 		hidden_effect = { target = { planet_event = { id = ef_trade.55} } }
 		destroy_situation = this
 	}
@@ -227,7 +225,7 @@ ef_situation_pollution = {
 			always = yes
 		}
 		on_select = {
-			custom_tooltip = ef_situation_cleanup_operations_desc
+			custom_tooltip = ef_situation_cleanup_operations_effects
 		}
 		 # Accepting bribes - maybe make it a trade modifier?
 		resources = {
@@ -245,7 +243,7 @@ ef_situation_pollution = {
 			always = yes
 		}
 		on_select = {
-			custom_tooltip = ef_situation_normal_production_desc
+			custom_tooltip = ef_situation_normal_production_effects
 		}
 		 # Accepting bribes - maybe make it a trade modifier?
 		resources = {
@@ -264,7 +262,7 @@ ef_situation_pollution = {
 			always = yes
 		}
 		on_select = {
-			custom_tooltip = ef_situation_let_it_burn_desc
+			custom_tooltip = ef_situation_let_it_burn_effects
 		}
 		resources = {
 			category = situations
@@ -272,12 +270,6 @@ ef_situation_pollution = {
 				energy = 50
 				alloys = 25
 			}
-		}
-	}
-	on_monthly = {
-		random_events = {
-			120 = 0 # TODO: Add some corpo war shit here
-			# The events will naturally progress the situation
 		}
 	}
 	monthly_progress = {
