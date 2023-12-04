@@ -220,6 +220,9 @@
   ef_economic_boom: "Economic Boom"
   ef_economic_boom_desc: "This world's economy is seeing remarkable growth in all sectors. The party seems like it will never end!"
 
+  ef_polluted_forge_world: "Inhospitable Industry"
+  ef_polluted_forge_world_desc: "This world's enormous industrial forges have scarred and tainted its environment with the detritus of progress."
+
   # Trait Loc
   trait_ef_mutant: "Mutant"
   trait_ef_mutant_desc: "This species is afflicted with uncontrolled mutations. Their bodies are breaking down under the pressure."
@@ -382,3 +385,40 @@
   ef_trade.71.name: "A Corporate Reconciliation"
   ef_trade.71.desc: "Our firm response on [This.GetName] appears to have been heeded. Incidents of sabotage and burglary have returned to normal levels.\n\nWhile the two rival corporations continue to compete, they appear to be content to keep their rivalry in the commercial sphere alone."
   ef_trade.71.a: "The best possible outcome."
+
+  ef_industry.10.name: "TODO"
+  ef_industry.10.desc: "TODO"
+  ef_industry.10.a: "TODO"
+
+  ef_industry.11.name: "On the Altar of Progress"
+  ef_industry.11.desc: "Our ruthless industrial development on [This.GetName] has brought us tremendous wealth. Unfortunately the planet has suffered for it. The atmosphere has been rendered unbreathable by toxic smog and pollutants contaminate every part of the planet's surface.\n\nIts population have increasingly turned to seeking shelter from the environment within climate-controlled habitation zones. Some have even embraced biological and cybernetic enhancements, legal or not, to better cope with the hostile nature of the planet.\n\nIf we ever want this world to return to its former habitability, we have a long cleanup process ahead of us."
+  ef_industry.11.a: "So be it."
+
+  ef_industry.12.name: "TODO"
+  ef_industry.12.desc: "TODO"
+  ef_industry.12.a: "TODO"
+
+  ef_industry.13.name: "TODO"
+  ef_industry.13.desc: "TODO"
+  ef_industry.13.a: "TODO"
+
+  ef_industry.14.name: "TODO"
+  ef_industry.14.desc: "TODO"
+  ef_industry.14.a: "TODO"
+
+  ef_industry.15.name: "TODO"
+  ef_industry.15.desc: "TODO"
+  ef_industry.15.a: "TODO"
+
+  ef_industry.16.name: "Natural Recycling"
+  ef_industry.16.desc: "TODO"
+  ef_industry.16.a: "We should fund an operation to spread them across the planet."
+  ef_industry.16.b: "A fortunate occurrence."
+
+  ef_industry.17.name: "Hungry Hungry Xenobacteria"
+  ef_industry.17.desc: "TODO"
+  ef_industry.17.a: "Just as planned."
+
+  ef_industry.18.name: "Overenthusiastic Microbes"
+  ef_industry.18.desc: "The waste-eating microbes that we recently spread across [Target.GetName] have been very successful at voraciously consuming the inorganic contaminants that cover the planet.\n\nUnfortunately they appear to have mutated further. The microscopic bacteria have developed a taste for the materials that make up our machinery and infrastructure too. Although the planetary authorities have successfully decontaminated most industrial areas of their presence, they managed to damage several important facilities across the planet."
+  ef_industry.18.a: "Unfortunate"

@@ -127,14 +127,38 @@ ef_decrease_stock_market = {
 # Root scope = situation
 ef_increase_pollution = {
     if = {
-        limit = {situation_progress >= 95}
+        limit = {situation_progress < 95}
         add_situation_progress = 5
     }
 }
 # Root scope = situation
 ef_increase_pollution_major = {
     if = {
-        limit = {situation_progress >= 90}
+        limit = {situation_progress < 90}
         add_situation_progress = 10
+    }
+}
+
+# Root scope = situation
+ef_decrease_pollution = {
+    if = {
+        limit = {situation_progress > 5}
+        add_situation_progress = -5
+    }
+}
+
+# Root scope = situation
+ef_decrease_pollution_major = {
+    if = {
+        limit = {situation_progress > 10}
+        add_situation_progress = -10
+    }
+}
+
+# Root scope = situation
+ef_decrease_pollution_massive = {
+    if = {
+        limit = {situation_progress > 15}
+        add_situation_progress = -15
     }
 }

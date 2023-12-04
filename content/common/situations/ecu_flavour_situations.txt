@@ -153,17 +153,13 @@ ef_situation_pollution = {
 	# NOTE: It might be a good idea to make the description of this situation refer to a scripted loc.
 	# This way the situation can be reused for non ecu planets if there's ever a good reason to.
 
-	# Progress has reached 0%. Order restored
+	# Progress has reached 0%. No effect, pollution is minimised but not gone.
 	on_fail = {
-		# Yay you fixed it
-		#hidden_effect = { target = { planet_event = { id = ef_trade.56} } }
-		#destroy_situation = this
 	}
 
 	# Progress has reached 100%. Pollution reigns
 	on_progress_complete = {
-		# TODO: Give a nasty modifier
-		hidden_effect = { target = { planet_event = { id = ef_trade.55} } }
+		target = { planet_event = { id = ef_industry.11 } }
 		destroy_situation = this
 	}
 	start_value = 0
@@ -176,6 +172,8 @@ ef_situation_pollution = {
 			end = 20
 			target_modifier = {
 				pop_environment_tolerance = -0.1
+				pop_growth_speed = -0.05
+				pop_happiness = -0.05
 			}
 			custom_tooltip = ef_stage_contamination_1_tt
 		}
@@ -185,6 +183,8 @@ ef_situation_pollution = {
 			end = 40
 			target_modifier = {
 				pop_environment_tolerance = -0.2
+				pop_growth_speed = -0.1
+				pop_happiness = -0.1
 			}
 			custom_tooltip = ef_stage_contamination_2_tt
 		}
@@ -194,6 +194,8 @@ ef_situation_pollution = {
 			end = 60
 			target_modifier = {
 				pop_environment_tolerance = -0.3
+				pop_growth_speed = -0.15
+				pop_happiness = -0.15
 			}
 			custom_tooltip = ef_stage_contamination_3_tt
 		}
@@ -203,6 +205,8 @@ ef_situation_pollution = {
 			end = 80
 			target_modifier = {
 				pop_environment_tolerance = -0.4
+				pop_growth_speed = -0.2
+				pop_happiness = -0.2
 			}
 			custom_tooltip = ef_stage_contamination_4_tt
 		}
@@ -212,6 +216,8 @@ ef_situation_pollution = {
 			end = 100
 			target_modifier = {
 				pop_environment_tolerance = -0.5
+				pop_growth_speed = -0.25
+				pop_happiness = -0.25
 			}
 			custom_tooltip = ef_stage_contamination_5_tt
 		}
@@ -227,58 +233,48 @@ ef_situation_pollution = {
 		on_select = {
 			custom_tooltip = ef_situation_cleanup_operations_effects
 		}
-		 # Accepting bribes - maybe make it a trade modifier?
-		resources = {
-			category = situations
-			produces = {
-				energy = 25
-			}
+		target_modifier = {
+			planet_jobs_alloys_produces_mult = -0.2
+			planet_jobs_consumer_goods_produces_mult = -0.2
 		}
 	}
 	approach = {
 		name = ef_situation_normal_production
 		icon = GFX_situation_approach_shrug
 		icon_background = GFX_situation_approach_bg_yellow
+		default = yes
 		allow = {
 			always = yes
 		}
 		on_select = {
 			custom_tooltip = ef_situation_normal_production_effects
 		}
-		 # Accepting bribes - maybe make it a trade modifier?
-		resources = {
-			category = situations
-			produces = {
-				energy = 25
-			}
+		target_modifier = {
+			planet_jobs_alloys_produces_mult = 0.2
+			planet_jobs_consumer_goods_produces_mult = 0.2
 		}
 	}
 	approach = {
 		name = ef_situation_let_it_burn
 		icon = GFX_situation_approach_scales
 		icon_background = GFX_situation_approach_bg_yellow
-		default = yes
 		allow = {
 			always = yes
 		}
 		on_select = {
 			custom_tooltip = ef_situation_let_it_burn_effects
 		}
-		resources = {
-			category = situations
-			upkeep = {
-				energy = 50
-				alloys = 25
-			}
+		target_modifier = {
+			planet_jobs_alloys_produces_mult = 0.4
+			planet_jobs_consumer_goods_produces_mult = 0.4
 		}
 	}
 	monthly_progress = {
 		base = 0
 		modifier = {
-			add = 2.5
+			add = 2
 			desc = ef_situation_let_it_burn_tt
 			current_situation_approach = ef_situation_let_it_burn
-			situation_progress < 97.5
 		}
 		modifier = {
 			add = -1
@@ -290,6 +286,7 @@ ef_situation_pollution = {
 	on_monthly = { #Note: technically, this is an on_action called test_situation. So don't call your situation "on_monthly_pulse"!
  		random_events = {
 			200 = 0 # A 1 in 3 chance of an event every month
+			10 = ef_industry.16
  		}
  	}
 	abort_trigger = {

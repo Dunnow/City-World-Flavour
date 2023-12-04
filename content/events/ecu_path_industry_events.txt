@@ -4,7 +4,7 @@ namespace = ef_industry
 planet_event = {
 	id = ef_industry.10
 	title = ef_industry.10.name
-	desc = "ef_industry.10.desc"
+	desc = ef_industry.10.desc
 	picture  = GFX_evt_mining_operations
 	location = root
 	is_triggered_only = yes
@@ -13,6 +13,165 @@ planet_event = {
 	option = {
 		name = ef_industry.10.a
 		owner = { start_situation = { type = ef_situation_pollution target = root } }
+	}
+}
+# Situation conclusion: Max pollution
+planet_event = {
+	id = ef_industry.11
+	title = ef_industry.11.name
+	desc = ef_industry.11.desc
+	picture  = GFX_evt_mining_operations
+	location = root
+	is_triggered_only = yes
+
+	# OK
+	option = {
+		name = ef_industry.11.a
+		add_modifier = { modifier = ef_polluted_forge_world days = -1}
+	}
+}
+
+# Possible generic pollution increase event.
+situation_event = {
+	id = ef_industry.12
+	title = ef_industry.12.name
+	desc = ef_industry.12.desc
+	picture  = GFX_evt_mining_operations
+	location = target
+	is_triggered_only = yes
+
+
+	# OK
+	option = {
+		name = ef_industry.12.a
+		add_situation_progress = 5
+	}
+}
+
+# Chemical spills event
+situation_event = {
+	id = ef_industry.13
+	title = ef_industry.13.name
+	desc = ef_industry.13.desc
+	picture  = GFX_evt_mining_operations
+	location = target
+	is_triggered_only = yes
+
+	# OK
+	option = {
+		name = ef_industry.13.a
+		add_situation_progress = 5
+	}
+}
+
+# Fire waste into orbit
+situation_event = {
+	id = ef_industry.14
+	title = ef_industry.14.name
+	desc = ef_industry.14.desc
+	picture  = GFX_evt_mining_operations
+	location = target
+	is_triggered_only = yes
+
+	# OK
+	option = {
+		name = ef_industry.14.a
+		add_situation_progress = 5
+	}
+}
+
+# Overproduction drive
+situation_event = {
+	id = ef_industry.15
+	title = ef_industry.15.name
+	desc = ef_industry.15.desc
+	picture  = GFX_evt_mining_operations
+	location = target
+	is_triggered_only = yes
+
+	# OK
+	option = {
+		name = ef_industry.15.a
+		add_situation_progress = 5
+	}
+}
+
+# Waste eating xenobacteria
+situation_event = {
+	id = ef_industry.16
+	title = ef_industry.16.name
+	desc = ef_industry.16.desc
+	picture  = GFX_evt_mining_operations
+	location = target
+	is_triggered_only = yes
+
+	trigger = {
+		target = {
+			NOT = {
+				has_planet_flag = ef_waste_eating_microbes_has_happened
+			}
+		}
+	}
+	immediate = {
+		target = { set_planet_flag = ef_waste_eating_microbes_has_happened  }
+	}
+
+	# Spread the xenobacteria
+	option = {
+		name = ef_industry.16.a
+		allow = {
+			owner = {
+				resource_stockpile_compare = { resource = energy value >= 2000 }
+			}
+		}
+		owner = {
+			add_resource = { energy = -2000 }
+		}
+		hidden_effect = {
+			random_list = {
+				1 = { planet_event = { id = ef_industry.18 days = 180} } # Bad outcome
+				1 = { planet_event = { id = ef_industry.17 days = 180} } # Good outcome
+			}
+		}
+		ef_decrease_pollution_major = yes
+	}
+
+	# Leave it as is
+	option = {
+		name = ef_industry.16.b
+		ef_decrease_pollution_major = yes
+	}
+}
+
+# Very successful xenobacteria
+situation_event = {
+	id = ef_industry.17
+	title = ef_industry.17.name
+	desc = ef_industry.17.desc
+	picture  = GFX_evt_mining_operations
+	location = target
+	is_triggered_only = yes
+
+	# OK
+	option = {
+		name = ef_industry.17.a
+		ef_decrease_pollution_massive = yes
+	}
+}
+
+# Xenobacteria mutated
+situation_event = {
+	id = ef_industry.18
+	title = ef_industry.18.name
+	desc = ef_industry.18.desc
+	picture  = GFX_evt_mining_operations
+	location = target
+	is_triggered_only = yes
+
+	# OK
+	option = {
+		name = ef_industry.18.a
+		add_planet_devastation = 10
 	}
 }
 # TODO: Maybe
