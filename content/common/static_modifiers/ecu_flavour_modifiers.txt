@@ -179,3 +179,8 @@ ef_polluted_forge_world = {
 	icon = gfx/interface/icons/planet_modifiers/pm_irradiated.dds
 	icon_frame = 2
 }
+
+ef_orbital_waste_disposal = {
+	icon = gfx/interface/icons/planet_modifiers/pm_trash_rings.dds
+	icon_frame = 2
+}
