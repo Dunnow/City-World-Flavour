@@ -20,6 +20,9 @@ planet_event = {
 						1 = { planet_event = { id = ef_flavour.40 }}
 						1 = { planet_event = { id = ef_flavour.50 }}
 						1 = { planet_event = { id = ef_flavour.60 }}
+						1 = { planet_event = { id = ef_flavour.70 }}
+						1 = { planet_event = { id = ef_flavour.71 }}
+						1 = { planet_event = { id = ef_flavour.80 }}
 					}
 				}
 			}
@@ -512,3 +515,147 @@ planet_event = {
 #		# pass
 #	}
 #}
+
+# Happy Citizen
+planet_event = {
+	id = ef_flavour.70
+	title = ef_flavour.70.name
+	desc = "ef_flavour.70.desc"
+	picture  = GFX_evt_ef_sunset_towers
+	location = root
+	is_triggered_only = yes
+
+	# I'm unsure about making this planet unique instead of empire unique, but what the hell I guess.
+	trigger = {
+		NOT = {
+			has_planet_flag = ef_happy_citizen_has_happened
+		}
+		happiness_planet >= 0.75
+		planet_stability >= 75
+	}
+
+	immediate = {
+		set_planet_flag = ef_happy_citizen_has_happened
+		random_pop = {
+			species = {
+				save_event_target_as = ef_random_citizen_species
+			}
+		}
+		owner = {
+			create_leader = {
+				name = random
+				species = event_target:ef_random_citizen_species
+				class  = random
+				skill = random
+				hide_leader = yes # This is an NPC citizen on your ecu, they are not going to be part of your empire leadership
+			}
+			last_created_leader = {
+				save_event_target_as = ef_random_citizen
+			}
+		}
+
+	}
+
+	option = {
+		name = ef_flavour.70.a
+		add_modifier = { modifier = ef_shining_city }
+		# Quietly get rid of our prop leader
+		hidden_effect = {
+			event_target:ef_random_citizen = {
+				kill_leader = {
+					show_notification = no
+				}
+			}
+		}
+	}
+}
+
+# Happy Citizen Revoked :(
+planet_event = {
+	id = ef_flavour.71
+	title = ef_flavour.71.name
+	desc = "ef_flavour.71.desc"
+	picture  = GFX_evt_spy_network
+	location = root
+	is_triggered_only = yes
+
+	# I'm unsure about making this planet unique instead of empire unique, but what the hell I guess.
+	trigger = {
+		has_planet_flag = ef_happy_citizen_has_happened
+		# This is only being called occasionally, so we don't have to be too strict about the conditions.
+		OR = {
+			happiness_planet <= 0.5
+			planet_stability <= 50
+		}
+	}
+
+	immediate = {
+		remove_planet_flag = ef_happy_citizen_has_happened
+		set_planet_flag = ef_happy_citizen_revoked
+	}
+
+	option = {
+		name = ef_flavour.71.a
+		remove_modifier = ef_shining_city
+		add_modifier = { modifier = ef_shining_city_legacy days = 3600 }
+	}
+}
+
+# Infatuation with
+planet_event = {
+	id = ef_flavour.80
+	title = ef_flavour.80.name
+	desc = "ef_flavour.80.desc"
+	picture  = GFX_evt_alien_nature
+	location = root
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			NOT = {
+				has_country_flag = ef_luxury_goods_infatuation
+			}
+			# We want to check that a planet can actually provide us with the luxury goods
+			any_owned_planet = {
+				is_artificial = no
+				ef_is_ecu = no
+			}
+		}
+	}
+
+	immediate = {
+		owner = {
+			set_country_flag = ef_luxury_goods_infatuation
+			# Pick the luxury source planet
+			random_owned_planet = {
+				limit = {
+					is_artificial = no
+					ef_is_ecu = no
+				}
+				save_event_target_as = ef_luxury_source_planet
+				set_planet_flag = ef_luxury_source_planet
+
+				switch = {
+					trigger = has_climate
+					dry = { owner = { set_country_flag = ef_dry_luxury } }
+					cold = { owner = { set_country_flag = ef_cold_luxury } }
+					wet = { owner = { set_country_flag = ef_wet_luxury } }
+					default = { owner = { set_country_flag = ef_wet_luxury } }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = ef_flavour.80.a
+		add_modifier = { modifier = ef_luxury_consumption }
+		owner = {
+			switch = {
+				trigger = has_country_flag
+				ef_dry_luxury = { event_target:ef_luxury_source_planet = { add_modifier = { modifier = ef_sand_spice_plantations } } }
+				ef_cold_luxury = { event_target:ef_luxury_source_planet = { add_modifier = { modifier = ef_ice_plum_orchards } } }
+				ef_wet_luxury = { event_target:ef_luxury_source_planet = { add_modifier = { modifier = ef_fireberry_groves } } }
+			}
+		}
+	}
+}

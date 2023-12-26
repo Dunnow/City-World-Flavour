@@ -83,3 +83,46 @@ ef_ai_insight = {
 	icon = "gfx/interface/icons/planet_modifiers/pm_engineering_research.dds"
 	icon_frame = 1
 }
+
+ef_shining_city = {
+	pop_happiness = 0.05
+	planet_amenities_add = 10
+	pop_growth_from_immigration = 0.25
+	icon = "gfx/interface/icons/planet_modifiers/ef_sunset_towers.dds"
+	icon_frame = 1
+}
+
+ef_shining_city_legacy = {
+	pop_growth_from_immigration = 0.1
+	icon = "gfx/interface/icons/planet_modifiers/ef_sunset_towers.dds"
+	icon_frame = 1
+}
+
+ef_sand_spice_plantations = {
+	trade_value_mult = 0.25
+	planet_farmers_consumer_goods_produces_add = 1
+	icon = "gfx/interface/icons/planet_modifiers/ef_dry_hills.dds"
+	icon_frame = 1
+}
+
+ef_ice_plum_orchards = {
+	trade_value_mult = 0.25
+	planet_farmers_consumer_goods_produces_add = 1
+	icon = "gfx/interface/icons/planet_modifiers/ef_geothermal_lakes.dds"
+	icon_frame = 1
+}
+
+ef_fireberry_groves = {
+	trade_value_mult = 0.25
+	planet_farmers_consumer_goods_produces_add = 1
+	icon = "gfx/interface/icons/planet_modifiers/ef_lush_jungle.dds"
+	icon_frame = 1
+}
+
+ef_luxury_consumption = {
+	pop_cat_ruler_happiness = 0.1
+	pop_cat_specialist_happiness = 0.05
+	planet_amenities_add = 10
+	icon = "gfx/interface/icons/planet_modifiers/pm_minor_artifact_decision.dds"
+	icon_frame = 1
+}

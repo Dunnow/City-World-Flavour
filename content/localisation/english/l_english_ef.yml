@@ -130,9 +130,32 @@
   ef_ai_insight: "AI Insights"
   ef_ai_insight_desc: "Novel solutions derived from artificial thought patterns."
 
+  ef_shining_city: "Shining City"
+  ef_shining_city_desc: "Across the galaxy this world is known as a beacon of prosperity and opportunity. Billions of souls look to it and dream of one day building a life in the great world-city."
+
+  ef_shining_city_legacy: "Faded Promises"
+  ef_shining_city_legacy_desc: "This world once held a reputation as a place of endless opportunity and abundance. The passage time has worn away much of its lustre, but some plucky individuals are still tempted to try their luck."
+
+  ef_sand_spice_plantations: "Sand Spice Plantations"
+  ef_sand_spice_plantations_desc: "Amid the shifting sands and intense heat, hardworking caretakers nurture the fragile Sand Spice crop for sale offworld."
+
+  ef_ice_plum_orchards: "Ice Plum Orchards"
+  ef_ice_plum_orchards_desc: "Warmed by the nurturing heat of the planet's geothermal energies, the delicate fragrances of the Ice Plums are infused with a rich and complex aroma."
+
+  ef_fireberry_groves: "Fireberry Groves"
+  ef_fireberry_groves_desc: "Dependant on a complex web of symbiotic organisms, these rare and unique plants are challenging to cultivate, but offer an unmatched array of sensory complexity."
+
+  ef_luxury_consumption: "Luxury Consumption"
+  ef_luxury_consumption_desc: "The elite of this world enjoy access to some of the galaxy's finest delicacies and rarities."
+
   # Trait Loc
   trait_ef_mutant: "Mutant"
   trait_ef_mutant_desc: "This species is afflicted with uncontrolled mutations. Their bodies are breaking down under the pressure."
+
+  # Scripted Loc
+  ef_dry_luxury_name: "Sand Spice"
+  ef_cold_luxury_name: "Ice Plums"
+  ef_wet_luxury_name: "Fireberries"
 
   # Event Loc
   ef_flavour.10.name: "Into the Deep"
@@ -192,3 +215,15 @@
   ef_flavour.62.desc: "Our investigation on [This.GetName] has borne fruit. It appears that a minor criminal syndicate was attempting to develop a homegrown artificial intelligence.\n\nUnfortunately for the criminals, they were unable to achieve a fully functional intelligence. The program performed poorly and left telltale traces on public systems when used, allowing our investigators to follow the tracks.\n\nAlthough the criminal's work was shoddy, there are some novel solutions they developed that certain members of our scientific community are interested in."
   ef_flavour.62.a: "Scrap it."
   ef_flavour.62.b: "Allow our researchers to examine it."
+
+  ef_flavour.70.name: "The [This.GetName] Dream"
+  ef_flavour.70.desc: "Once again [ef_random_citizen.GetName] was reminded just how good [ef_random_citizen.GetHeShe] had it on [This.GetName].\n\nThe morning sunlight slowly filtered through the windows of [ef_random_citizen.GetHerHis] upper spire quarters. From [ef_random_citizen.GetHerHis] comfortable living space, one could access all the amenities and luxuries of a hundred worlds in the arcology below.\n\nThe [ef_random_citizen.Species.GetName] performer had left [ef_random_citizen.GetHisHer] homeworld years ago to venture to [This.GetName] in the hopes of striking it big in the famous city world.\n\nWith a lucky break at one of the planet's most prominent entertainment studios, [ef_random_citizen.GetHeShe] had been catapulted to stardom. As one of the most iconic celebrities in the [This.Owner.GetName], [ef_random_citizen.GetHeShe] had admirers across the galaxy.\n\nDoubtlessly many hopeful and ambitious youths of all species were looking at [ef_random_citizen.GetHisHer] story and dreaming that one day they could be the next [ef_random_citizen.GetName], living in an arcology penthouse on [This.GetName]."
+  ef_flavour.70.a: "Let the galaxy dream of life on [This.GetName]."
+
+  ef_flavour.71.name: "Faded Dreams"
+  ef_flavour.71.desc: "Much of the opportunity and promise that once defined [This.GetName] seems to have disappeared over the years.\n\nMany of the new arrivals to [This.GetName] have been disappointed to discover that the legendary world of endless prosperity seems to have been little more than myth.\n\nWith cruel reality slowly dissipating the [This.GetName] Dream, it is impossible to ignore the feeling that a unique chapter of [This.GetName]'s history is slowly coming to an end."
+  ef_flavour.71.a: "It seems that [This.GetName]'s heyday has passed."
+
+  ef_flavour.80.name: "The Luxuries of [ef_luxury_source_planet.GetName]"
+  ef_flavour.80.desc: "A curious new infatuation has been spreading among the elites of [This.GetName]'s high society.\n\n§H[This.owner.ef_luxury_name]§!, a rare delicacy derived from a plant species native to §Y[ef_luxury_source_planet.GetName]§! has proven immensely popular for its refined qualities and cross-species compatibility.\n\nMerchants and traders have eagerly capitalised on the opportunity to deliver the highly sought-after good to the wealthy upper classes, while less scrupulous individuals have attempted to make a quick fortune selling dubious counterfeits to the general public.\n\nThe eager patronage of [This.GetName]'s connoisseurs has led to an explosion of activity on §Y[ef_luxury_source_planet.GetName]§! where the enterprising locals have quickly moved to exploit the sudden demand for their local goods."
+  ef_flavour.80.a: "How charming, I must try some."
