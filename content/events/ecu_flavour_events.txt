@@ -601,7 +601,7 @@ planet_event = {
 	}
 }
 
-# Infatuation with
+# Infatuation with luxuries
 planet_event = {
 	id = ef_flavour.80
 	title = ef_flavour.80.name

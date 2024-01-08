@@ -4,7 +4,7 @@
 
 ef_crowded_spacelanes ={
 	trade_value_mult = -0.2
-    pop_growth_from_immigration = -0.25
+    	pop_growth_from_immigration = -0.25
 
 	icon = "gfx/interface/icons/planet_modifiers/ef_crowded_spacelanes.dds"
 	icon_frame = 3
