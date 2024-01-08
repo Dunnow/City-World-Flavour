@@ -131,3 +131,48 @@ d_ef_seismic_stabilization_stations= {
 		weight = 0 # Only added by decision
 	}
 }
+
+d_ef_urban_parklands= {
+	is_for_colonizable = yes
+	icon = "d_ef_urban_parklands"
+
+	category = deposit_cat_rare
+
+	planet_modifier = {
+		# TODO
+	}
+
+	drop_weight = {
+		weight = 0 # Only added by decision
+	}
+}
+
+d_ef_lake_district = {
+	is_for_colonizable = yes
+	icon = "d_prosperous_mesa"
+
+	category = deposit_cat_rare
+
+	planet_modifier = {
+		# TODO
+	}
+
+	drop_weight = {
+		weight = 0 # Only added by decision
+	}
+}
+
+d_ef_imperial_conservatory = {
+	is_for_colonizable = yes
+	icon = "d_ef_sunset_building"
+
+	category = deposit_cat_rare
+
+	planet_modifier = {
+		# TODO
+	}
+
+	drop_weight = {
+		weight = 0 # Only added by decision
+	}
+}
