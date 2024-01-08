@@ -536,7 +536,7 @@ planet_event = {
 
 	immediate = {
 		set_planet_flag = ef_happy_citizen_has_happened
-		random_pop = {
+		random_owned_pop = {
 			species = {
 				save_event_target_as = ef_random_citizen_species
 			}
@@ -545,7 +545,7 @@ planet_event = {
 			create_leader = {
 				name = random
 				species = event_target:ef_random_citizen_species
-				class  = random
+				class  = scientist # Doesn't actually matter
 				skill = random
 				hide_leader = yes # This is an NPC citizen on your ecu, they are not going to be part of your empire leadership
 			}
