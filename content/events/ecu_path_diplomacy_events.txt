@@ -1,6 +1,5 @@
 namespace = ef_diplo
 
-# Generic (and repeatable) event about a particularly successful movie or drama
 planet_event = {
 	id = ef_diplo.10
 	title = ef_diplo.10.name
@@ -40,3 +39,6 @@ planet_event = {
 		}
 	}
 }
+
+# TODO
+# Generic (and repeatable) event about a particularly successful movie or drama

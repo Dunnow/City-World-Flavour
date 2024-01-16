@@ -149,7 +149,7 @@ d_ef_urban_parklands= {
 
 d_ef_lake_district = {
 	is_for_colonizable = yes
-	icon = "d_prosperous_mesa"
+	icon = "d_ef_lake_district"
 
 	category = deposit_cat_rare
 
