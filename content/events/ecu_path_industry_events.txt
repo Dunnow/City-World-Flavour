@@ -1,5 +1,25 @@
 namespace = ef_industry
 
+# TODO: Need to test these events work properly
+
+# TODO: consider removing this, not sure about it
+# Hidden event to trigger situational events. Makes probability easier to manage
+situation_event = {
+	id = ef_industry.9
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		random_list = {
+			30 = { situation_event = { id = ef_industry.12 } }
+			10 = { situation_event = { id = ef_industry.13 } }
+			10 = { situation_event = { id = ef_industry.14 } }
+			10 = { situation_event = { id = ef_industry.15 } }
+			10 = { situation_event = { id = ef_industry.16 } }
+		}
+	}
+}
+
 # Introduce pollution situation
 planet_event = {
 	id = ef_industry.10
@@ -42,8 +62,14 @@ situation_event = {
 
 	trigger = { target = { NOT = { has_planet_flag = ef_recent_generic_pollution_event } } }
 
-	immediate = { target = { set_planet_flag = ef_recent_generic_pollution_event} }
-
+	immediate = {
+		target = {
+			set_timed_planet_flag =  {
+				flag = ef_recent_generic_pollution_event
+				days = 720
+			}
+		}
+	}
 	# OK
 	option = {
 		name = ef_industry.12.a
@@ -114,6 +140,17 @@ situation_event = {
 	location = target
 	is_triggered_only = yes
 
+	trigger = { target = { NOT = { has_planet_flag = ef_recent_overproduction_event } } }
+
+	immediate = {
+		target = {
+			set_timed_planet_flag =  {
+				flag = ef_recent_overproduction_event
+				days = 720
+			}
+		}
+	}
+
 	# OK
 	option = {
 		name = ef_industry.15.a
@@ -125,7 +162,7 @@ situation_event = {
 	}
 }
 
-# Waste eating xenobacteria. TODO loc
+# Waste eating xenobacteria.
 situation_event = {
 	id = ef_industry.16
 	title = ef_industry.16.name
@@ -172,7 +209,7 @@ situation_event = {
 	}
 }
 
-# Very successful xenobacteria . TODO loc
+# Very successful xenobacteria .
 situation_event = {
 	id = ef_industry.17
 	title = ef_industry.17.name
@@ -188,7 +225,7 @@ situation_event = {
 	}
 }
 
-# Xenobacteria mutated. TODO loc
+# Xenobacteria mutated.
 situation_event = {
 	id = ef_industry.18
 	title = ef_industry.18.name

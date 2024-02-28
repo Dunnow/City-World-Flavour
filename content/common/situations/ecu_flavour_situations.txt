@@ -286,12 +286,8 @@ ef_situation_pollution = {
 	on_monthly = { #Note: technically, this is an on_action called test_situation. So don't call your situation "on_monthly_pulse"!
  		random_events = {
 			# Try to ensure that probabilities balance to about 1 a year on average
-			770 = 0 # Total chance of an event = 70. (70 * 11) = 770
-			30 = ef_industry.12
-			10 = ef_industry.13
-			10 = ef_industry.14
-			10 = ef_industry.15
-			10 = ef_industry.16
+			11 = 0
+			1 = ef_industry.9
 
  		}
  	}

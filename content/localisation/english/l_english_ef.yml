@@ -25,6 +25,10 @@
   #decision_ef_choose_path_effects_short: ""
   decision_ef_choose_path_desc: "Embark on a program of investment and construction to focus this world's output."
 
+  decision_ef_revise_industrial_policy: "Revise Industrial Environmental Policy"
+  decision_ef_revise_industrial_policy_desc: "Although we have benefited from the relaxed environmental regulations, the time has come to consider the impact on the habitability of our world."
+  ef_decision_revise_industrial_policy_tt: "§BThis will restart the Pollution on [This.GetName] situation.§!"
+
   # Deposits
   d_ef_ventilation_system: "Ventilation Systems"
   d_ef_ventilation_system_desc: "A massive system of ducts and fans provide breathable atmosphere to the denizens of the under city."
