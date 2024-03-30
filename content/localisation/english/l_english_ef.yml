@@ -54,8 +54,14 @@
   d_ef_seismic_stabilization_stations: "Seismic Stabilization Stations"
   d_ef_seismic_stabilization_stations_desc: "By securing the lower levels of the urban sprawl, we enable even grander and larger structures to be constructed on the levels above."
 
-  d_ef_spaceport: "Planetary Spaceport"
-  d_ef_spaceport_desc: "Immense infrastructure and an army of personnel work nonstop to feed the voracious appetites of this world."
+  d_ef_urban_parklands: "Urban Parklands"
+  d_ef_urban_parklands_desc: "TODO."
+
+  d_ef_lake_district: "Lake District"
+  d_ef_lake_district_desc: "TODO."
+
+  d_ef_imperial_conservatory: "Imperial Conservatory"
+  d_ef_imperial_conservatory_desc: "TODO."
 
   # Jobs
   job_ef_satellite_operator: "Satellite Operator"
