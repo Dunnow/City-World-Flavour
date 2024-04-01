@@ -1,42 +1,60 @@
 namespace = ef_diplo
 
+# Playground of the elite
 planet_event = {
-	id = ef_diplo.10
-	title = ef_diplo.10.name
-	desc = "ef_diplo.10.desc"
-	picture  = GFX_evt_glitchy_matrix
+	id = ef_diplo.20
+	title = ef_diplo.20.name
+	desc = "ef_diplo.20.desc"
+	picture  = GFX_evt_crisis_defeated
 	location = root
 	is_triggered_only = yes
 
-	# Investigate
+	# Acknowledge
 	option = {
-		name = ef_flavour.60.a
+		name = ef_diplo.20.a
+		add_modifier = { modifier = ef_economic_boom years = 5 }
+	}
+
+	# Emphasise our status
+	option = {
+		name = ef_diplo.20.b
+		add_modifier = { modifier = ef_playground_of_the_elite }
         allow = {
 			owner = {
-				resource_stockpile_compare = { resource = influence value >= 50 }
+				resource_stockpile_compare = { resource = influence value >= 150 }
 			}
 		}
 		owner = {
-			add_resource = { influence = -50 }
+			add_resource = { influence = -150 }
 		}
-		add_modifier = { modifier = ef_glitchy_machines days = 270 }
-		hidden_effect = {
-			planet_event = {
-				id = ef_flavour.61
-				days = 270
+	}
+}
+
+# Hologems
+planet_event = {
+	id = ef_diplo.30
+	title = ef_diplo.30.name
+	desc = "ef_diplo.30.desc"
+	picture  = GFX_evt_friendly_enlightenment
+	location = root
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			NOT = {
+				has_country_flag = ef_hologems_industry_has_happened
 			}
 		}
 	}
-	# Ignore (leads to a bad event  in a few months)
+
+	immediate = {
+		set_planet_flag = ef_has_hologems_industry
+		owner = { set_country_flag = ef_hologems_industry_has_happened }
+	}
+
 	option = {
-		name = ef_flavour.60.b
-		add_modifier = { modifier = ef_glitchy_machines days = 270 }
-		hidden_effect = {
-			planet_event = {
-				id = ef_flavour.62
-				days = 270
-			}
-		}
+		name = ef_diplo.30.a
+		add_modifier = { modifier = ef_luxury_goods_exports }
 	}
 }
 

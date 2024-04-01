@@ -239,6 +239,12 @@
   ef_orbital_waste_disposal: "Orbital Waste Disposal"
   ef_orbital_waste_disposal_desc: "This planet is surrounded by slowly dissipating clouds of trash and waste, fired up into orbit by the inhabitants below."
 
+  ef_playground_of_the_elite: "Playground of the Elite"
+  ef_playground_of_the_elite_desc: "This planet's popularity amongst the galaxy's upper crust lends it an enormous cultural and economic weight."
+
+  ef_luxury_goods_exports: "Luxury Goods Exports"
+  ef_luxury_goods_exports_desc: "This planet is known across the galaxy for its exports of high-quality luxury goods."
+
   # Trait Loc
   trait_ef_mutant: "Mutant"
   trait_ef_mutant_desc: "This species is afflicted with uncontrolled mutations. Their bodies are breaking down under the pressure."
@@ -394,7 +400,7 @@
 
   ef_trade.70.name: "Hypercompetitive Business Practices"
   ef_trade.70.desc: "[This.GetName] is famous for its intense corporate rivalries and cutthroat business practices. However in recent months, this competition has been threatening to grow into something more sinister.\n\nNumerous warehouses and factories in the lower levels have been reporting an uptick in sabotage and mysterious break ins. Suspiciously, these incidents are confined to facilities belonging to two rival corporations.\n\nNaturally, both have blamed the other and have sought the authorities to punish the other party."
-  ef_trade.70.a: "We could be "persuaded" to a particular perspective."
+  ef_trade.70.a: "We could be 'persuaded' to a particular perspective."
   ef_trade.70.b: "It is not our role to interfere."
   ef_trade.70.c: "Crack down on this sort of behaviour."
 
@@ -439,3 +445,12 @@
   ef_industry.18.name: "Overenthusiastic Microbes"
   ef_industry.18.desc: "The waste-eating microbes that we recently spread across [Target.GetName] have been very successful at voraciously consuming the inorganic contaminants that cover the planet.\n\nUnfortunately they appear to have mutated further. The microscopic bacteria have developed a taste for the materials that make up our machinery and infrastructure too.\n\nAlthough the planetary authorities have successfully decontaminated most industrial areas of their presence, they managed to damage several important facilities across the planet."
   ef_industry.18.a: "Unfortunate"
+
+  ef_diplo.20.name: "Planetary Playground"
+  ef_diplo.20.desc: "In recent years [This.GetName] has become increasingly popular among the galaxy's elite. Attracted by the planet's sophisticated culture, vast economic opportunities and endless activity, many of the galaxy's most prominent individuals have taken to spending their time and considerable wealth visiting [This.GetName]'s many attractions."
+  ef_diplo.20.a: "Enjoy the benefits."
+  ef_diplo.20.b: "We can embrace this reputation."
+
+  ef_diplo.30.name: "Holographic Gems"
+  ef_diplo.30.desc: "A group of talented researchers on [This.GetName] have made a remarkable discovery: certain §Y$rare_crystals$§! posses the unique property of refracting light into near perfect holographic shapes.\n\nAlthough too expensive for use in regular display matrices, these unique crystals have become highly sought after as expensive ornaments and fashion accessories. With [This.GetName]'s artisans being considered the highest quality, a burgeoning luxury industry has quickly sprung up to meet the growing demand."
+  ef_diplo.30.a: "Wonderful."

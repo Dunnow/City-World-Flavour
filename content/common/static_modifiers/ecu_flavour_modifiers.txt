@@ -184,3 +184,17 @@ ef_orbital_waste_disposal = {
 	icon = gfx/interface/icons/planet_modifiers/pm_trash_rings.dds
 	icon_frame = 2
 }
+
+ef_playground_of_the_elite = {
+	planet_jobs_unity_produces_mult = 0.1
+	trade_value_mult = 0.1
+	icon = gfx/interface/icons/planet_modifiers/pm_museum.dds
+	icon_frame = 1
+}
+
+ef_luxury_goods_exports = {
+	trade_value_mult = 0.1
+	diplo_weight_mult = 0.05
+	icon = gfx/interface/icons/planet_modifiers/pm_resources.dds
+	icon_frame = 1
+}
