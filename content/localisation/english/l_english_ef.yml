@@ -84,6 +84,12 @@
   mod_job_ef_freighter_pilot_add: "$job_ef_freighter_pilot$ Jobs"
   job_ef_freighter_pilot_desc: "Specialist skills and local knowledge are needed to safely guide shuttles and freighters to their berths amid the spires and towers."
 
+  job_ef_gemcutter: "Gemcutter"
+  job_ef_gemcutter_plural: "Gemcutters"
+  mod_job_ef_gemcutter_add: "$job_ef_gemcutter$ Jobs"
+  job_ef_gemcutter_desc: "Skilled artisans cut and engrave rare crystals into galaxy-renowned works of art."
+  job_ef_gemcutter_effect_desc: "£job_ef_gemcutter£ $job_ef_gemcutter_plural$ turn £rare_crystals£ §Y$rare_crystals$§! into £trade_value£ §YTrade Value§!"
+
   job_ef_vent_tribal: "Vent Tribal"
   job_ef_vent_tribal_plural: "Vent Tribals"
   mod_job_ef_vent_tribal_add: "$job_ef_vent_tribal$ Jobs"
@@ -110,6 +116,10 @@
   pop_cat_ef_undercity: "Underworlder"
   pop_cat_ef_undercity_plural: "Underworlders"
   pop_cat_ef_undercity_desc: "Largely forgotten and ignored by mainstream society, the dregs of society make their living in the forgotten spaces of this great city."
+
+  # Building Loc
+  building_ef_hologem_bourse: "Hologem Bourse"
+  building_ef_hologem_bourse_desc: "These enormous halls are host to sophisticated network of acquisitions, artisans and traders. "
 
   # Situation Loc
   ef_situation_corpo_war: "Corporate War"
