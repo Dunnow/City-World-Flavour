@@ -89,7 +89,7 @@ d_ef_orbital_control_network= {
 	category = deposit_cat_rare
 
 	planet_modifier = {
-		job_ef_satellite_operator_add = 2
+		job_ef_satellite_operator_add = 4
 		planet_max_districts_add = -1
 	}
 
@@ -106,7 +106,7 @@ d_ef_climate_management_centre= {
 	category = deposit_cat_rare
 
 	planet_modifier = {
-		job_ef_habitation_technician_add = 2
+		job_ef_habitation_technician_add = 4
 		planet_max_districts_add = -1
 	}
 
@@ -123,7 +123,7 @@ d_ef_seismic_stabilization_stations= {
 	category = deposit_cat_rare
 
 	planet_modifier = {
-		job_ef_deep_level_engineer_add = 2
+		job_ef_deep_level_engineer_add = 4
 		planet_max_districts_add = -1
 	}
 
@@ -139,7 +139,11 @@ d_ef_urban_parklands= {
 	category = deposit_cat_rare
 
 	planet_modifier = {
-		# TODO
+		planet_amenities_add = 20
+		job_ranger_add = 6
+		planet_rangers_society_research_produces_add = 2
+		planet_rangers_unity_produces_add = 2
+		planet_max_districts_add = -1
 	}
 
 	drop_weight = {
@@ -154,7 +158,10 @@ d_ef_lake_district = {
 	category = deposit_cat_rare
 
 	planet_modifier = {
-		# TODO
+		planet_amenities_add = 20
+		job_angler_add = 5
+		job_culture_worker_add = 5
+		planet_max_districts_add = -1
 	}
 
 	drop_weight = {
@@ -169,7 +176,10 @@ d_ef_imperial_conservatory = {
 	category = deposit_cat_rare
 
 	planet_modifier = {
-		# TODO
+		job_culture_worker_add = 8
+		planet_amenities_add = 20
+		planet_jobs_unity_produces_mult = 0.15
+		planet_max_districts_add = -1
 	}
 
 	drop_weight = {
