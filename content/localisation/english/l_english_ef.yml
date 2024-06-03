@@ -22,7 +22,7 @@
 
   decision_ef_choose_path: "Choose a Planetary Specialization"
   # TODO
-  #decision_ef_choose_path_effects_short: ""
+  decision_ef_choose_path_effects_short: "TODO"
   decision_ef_choose_path_desc: "Embark on a program of investment and construction to focus this world's output."
 
   decision_ef_revise_industrial_policy: "Revise Industrial Environmental Policy"
@@ -55,13 +55,13 @@
   d_ef_seismic_stabilization_stations_desc: "By securing the lower levels of the urban sprawl, we enable even grander and larger structures to be constructed on the levels above."
 
   d_ef_urban_parklands: "Urban Parklands"
-  d_ef_urban_parklands_desc: "TODO."
+  d_ef_urban_parklands_desc: "Swathes of land in the city centers, given over entirely to green spaces and amenities."
 
   d_ef_lake_district: "Lake District"
-  d_ef_lake_district_desc: "TODO."
+  d_ef_lake_district_desc: "A palatial retreat for the wealthy and the lucky. A huge chunk of scarce and valuable land has been flooded and carefully terraformed to form perfect ornamental lakes."
 
   d_ef_imperial_conservatory: "Imperial Conservatory"
-  d_ef_imperial_conservatory_desc: "TODO."
+  d_ef_imperial_conservatory_desc: "The cultural nexus of a hundred worlds. Here the talented and ambitious come to seek their fame and fortune from across the galaxy."
 
   # Jobs
   job_ef_satellite_operator: "Satellite Operator"
