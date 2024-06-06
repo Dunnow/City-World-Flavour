@@ -20,6 +20,21 @@
   decision_ef_construct_seismic_stabilization_stations: "Construct Seismic Stabilization Stations"
   decision_ef_construct_seismic_stabilization_stations_desc: "To enable layers upon layers of urban sprawl, careful load and structural management must be a priority."
 
+  decision_ef_terraform_urban_lakes: "Terraform Lake Districts"
+  decision_ef_terraform_urban_lakes_desc: "On a world as mighty as this, mere extravagance will not do. The wealthy and the powerful demand total opulence."
+
+  decision_ef_designate_parklands: "Designate Parklands"
+  decision_ef_designate_parklands_desc: "By setting aside some valuable land to preserve this world's biosphere, we can improve the quality of all surrounding cityscape."
+
+  decision_ef_establish_imperial_academies: "Establish Imperial Conservatories"
+  decision_ef_establish_imperial_academies_desc: "Great halls of culture shall make this world one the crown jewels of the cosmos and spread our empire's influence across the stars."
+
+  decision_ef_host_galactic_exhibitions: "Host Galactic Exhibitions"
+  decision_ef_host_galactic_exhibitions_desc: "The culture and accomplishments of our empire are noteworthy and deserving of praise. Let us show them off to all."
+
+  decision_ef_prepare_diplomatic_quarter: "Prepare a Diplomatic Quarter"
+  decision_ef_prepare_diplomatic_quarter_desc: "A large portion of our cityscape shall be dedicated to the embassies and ministries of intergalactic affairs."
+
   decision_ef_choose_path: "Choose a Planetary Specialization"
   # TODO
   decision_ef_choose_path_effects_short: "TODO"
@@ -28,6 +43,9 @@
   decision_ef_revise_industrial_policy: "Revise Industrial Environmental Policy"
   decision_ef_revise_industrial_policy_desc: "Although we have benefited from the relaxed environmental regulations, the time has come to consider the impact on the habitability of our world."
   ef_decision_revise_industrial_policy_tt: "§BThis will restart the Pollution on [This.GetName] situation.§!"
+
+  # Misc Loc
+  mod_planet_rangers_unity_produces_add: "£unity£$unity$ from £job_ranger£$job_ranger_plural$"
 
   # Deposits
   d_ef_ventilation_system: "Ventilation Systems"
@@ -62,6 +80,12 @@
 
   d_ef_imperial_conservatory: "Imperial Conservatory"
   d_ef_imperial_conservatory_desc: "The cultural nexus of a hundred worlds. Here the talented and ambitious come to seek their fame and fortune from across the galaxy."
+
+  d_ef_galactic_expo_centre: "Galactic Expo Center"
+  d_ef_galactic_expo_centre_desc: "The treasures and amenities of the galaxy, all on display amidst the grandeur of this great city."
+
+  d_ef_grand_presidium: "Grand Presidium"
+  d_ef_grand_presidium_desc: "An enormous diplomatic quarter capable of accommodating masses of diplomats in tasteful splendor."
 
   # Jobs
   job_ef_satellite_operator: "Satellite Operator"
@@ -464,3 +488,7 @@
   ef_diplo.30.name: "Holographic Gems"
   ef_diplo.30.desc: "A group of talented researchers on [This.GetName] have made a remarkable discovery: certain §Y$rare_crystals$§! posses the unique property of refracting light into near perfect holographic shapes.\n\nAlthough too expensive for use in regular display matrices, these unique crystals have become highly sought after as expensive ornaments and fashion accessories. With [This.GetName]'s artisans being considered the highest quality, a burgeoning luxury industry has quickly sprung up to meet the growing demand."
   ef_diplo.30.a: "Wonderful."
+
+  ef_diplo.40.name: "The Jewel of the Galaxy"
+  ef_diplo.40.desc: "TODO"
+  ef_diplo.40.a: "TODO"

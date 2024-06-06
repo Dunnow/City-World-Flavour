@@ -186,3 +186,43 @@ d_ef_imperial_conservatory = {
 		weight = 0 # Only added by decision
 	}
 }
+
+d_ef_grand_presidium = {
+	is_for_colonizable = yes
+	icon = "unused/d_galactic_senate"
+
+	category = deposit_cat_rare
+
+	planet_modifier = {
+		job_politician_add = 4
+		planet_amenities_add = 10
+		planet_max_districts_add = -1
+	}
+	country_modifier = {
+		envoys_add = 1
+	}
+
+	drop_weight = {
+		weight = 0 # Only added by decision
+	}
+}
+
+d_ef_galactic_expo_centre = {
+	is_for_colonizable = yes
+	icon = "d_central_spire"
+
+	category = deposit_cat_rare
+
+	planet_modifier = {
+		job_culture_worker_add = 6
+		planet_amenities_add = 10
+		planet_max_districts_add = -1
+	}
+	country_modifier = {
+		diplo_weight_mult = 0.05
+	}
+
+	drop_weight = {
+		weight = 0 # Only added by decision
+	}
+}

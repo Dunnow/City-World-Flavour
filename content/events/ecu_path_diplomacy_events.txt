@@ -58,5 +58,20 @@ planet_event = {
 	}
 }
 
+# Built all special deposits
+planet_event = {
+	id = ef_diplo.40
+	title = ef_diplo.40.name
+	desc = "ef_diplo.40.desc"
+	picture  = GFX_evt_ef_skyline
+	location = root
+	is_triggered_only = yes
+
+	option = {
+		name = ef_diplo.40.a
+		add_modifier = { modifier = ef_luxury_goods_exports }
+	}
+}
+
 # TODO
 # Generic (and repeatable) event about a particularly successful movie or drama

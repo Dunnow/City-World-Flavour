@@ -270,3 +270,228 @@ decision_ef_revise_industrial_policy = {
 		weight = 0
 	}
 }
+
+decision_ef_designate_parklands = {
+	owned_planets_only = yes
+	icon = "decision_animal_wildlife"
+
+	enactment_time = 180
+	resources = {
+		category = decisions
+		cost = {
+			influence = 50
+			minerals = 1000
+		}
+	}
+
+	allow = {
+		free_district_slots >= 1
+	}
+
+	potential = {
+		is_planet_class = pc_city
+		has_planet_flag = ef_diplomacy_specialisation
+		NOT = { has_deposit = d_ef_urban_parklands}
+	}
+
+	effect = {
+		add_deposit = d_ef_urban_parklands
+		# Event for collecting all the deposits
+		if = {
+			limit = {
+				AND = {
+					has_deposit = d_ef_grand_presidium
+					has_deposit = d_ef_imperial_conservatory
+					has_deposit = d_ef_urban_parklands
+					has_deposit = d_ef_lake_district
+					has_deposit = d_ef_galactic_expo_centre
+				}
+			}
+			planet_event = { id = ef_diplo.40 }
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+decision_ef_terraform_urban_lakes = {
+	owned_planets_only = yes
+	icon = "decision_resort_colony"
+
+	enactment_time = 180
+	resources = {
+		category = decisions
+		cost = {
+			influence = 50
+			minerals = 1000
+		}
+	}
+
+	potential = {
+		is_planet_class = pc_city
+		has_planet_flag = ef_diplomacy_specialisation
+		NOT = { has_deposit = d_ef_lake_district}
+	}
+
+	allow = {
+		free_district_slots >= 1
+	}
+
+	effect = {
+		add_deposit = d_ef_lake_district
+		# Event for collecting all the deposits
+		if = {
+			limit = {
+				AND = {
+					has_deposit = d_ef_grand_presidium
+					has_deposit = d_ef_imperial_conservatory
+					has_deposit = d_ef_urban_parklands
+					has_deposit = d_ef_lake_district
+					has_deposit = d_ef_galactic_expo_centre
+				}
+			}
+			planet_event = { id = ef_diplo.40 }
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+decision_ef_establish_imperial_academies= {
+	owned_planets_only = yes
+	icon = "decision_art_monument"
+
+	enactment_time = 180
+	resources = {
+		category = decisions
+		cost = {
+			influence = 50
+			minerals = 1000
+		}
+	}
+
+	allow = {
+		free_district_slots >= 1
+	}
+
+	potential = {
+		is_planet_class = pc_city
+		has_planet_flag = ef_diplomacy_specialisation
+		NOT = { has_deposit = d_ef_imperial_conservatory}
+	}
+
+	effect = {
+		add_deposit = d_ef_imperial_conservatory
+		# Event for collecting all the deposits
+		if = {
+			limit = {
+				AND = {
+					has_deposit = d_ef_grand_presidium
+					has_deposit = d_ef_imperial_conservatory
+					has_deposit = d_ef_urban_parklands
+					has_deposit = d_ef_lake_district
+					has_deposit = d_ef_galactic_expo_centre
+				}
+			}
+			planet_event = { id = ef_diplo.40 }
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+decision_ef_prepare_diplomatic_quarter= {
+	owned_planets_only = yes
+	icon = "decision_deal"
+
+	enactment_time = 180
+	resources = {
+		category = decisions
+		cost = {
+			influence = 50
+			minerals = 1000
+		}
+	}
+
+	allow = {
+		free_district_slots >= 1
+	}
+
+	potential = {
+		is_planet_class = pc_city
+		has_planet_flag = ef_diplomacy_specialisation
+		NOT = { has_deposit = d_ef_grand_presidium}
+	}
+
+	effect = {
+		add_deposit = d_ef_grand_presidium
+		# Event for collecting all the deposits
+		if = {
+			limit = {
+				AND = {
+					has_deposit = d_ef_grand_presidium
+					has_deposit = d_ef_imperial_conservatory
+					has_deposit = d_ef_urban_parklands
+					has_deposit = d_ef_lake_district
+					has_deposit = d_ef_galactic_expo_centre
+				}
+			}
+			planet_event = { id = ef_diplo.40 }
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+decision_ef_host_galactic_exhibitions= {
+	owned_planets_only = yes
+	icon = "decision_alien_propaganda"
+
+	enactment_time = 180
+	resources = {
+		category = decisions
+		cost = {
+			influence = 50
+			minerals = 1000
+		}
+	}
+	
+	allow = {
+		free_district_slots >= 1
+	}
+
+	potential = {
+		is_planet_class = pc_city
+		has_planet_flag = ef_diplomacy_specialisation
+		NOT = { has_deposit = d_ef_galactic_expo_centre}
+	}
+
+	effect = {
+		add_deposit = d_ef_galactic_expo_centre
+		# Event for collecting all the deposits
+		if = {
+			limit = {
+				AND = {
+					has_deposit = d_ef_grand_presidium
+					has_deposit = d_ef_imperial_conservatory
+					has_deposit = d_ef_urban_parklands
+					has_deposit = d_ef_lake_district
+					has_deposit = d_ef_galactic_expo_centre
+				}
+			}
+			planet_event = { id = ef_diplo.40 }
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
