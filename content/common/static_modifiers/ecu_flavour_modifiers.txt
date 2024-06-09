@@ -198,3 +198,8 @@ ef_luxury_goods_exports = {
 	icon = gfx/interface/icons/planet_modifiers/pm_resources.dds
 	icon_frame = 1
 }
+
+# Country modifier
+ef_galactic_centre_of_diplomacy = {
+	diplo_weight_mult = 0.15
+}

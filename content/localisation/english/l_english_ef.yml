@@ -279,6 +279,9 @@
   ef_luxury_goods_exports: "Luxury Goods Exports"
   ef_luxury_goods_exports_desc: "This planet is known across the galaxy for its exports of high-quality luxury goods."
 
+  ef_galactic_centre_of_diplomacy: "Galactic Center of Diplomacy"
+  ef_galactic_centre_of_diplomacy_desc: "§LOne of this empire's worlds has become renowned for its heritage as a center of galactic affairs and statecraft.§!"
+
   # Trait Loc
   trait_ef_mutant: "Mutant"
   trait_ef_mutant_desc: "This species is afflicted with uncontrolled mutations. Their bodies are breaking down under the pressure."
@@ -490,5 +493,5 @@
   ef_diplo.30.a: "Wonderful."
 
   ef_diplo.40.name: "The Jewel of the Galaxy"
-  ef_diplo.40.desc: "TODO"
-  ef_diplo.40.a: "TODO"
+  ef_diplo.40.desc: "Our persistent investments into [This.GetName] have paid off. The city world has become famous for its grand parks, luxurious accommodations and the extensive diplomatic infrastructure we have built.\n\nOur actions have primed [This.GetName] to be a nexus of diplomacy, business and galactic politics for years to come. Doubtlessly the [This.Owner.GetName] will benefit greatly as a result."
+  ef_diplo.40.a: "Excellent news."

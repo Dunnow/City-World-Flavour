@@ -69,7 +69,9 @@ planet_event = {
 
 	option = {
 		name = ef_diplo.40.a
-		add_modifier = { modifier = ef_luxury_goods_exports }
+		owner = {
+			add_modifier = { modifier = ef_galactic_centre_of_diplomacy }
+		}
 	}
 }
 

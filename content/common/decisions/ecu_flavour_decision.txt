@@ -463,7 +463,7 @@ decision_ef_host_galactic_exhibitions= {
 			minerals = 1000
 		}
 	}
-	
+
 	allow = {
 		free_district_slots >= 1
 	}
