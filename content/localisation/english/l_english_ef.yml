@@ -165,9 +165,8 @@
 
   ef_situation_pollution: "Pollution on [Target.GetName]"
   ef_situation_pollution_desc: "As [Target.GetName]'s population and industry has grown, it has overtaken practically all of the indigenous environment.\n\nAs the world's industry continues to grow we must be aware of its effects on the fragile ecosphere or it may collapse for good."
-  ef_situation_pollution_desc: "As [Target.GetName]'s population and industry has grown, it has overtaken practically all of the indigenous environment.\n\nAs the world's industry continues to grow we must be aware of its effects on the fragile ecosphere or it may collapse for good."
   ef_situation_pollution_type: "Industrial Pollution"
-  ef_situation_pollution_monthly_change_tooltip: "§LThe neverending march of industry has wreaked a toll on this planet.§!"
+  ef_situation_pollution_monthly_change_tooltip: "§LThe never ending march of industry has wreaked a toll on this planet.§!"
   ef_situation_cleanup_operations: "Cleanup Operations"
   ef_situation_cleanup_operations_tt: "Restoration Efforts"
   ef_situation_cleanup_operations_desc: "We must take steps to ensure that this world remains livable for future generations."
@@ -441,13 +440,13 @@
   ef_trade.70.b: "It is not our role to interfere."
   ef_trade.70.c: "Crack down on this sort of behaviour."
 
-  ef_trade.71.name: "A Corporate Reconciliation"
+  ef_trade.71.name: "Corporate Reconciliation"
   ef_trade.71.desc: "Our firm response on [This.GetName] appears to have been heeded. Incidents of sabotage and burglary have returned to normal levels.\n\nWhile the two rival corporations continue to compete, they appear to be content to keep their rivalry in the commercial sphere alone."
   ef_trade.71.a: "The best possible outcome."
 
   ef_industry.10.name: "Industrial Consequences"
-  ef_industry.10.desc: "TODO"
-  ef_industry.10.a: "TODO"
+  ef_industry.10.desc: "[This.GetName] is a major hub of industry in its region of the galaxy, but the planet's immense manufacturing potential has severe implications for the planetary environment.\n\nWith most of the planet's surface paved over and developed, the remaining biosphere has been struggling to adapt to the new reality of massive industrial development. It remains to be seen whether this may lead to catastrophic consequences."
+  ef_industry.10.a: "Monitor the situation."
 
   ef_industry.11.name: "On the Altar of Progress"
   ef_industry.11.desc: "Our ruthless industrial development on [This.GetName] has brought us tremendous wealth. Unfortunately the planet has suffered for it. The atmosphere has been rendered unbreathable by toxic smog and pollutants contaminate every part of the planet's surface.\n\nIts population have increasingly turned to seeking shelter from the environment within climate-controlled habitation zones. Some have even embraced biological and cybernetic enhancements, legal or not, to better cope with the hostile nature of the planet.\n\nIf we ever want this world to return to its former habitability, we have a long cleanup process ahead of us."
@@ -462,7 +461,7 @@
   ef_industry.13.a: "Unfortunate"
 
   ef_industry.14.name: "Stash it Away"
-  ef_industry.14.desc: "The local authorities on [Target.GetName] have come up with a inventive proposal to address the world's neverending hazardous waste issue.\n\nBy gathering large quantities of difficult-to-store waste materials and hauling them into orbit, we can neatly sidestep the question of where to store them. Any potential navigation hazards would be well outweighed by the benefits of this easy disposal method."
+  ef_industry.14.desc: "The local authorities on [Target.GetName] have come up with a inventive proposal to address the world's never ending hazardous waste issue.\n\nBy gathering large quantities of difficult-to-store waste materials and hauling them into orbit, we can neatly sidestep the question of where to store them. Any potential navigation hazards would be well outweighed by the benefits of this easy disposal method."
   ef_industry.14.a: "Do it."
   ef_industry.14.b: "Hold off."
 
@@ -471,7 +470,7 @@
   ef_industry.15.a: "Splendid"
 
   ef_industry.16.name: "Natural Recycling"
-  ef_industry.16.desc: "A curious biological phenomenom has emerged on [Target.GetName].\n\nAs the planet's biosphere is increasingly saturated in toxic chemicals, some forms of microbial life appear to have adapted to feed upon the artificial elements present in the environment.\n\nThese adaptable microbes have had a noticeable effect on the local environment, helping purify many of the worst contaminants and breaking them down into simpler forms."
+  ef_industry.16.desc: "A curious biological phenomenon has emerged on [Target.GetName].\n\nAs the planet's biosphere is increasingly saturated in toxic chemicals, some forms of microbial life appear to have adapted to feed upon the artificial elements present in the environment.\n\nThese adaptable microbes have had a noticeable effect on the local environment, helping purify many of the worst contaminants and breaking them down into simpler forms."
   ef_industry.16.a: "We should fund an operation to spread them across the planet."
   ef_industry.16.b: "A fortunate occurrence."
 
