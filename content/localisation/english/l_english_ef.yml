@@ -278,6 +278,9 @@
   ef_luxury_goods_exports: "Luxury Goods Exports"
   ef_luxury_goods_exports_desc: "This planet is known across the galaxy for its exports of high-quality luxury goods."
 
+  ef_space_hollywood: "Entertainment Hub"
+  ef_space_hollywood_desc: "This world produces enormous quantities of galaxy-acclaimed media and diverse entertainment forms."
+
   ef_galactic_centre_of_diplomacy: "Galactic Center of Diplomacy"
   ef_galactic_centre_of_diplomacy_desc: "§LOne of this empire's worlds has become renowned for its heritage as a center of galactic affairs and statecraft.§!"
 
@@ -492,5 +495,25 @@
   ef_diplo.30.a: "Wonderful."
 
   ef_diplo.40.name: "The Jewel of the Galaxy"
-  ef_diplo.40.desc: "Our persistent investments into [This.GetName] have paid off. The city world has become famous for its grand parks, luxurious accommodations and the extensive diplomatic infrastructure we have built.\n\nOur actions have primed [This.GetName] to be a nexus of diplomacy, business and galactic politics for years to come. Doubtlessly the [This.Owner.GetName] will benefit greatly as a result."
+  ef_diplo.40.desc: "Our persistent investments into [This.GetName] have paid off. The city world has become famous for its grand parks, luxurious accommodations and the extensive diplomatic infrastructure we have built.\n\nOur actions have primed [This.GetName] to be a nexus of diplomacy, business and galactic politics for years to come. Doubtlessly the §Y[This.Owner.GetName]§! will benefit greatly as a result."
   ef_diplo.40.a: "Excellent news."
+
+  ef_diplo.50.name: "Rise of the [This.GetName] Entertainment Industry"
+  ef_diplo.50.desc: "As a massive hub of people and culture, [This.GetName]'s artists and entertainers have begun to attract a reputation across the galaxy for their works. With more talent and resources than ever, [This.GetName]'s pursuit of the arts has a bright future ahead."
+  ef_diplo.50.a: "Splendid."
+
+  ef_diplo.51.name: "A Dramatized History of [This.GetName]"
+  ef_diplo.51.desc: "A standout hit from [This.GetName] has been making waves in the galactic entertainment scene. A dramatized retelling of the city world's early years, set long before it became the immense urban planet that it is today.\n\nCritics and audiences alike have acclaimed it to be one of the best instances of storytelling to come out of the §Y[This.Owner.GetName]§! in quite some time."
+  ef_diplo.51.a: "This is a good look for us."
+
+  ef_diplo.52.name: "Killer Xenos from Extragalactic Space"
+  ef_diplo.52.desc: "The entertainment industry of [This.GetName] has had another roaring success. Their latest offering - a sensational story of aliens from beyond the galactic rim that invade and lay waste to much of the galaxy has been very well received across the galaxy, although some critics have called the plot 'contrived' and 'wholly unrealistic'.\n\nNonetheless this reflects well on the prospects of the §I[This.Owner.GetName]'s§! influence in greater galactic media."
+  ef_diplo.52.a: "The premise is a bit implausible."
+
+  ef_diplo.53.name: "Khan of the Void"
+  ef_diplo.53.desc: "One of [This.GetName]'s most recent media offerings has been gathering a cult following.\n\nSet in a fictionalized version of the §Y[event_target:ef_maruader_expy_country.GetName]§!, the story follows a §Y[event_target:ef_maruader_expy_country.species.GetName]§! youth as they unite their warring clans and establish themselves as a mighty Khan.\n\nThe producers assure viewers that any resemblance to real or historical characters is §Rstrictly§! coincidental. It's certainly garnered a great deal of attention and interest in [This.GetName]'s other entertainment media."
+  ef_diplo.53.a: "Purely coincidental..."
+
+  ef_diplo.54.name: "Life Among the Primitives"
+  ef_diplo.54.desc: "A recent holovid account from [This.GetName] of the pre-ftl §Y[event_target:ef_primitive_documentary_country.GetName]§! on §Y[event_target:ef_primitive_documentary_country.home_planet.GetName]§! has been developing a devoted following across the galaxy.\n\nAcclaimed as a 'breathtaking insight' into the lives of primitive races, this has helped develop [This.GetName]'s reputation as a solid and reputable source of information - excellent for the §Y[This.Owner.GetName]'s§! soft power across the galaxy."
+  ef_diplo.54.a: "Good."

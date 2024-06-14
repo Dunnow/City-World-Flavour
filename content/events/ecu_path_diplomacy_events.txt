@@ -75,5 +75,205 @@ planet_event = {
 	}
 }
 
-# TODO
-# Generic (and repeatable) event about a particularly successful movie or drama
+# Rise of Space hollywood
+planet_event = {
+	id = ef_diplo.50
+	title = ef_diplo.50.name
+	desc = "ef_diplo.50.desc"
+	picture  = GFX_evt_ef_city_world
+	location = root
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			owner = {
+				any_owned_planet = {
+					has_planet_flag = ef_space_hollywood
+				}
+			}
+		}
+	}
+
+	immediate = {
+		set_planet_flag = ef_space_hollywood
+	}
+
+	# Acknowledge
+	option = {
+		name = ef_diplo.50.a
+		add_modifier = { modifier = ef_space_hollywood }
+	}
+}
+
+# Successful historical drama
+planet_event = {
+	id = ef_diplo.51
+	title = ef_diplo.51.name
+	desc = "ef_diplo.51.desc"
+	picture  = GFX_evt_ef_colony
+	location = root
+	is_triggered_only = yes
+
+	trigger = {
+		has_planet_flag = ef_space_hollywood
+		NOT = {
+			owner = { has_country_flag = ef_recent_history_drama}
+		}
+	}
+
+	immediate = {
+		owner = {
+			set_timed_country_flag = {
+				flag = ef_recent_history_drama
+				years = 15
+			}
+		}
+	}
+
+	# Acknowledge
+	option = {
+		name = ef_diplo.51.a
+		owner = {
+			add_resource = {
+				unity = 5000
+			}
+		}
+	}
+}
+
+# Invasion drama
+planet_event = {
+	id = ef_diplo.52
+	title = ef_diplo.52.name
+	desc = "ef_diplo.52.desc"
+	picture  = GFX_evt_death_from_above
+	location = root
+	is_triggered_only = yes
+
+	trigger = {
+		has_planet_flag = ef_space_hollywood
+		NOT = {
+			owner = { has_country_flag = ef_recent_invasion_drama}
+		}
+	}
+
+	immediate = {
+		owner = {
+			set_timed_country_flag = {
+				flag = ef_recent_invasion_drama
+				years = 10
+			}
+		}
+	}
+
+	# Acknowledge
+	option = {
+		name = ef_diplo.52.a
+		owner = {
+			add_resource = {
+				unity = 5000
+			}
+		}
+	}
+}
+
+# Badly written Khan expy
+planet_event = {
+	id = ef_diplo.53
+	title = ef_diplo.53.name
+	desc = "ef_diplo.53.desc"
+	picture  = GFX_evt_khan_throne_room
+	location = root
+	is_triggered_only = yes
+
+	trigger = {
+		has_planet_flag = ef_space_hollywood
+		NOT = {
+			owner = { has_country_flag = ef_recent_khan_expy}
+		}
+		any_country = {
+			OR = {
+					is_country_type = awakened_marauders
+					is_country_type = dormant_marauders
+					is_country_type = ruined_marauders
+					is_country_type = marauder_raiders
+				}
+			}
+		}
+	}
+
+	immediate = {
+		random_country = {
+			limit = {
+				OR = {
+					is_country_type = awakened_marauders
+					is_country_type = dormant_marauders
+					is_country_type = ruined_marauders
+					is_country_type = marauder_raiders
+				}
+			}
+			save_event_target_as = ef_maruader_expy_country
+		}
+		owner = {
+			set_timed_country_flag = {
+				flag = ef_recent_khan_expy
+				years = 50 # We don't want this one to pop too often
+			}
+		}
+	}
+
+	# Acknowledge
+	option = {
+		name = ef_diplo.53.a
+		owner = {
+			add_resource = {
+				unity = 5000
+			}
+		}
+	}
+}
+
+# Pre-ftl documentary
+planet_event = {
+	id = ef_diplo.54
+	title = ef_diplo.54.name
+	desc = "ef_diplo.54.desc"
+	picture  = GFX_evt_observation
+	location = root
+	is_triggered_only = yes
+
+	trigger = {
+		has_planet_flag = ef_space_hollywood
+		NOT = {
+			owner = { has_country_flag = ef_recent_preftl_documentary}
+		}
+		any_country = {
+			is_primitive = yes
+		}
+	}
+
+	immediate = {
+		random_country = {
+			limit ={
+				is_primitive = yes
+			}
+			save_event_target_as = ef_primitive_documentary_country
+		}
+		owner = {
+			set_timed_country_flag = {
+				flag = ef_recent_preftl_documentary
+				years = 25 # We don't want this one to pop too often
+			}
+		}
+	}
+
+	# Acknowledge
+	option = {
+		name = ef_diplo.54.a
+		owner = {
+			add_resource = {
+				unity = 5000
+			}
+		}
+	}
+}
