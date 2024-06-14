@@ -1,5 +1,45 @@
 namespace = ef_diplo
 
+# Diplo gatekeeper
+planet_event = {
+	id = ef_diplo.10
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		random_list = {
+			24 = {} # 1 in 25 of something happening - we don't have that many event so we have to ration them
+			1 = {
+				random_list = {
+					1 = { planet_event = { id =  ef_diplo.20 } }
+					1 = { planet_event = { id =  ef_diplo.30 } }
+					1 = { planet_event = { id =  ef_diplo.50 } }
+				}
+			}
+		}
+		# Roll for movies
+		if = {
+			limit = {
+				has_planet_flag = ef_space_hollywood
+			}
+			random_list = {
+				14 = {  }
+				# 1 in 15 chance of a movie - there's also triggers and cooldowns so will be less than this in practice
+				1 = {
+					random_list = {
+						1 = { planet_event = { id = ef_diplo.51 }}
+						1 = { planet_event = { id = ef_diplo.52 }}
+						1 = { planet_event = { id = ef_diplo.53 }}
+						1 = { planet_event = { id = ef_diplo.54 }}
+					}
+				}
+			}
+		}
+		# Refresh
+		planet_event = { id = ef_diplo.10 days = 360 }
+	}
+}
+
 # Playground of the elite
 planet_event = {
 	id = ef_diplo.20
