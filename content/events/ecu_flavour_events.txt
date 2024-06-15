@@ -23,20 +23,16 @@ planet_event = {
 					}
 				}
 			}
+			# TODO: need to think how I'm gonna handle this - sub gatekeepers or put them all here? Also could just fire the gatekeeper from here
 			switch = {
 				trigger = has_planet_flag
 				# Diplo events
 				ef_diplomacy_specialisation = {
-					random_list = {
-						95 = { } # Approximately a new event every 20 years or so. (Ideally)
-						5 = {
-							random_list = {
-								#1 = { planet_event = { id = ef_flavour.10 }}
-							}
-						}
-					}
+					# This has its own gatekeeper event
+					planet_event = { id = ef_diplo.10 }
 				}
 				# Industry events
+				# At the moment (15/06/2024) all the industry content is in the situation
 				ef_industry_specialisation = {
 					random_list = {
 						95 = { } # Approximately a new event every 20 years or so. (Ideally)
@@ -51,7 +47,7 @@ planet_event = {
 				ef_trade_specialisation = {
 					# Stock market events
 					random_list = {
-						80 = { } # Approximately a new event every 20 years or so. (Ideally)
+						80 = { } # Approximately a new event every 5 years or so. (Ideally)
 						20 = {
 							random_list = {
 								10 = { planet_event = { id = ef_trade.10 }}

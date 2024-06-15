@@ -54,6 +54,9 @@ planet_event = {
 		custom_tooltip = ef_path.1.b.tooltip
 		remove_planet_flag = ef_planet_specialisation_options_available
 		set_planet_flag = ef_industry_specialisation
+		hidden_effect = {
+			planet_event = { id = ef_industry.10 days = 360 }
+		}
 
 	}
     option = {
