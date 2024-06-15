@@ -434,7 +434,7 @@ planet_event = {
 		owner = {
 			add_resource = { energy = 5000 }
 		}
-		add_modifier = { modifier = ef_corrupt_collusion years = 5 }
+		add_modifier = { modifier = ef_corrupt_collusion years = 15 }
 		hidden_effect = {
 			random_list = {
 				40 = { planet_event = { id = ef_trade.71 days = 90 } }
@@ -449,8 +449,8 @@ planet_event = {
 		custom_tooltip = ef_trade.40.dispute_warning_tt
 		hidden_effect = {
 			random_list = {
-				50 = { planet_event = { id = ef_trade.71 days = 90 } }
-				25 = { planet_event = { id = ef_trade.50 days = 90 } }
+				25 = { planet_event = { id = ef_trade.71 days = 90 } }
+				50 = { planet_event = { id = ef_trade.50 days = 90 } }
 			}
 		}
 	}
@@ -460,11 +460,11 @@ planet_event = {
 		name = ef_trade.70.c
 		allow = {
 			owner = {
-				resource_stockpile_compare = { resource = influence value >= 50 }
+				resource_stockpile_compare = { resource = influence value >= 100 }
 			}
 		}
 		owner = {
-			add_resource = { influence = -50 }
+			add_resource = { influence = -100 }
 		}
 
 		hidden_effect = {

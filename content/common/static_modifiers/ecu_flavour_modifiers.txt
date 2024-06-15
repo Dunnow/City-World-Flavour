@@ -121,7 +121,7 @@ ef_embedded_corruption = {
 }
 
 ef_corrupt_collusion = {
-	trade_value_mult = 0.2
+	trade_value_mult = -0.2
 	planet_crime_add = 30
 	job_criminal_per_crime = 0.05
 	icon = gfx/interface/icons/planet_modifiers/pm_stellar_culture_shock.dds
