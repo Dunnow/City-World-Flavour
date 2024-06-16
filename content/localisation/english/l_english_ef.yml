@@ -72,6 +72,9 @@
   d_ef_seismic_stabilization_stations: "Seismic Stabilization Stations"
   d_ef_seismic_stabilization_stations_desc: "By securing the lower levels of the urban sprawl, we enable even grander and larger structures to be constructed on the levels above."
 
+  d_ef_ship_breaking_yards: "Ship Breaking Yards"
+  d_ef_ship_breaking_yards_desc: "Dedicated facilities and diligent workers strip old hulks of anything that could possibly be of value."
+
   d_ef_urban_parklands: "Urban Parklands"
   d_ef_urban_parklands_desc: "Swathes of land in the city centers, given over entirely to green spaces and amenities."
 
@@ -113,6 +116,11 @@
   mod_job_ef_gemcutter_add: "$job_ef_gemcutter$ Jobs"
   job_ef_gemcutter_desc: "Skilled artisans cut and engrave rare crystals into galaxy-renowned works of art."
   job_ef_gemcutter_effect_desc: "£job_ef_gemcutter£ $job_ef_gemcutter_plural$ turn £rare_crystals£ §Y$rare_crystals$§! into £trade_value£ §YTrade Value§!"
+
+  job_ef_recycler: "Recycler"
+  job_ef_recycler_plural: "Recyclers"
+  mod_job_ef_recycler_add: "$job_ef_recycler$ Jobs"
+  job_ef_recycler_desc: "Salvage and scrap can be just as lucrative as any fresh-forged factory goods."
 
   job_ef_vent_tribal: "Vent Tribal"
   job_ef_vent_tribal_plural: "Vent Tribals"
@@ -498,6 +506,10 @@
   ef_industry.30.name: "Lost and Found"
   ef_industry.30.desc: "Managing interstellar supply chains is a challenging endeavor at the best of times. It appears that one of the myriad industries on [This.GetName] unintentionally over-ordered certain rare materials required as part of their production line.\n\nWith no ability to store any more resources and with the freighter unwilling to ship them back offworld, our local authorities have found themselves the unexpected owners of a large quantity of valuable materials."
   ef_industry.30.a: "Excellent."
+
+  ef_industry.40.name: "Cradle to Grave"
+  ef_industry.40.desc: "[This.GetName] produces an enormous quantity of starship parts and replacements. Many ships regularly visit the planet throughout their lifetimes for maintenance and repair.\n\nNow certain enterprising individuals have begun to take advantage of this, stripping the old hulks of outdated vessels for parts and materials to supply the factories and shipyards of [This.GetName]."
+  ef_industry.40.a: "Interesting."
 
   ef_diplo.20.name: "Planetary Playground"
   ef_diplo.20.desc: "In recent years [This.GetName] has become increasingly popular among the galaxy's elite. Attracted by the planet's sophisticated culture, vast economic opportunities and endless activity, many of the galaxy's most prominent individuals have taken to spending their time and considerable wealth visiting [This.GetName]'s many attractions."

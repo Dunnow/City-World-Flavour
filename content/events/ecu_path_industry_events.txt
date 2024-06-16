@@ -306,3 +306,25 @@ planet_event = {
 		}
 	}
 }
+
+# Ship breaking yards
+planet_event = {
+	id = ef_industry.40
+	title = ef_industry.40.name
+	desc = ef_industry.40.desc
+	picture  = GFX_evt_cargoship_caravan
+	location = target
+	is_triggered_only = yes
+
+	trigger = {
+		not = {
+			has_deposit = d_ef_ship_breaking_yards
+		}
+	}
+
+	# Leave it be
+	option = {
+		name = ef_industry.40.a
+		add_deposit = d_ef_ship_breaking_yards
+	}
+}

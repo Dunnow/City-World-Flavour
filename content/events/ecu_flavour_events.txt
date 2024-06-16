@@ -40,6 +40,7 @@ planet_event = {
 							random_list = {
 								1 = { planet_event = { id = ef_industry.20 }}
 								1 = { planet_event = { id = ef_industry.30 }}
+								1 = { planet_event = { id = ef_industry.40 }}
 							}
 						}
 					}
