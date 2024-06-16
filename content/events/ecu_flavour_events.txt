@@ -73,6 +73,13 @@ planet_event = {
 		}
 		# Loop the event
 		planet_event = { id = ef_flavour.0 days = 360 }
+		# Planet specialisations become available
+		random_list = {
+			# ~1 in 20 chance of firing
+			95 = { }
+			# This only needs to fire once, if it fires again it will have no effect
+			5 = { planet_event = { id = ef_path.0 } }
+		}
 	}
 
 }

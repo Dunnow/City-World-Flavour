@@ -1,7 +1,6 @@
 namespace = ef_path
 
 # Specialisation gatekeeper
-# TODO: This isn't fired anywhere yet
 planet_event = {
 	id = ef_path.0
 	hide_window = yes
@@ -24,7 +23,6 @@ planet_event = {
 
 # Planet specialisation event
 # TODO: Needs ai weights
-# This doesnt trigger atm
 planet_event = {
 	id = ef_path.1
 	title = ef_path.1.name
@@ -54,10 +52,11 @@ planet_event = {
 		custom_tooltip = ef_path.1.b.tooltip
 		remove_planet_flag = ef_planet_specialisation_options_available
 		set_planet_flag = ef_industry_specialisation
+
+		# Init pollution
 		hidden_effect = {
 			planet_event = { id = ef_industry.10 days = 360 }
 		}
-
 	}
     option = {
 		name = ef_path.1.c
