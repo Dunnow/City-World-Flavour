@@ -2,7 +2,6 @@ namespace = ef_industry
 
 # TODO: Need to test these events work properly
 
-# TODO: consider removing this, not sure about it
 # Hidden event to trigger situational events. Makes probability easier to manage
 situation_event = {
 	id = ef_industry.9
@@ -240,7 +239,70 @@ situation_event = {
 		target = { add_planet_devastation = 10 }
 	}
 }
+
 # TODO: Maybe
 # Generic (and repeatable) event about quarterly reports being good or something
-# TODO: strike action event
 # Nice to have: An event about a kidnapping ring to get labour for sweatshops
+
+# Strikes, repeatable
+planet_event = {
+	id = ef_industry.20
+	title = ef_industry.20.name
+	desc = ef_industry.20.desc
+	picture  = GFX_evt_ef_protests
+	location = target
+	is_triggered_only = yes
+
+	# Leave it be
+	option = {
+		name = ef_industry.20.a
+		add_modifier = {
+			modifier = ef_labour_disputes
+			years = 5
+		}
+	}
+	# Come to an agreement
+	option = {
+		name = ef_industry.20.b
+		allow = {
+			owner = { resource_stockpile_compare = { resource = influence value >= 100 } }
+		}
+		owner = {
+			add_resource = { influence = -100 }
+		}
+	}
+	# Initiate a crackdown
+	option = {
+		name = ef_industry.20.c
+		random_list = {
+			50 = {}
+			50 = {
+				random_owned_pop = {
+					kill_pop = yes
+				}
+			}
+		}
+	}
+}
+
+# Accidental overproduction
+planet_event = {
+	id = ef_industry.30
+	title = ef_industry.30.name
+	desc = ef_industry.30.desc
+	picture  = GFX_evt_ship_offloading_cargo
+	location = target
+	is_triggered_only = yes
+
+	# Leave it be
+	option = {
+		name = ef_industry.20.a
+		owner = {
+			add_resource = {
+				exotic_gases = 500
+				rare_crystals = 500
+				volatile_motes = 500
+			}
+		}
+	}
+}

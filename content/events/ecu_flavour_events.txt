@@ -38,7 +38,8 @@ planet_event = {
 						95 = { } # Approximately a new event every 20 years or so. (Ideally)
 						5 = {
 							random_list = {
-								#1 = { planet_event = { id = ef_flavour.10 }}
+								1 = { planet_event = { id = ef_industry.20 }}
+								1 = { planet_event = { id = ef_industry.30 }}
 							}
 						}
 					}

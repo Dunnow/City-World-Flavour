@@ -281,6 +281,9 @@
   ef_space_hollywood: "Entertainment Hub"
   ef_space_hollywood_desc: "This world produces enormous quantities of galaxy-acclaimed media and diverse entertainment forms."
 
+  ef_labour_disputes: "Labor Disputes"
+  ef_labour_disputes_desc: "Large sections of this world's economy has ground to a halt amidst intense disagreements over working conditions."
+
   ef_galactic_centre_of_diplomacy: "Galactic Center of Diplomacy"
   ef_galactic_centre_of_diplomacy_desc: "§LOne of this empire's worlds has become renowned for its heritage as a center of galactic affairs and statecraft.§!"
 
@@ -485,6 +488,16 @@
   ef_industry.18.name: "Overenthusiastic Microbes"
   ef_industry.18.desc: "The waste-eating microbes that we recently spread across [Target.GetName] have been very successful at voraciously consuming the inorganic contaminants that cover the planet.\n\nUnfortunately they appear to have mutated further. The microscopic bacteria have developed a taste for the materials that make up our machinery and infrastructure too.\n\nAlthough the planetary authorities have successfully decontaminated most industrial areas of their presence, they managed to damage several important facilities across the planet."
   ef_industry.18.a: "Unfortunate"
+
+  ef_industry.20.name: "Strike Action on [This.GetName]"
+  ef_industry.20.desc: "A seemingly minor dispute in one of the manufactories on [This.GetName] has escalated into a series of planet-wide protests. Several poorly worded comments by local administrators have inflamed the situation.\n\nWith the workers downing tools and taking the opportunity to air their grievances, the planet's industry has ground to a halt. Without action to break the deadlock, this situation may persist for months."
+  ef_industry.20.a: "Nobody wants to work anymore."
+  ef_industry.20.b: "See what we can do to make reasonable accommodations."
+  ef_industry.20.c: "Disperse the protesters by force."
+
+  ef_industry.30.name: "Lost and Found"
+  ef_industry.30.desc: "Managing interstellar supply chains is a challenging endeavor at the best of times. It appears that one of the myriad industries on [This.GetName] unintentionally over-ordered certain rare materials required as part of their production line.\n\nWith no ability to store any more resources and with the freighter unwilling to ship them back offworld, our local authorities have found themselves the unexpected owners of a large quantity of valuable materials."
+  ef_industry.30.a: "Excellent."
 
   ef_diplo.20.name: "Planetary Playground"
   ef_diplo.20.desc: "In recent years [This.GetName] has become increasingly popular among the galaxy's elite. Attracted by the planet's sophisticated culture, vast economic opportunities and endless activity, many of the galaxy's most prominent individuals have taken to spending their time and considerable wealth visiting [This.GetName]'s many attractions."

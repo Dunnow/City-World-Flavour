@@ -1,25 +1,21 @@
 # Crowded Spacelanes
-# Vertical Sprawl
-# Unstable Climate
-
 ef_crowded_spacelanes ={
 	trade_value_mult = -0.2
     pop_growth_from_immigration = -0.25
-
 	icon = "gfx/interface/icons/planet_modifiers/ef_crowded_spacelanes.dds"
 	icon_frame = 3
 }
 
+# Vertical Sprawl
 ef_vertical_sprawl ={
     planet_building_build_speed_mult = -0.5
-
 	icon = "gfx/interface/icons/planet_modifiers/ef_vertical_sprawl.dds"
 	icon_frame = 3
 }
 
+# Unstable Climate
 ef_unstable_climate ={
 	pop_environment_tolerance = -0.2
-
 	icon = "gfx/interface/icons/planet_modifiers/ef_unstable_climate.dds"
 	icon_frame = 3
 }
@@ -125,6 +121,13 @@ ef_corrupt_collusion = {
 	planet_crime_add = 30
 	job_criminal_per_crime = 0.05
 	icon = gfx/interface/icons/planet_modifiers/pm_stellar_culture_shock.dds
+	icon_frame = 2
+}
+
+ef_labour_disputes = {
+	planet_jobs_worker_produces_mult = -0.25
+	planet_jobs_specialist_produces_mult = -0.1
+	icon = gfx/interface/icons/planet_modifiers/pm_slave_riots.dds
 	icon_frame = 2
 }
 
