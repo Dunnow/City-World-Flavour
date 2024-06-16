@@ -17,8 +17,8 @@ ef_situation_corpo_war = {
 		destroy_situation = this
 	}
 	start_value = 50
-	fail_category = positive
-	complete_category = negative
+	#fail_category = positive
+	#complete_category = negative
 	stages = {
 		ef_stage_corpo_skirmishes = {
 			icon = GFX_situation_stage_1
@@ -113,17 +113,17 @@ ef_situation_corpo_war = {
 	monthly_progress = {
 		base = 0
 		modifier = {
-			add = 5
+			add = 2
 			desc = ef_situation_hands_off_tt
 			current_situation_approach = ef_situation_hands_off
 		}
 		modifier = {
-			add = -2.5
+			add = -1
 			desc = ef_situation_normal_operations_tt
 			current_situation_approach = ef_situation_normal_operations
 		}
 		modifier = {
-			add = -5
+			add = -2
 			desc = ef_situation_severe_response_tt
 			current_situation_approach = ef_situation_severe_response
 		}
@@ -164,7 +164,7 @@ ef_situation_pollution = {
 	}
 	start_value = 0
 	#fail_category = positive
-	complete_category = negative
+	#complete_category = negative
 	stages = {
 		ef_stage_contamination_1 = {
 			icon = GFX_situation_stage_1

@@ -23,7 +23,7 @@ planet_event = {
 					}
 				}
 			}
-			# TODO: need to think how I'm gonna handle this - sub gatekeepers or put them all here? Also could just fire the gatekeeper from here
+			# TODO: consider revisiting how we do this, it's inconsistent
 			switch = {
 				trigger = has_planet_flag
 				# Diplo events

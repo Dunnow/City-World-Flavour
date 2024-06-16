@@ -270,6 +270,7 @@ situation_event = {
 
 	option = {
 		name = ef_trade.51.a
+		add_situation_progress = 10
 		target = {
 			add_planet_devastation = 10
 			ef_decrease_stock_market = yes
@@ -288,6 +289,7 @@ situation_event = {
 
 	option = {
 		name = ef_trade.52.a
+		add_situation_progress = 10
 		target = {
 			add_planet_devastation = 10
 			random_owned_pop = { kill_pop = yes }
@@ -307,6 +309,7 @@ situation_event = {
 
 	option = {
 		name = ef_trade.53.a
+		add_situation_progress = 10
 		target = {
 			add_modifier = { modifier = ef_financial_chaos years = 2 }
 			ef_decrease_stock_market = yes
@@ -327,6 +330,7 @@ situation_event = {
 
 	option = {
 		name = ef_trade.54.a
+		add_situation_progress = 10
 		target = {
 			add_planet_devastation = 25
 			random_owned_pop = { kill_pop = yes }
