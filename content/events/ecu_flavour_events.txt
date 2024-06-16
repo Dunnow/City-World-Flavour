@@ -23,9 +23,65 @@ planet_event = {
 					}
 				}
 			}
+			# TODO: consider revisiting how we do this, it's inconsistent
+			switch = {
+				trigger = has_planet_flag
+				# Diplo events
+				ef_diplomacy_specialisation = {
+					# This has its own gatekeeper event
+					planet_event = { id = ef_diplo.10 }
+				}
+				# Industry events
+				# At the moment (15/06/2024) all the industry content is in the situation
+				ef_industry_specialisation = {
+					random_list = {
+						95 = { } # Approximately a new event every 20 years or so. (Ideally)
+						5 = {
+							random_list = {
+								1 = { planet_event = { id = ef_industry.20 }}
+								1 = { planet_event = { id = ef_industry.30 }}
+								1 = { planet_event = { id = ef_industry.40 }}
+							}
+						}
+					}
+				}
+				# Trade events
+				ef_trade_specialisation = {
+					# Stock market events
+					random_list = {
+						80 = { } # Approximately a new event every 5 years or so. (Ideally)
+						20 = {
+							random_list = {
+								10 = { planet_event = { id = ef_trade.10 }}
+								10 = { planet_event = { id = ef_trade.15 }}
+							}
+						}
+					}
+					# Flavour events
+					random_list = {
+						95 = { } # Approximately a new event every 20 years or so. (Ideally)
+						5 = {
+							random_list = {
+								1 = { planet_event = { id = ef_trade.20 }}
+								1 = { planet_event = { id = ef_trade.30 }}
+								1 = { planet_event = { id = ef_trade.40 }}
+								1 = { planet_event = { id = ef_trade.60 }}
+								1 = { planet_event = { id = ef_trade.70 }}
+							}
+						}
+					}
+				}
+			}
 		}
 		# Loop the event
 		planet_event = { id = ef_flavour.0 days = 360 }
+		# Planet specialisations become available
+		random_list = {
+			# ~1 in 20 chance of firing
+			95 = { }
+			# This only needs to fire once, if it fires again it will have no effect
+			5 = { planet_event = { id = ef_path.0 } }
+		}
 	}
 
 }
@@ -496,6 +552,30 @@ planet_event = {
 		add_modifier = { modifier = ef_ai_insight years = 30 }
 	}
 }
+
+# Property bought up by rivals
+# TODO
+#planet_event = {
+#	id = ef_flavour.70
+#	title = ef_flavour.70.name
+#	desc = "ef_flavour.70.desc"
+#	picture  = GFX_evt_bribery
+#	location = root
+#	is_triggered_only = yes
+#
+#	# Scrap it
+#	option = {
+#		name = ef_flavour.70.a
+#		owner = {
+#			add_resource = { alloys = 1000 }
+#		}
+#
+#	}
+#	# Use it
+#	option = {
+#		name = ef_flavour.70.b
+#	}
+#}
 
 # Archaeological Dig # TODO
 #planet_event = {
