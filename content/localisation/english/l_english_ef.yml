@@ -357,6 +357,7 @@
   ef_path.1.c.tooltip: "Unlocks the §BCommerce§! special effects\n\n§RThis decision is permanent§!"
   ef_path.1.d: "Not at this time."
   ef_path.1.d.tooltip: "§HWe will have the ability to reconsider at a later date.§!"
+  ef_already_specialised_tt: "Only one specialization may be chosen"
 
   ef_trade.10.name: "Lucrative Outcomes"
   ef_trade.10.desc: "A recent uptick in economic activity has been reflected on the stock markets of [This.GetName]. Confidence has risen and many investors are enjoying a healthy return."

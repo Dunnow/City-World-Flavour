@@ -37,18 +37,38 @@ planet_event = {
 
 	option = {
 		name = ef_path.1.a
-		allow = { owner = { resource_stockpile_compare = { resource = influence value >= 500 } } }
-		owner = { add_resource = { influence = -500 } }
+		allow = {
+			owner = { resource_stockpile_compare = { resource = influence value >= 500 } }
+			custom_tooltip_fail = {
+				text = ef_already_specialised_tt
+				NOR = {
+					has_planet_flag = ef_diplomacy_specialisation
+					has_planet_flag = ef_industry_specialisation
+					has_planet_flag = ef_trade_specialisation
+				}
+			}
+		}
 
+		owner = { add_resource = { influence = -500 } }
 		custom_tooltip = ef_path.1.a.tooltip
 		remove_planet_flag = ef_planet_specialisation_options_available
 		set_planet_flag = ef_diplomacy_specialisation
 	}
     option = {
 		name = ef_path.1.b
-		allow = { owner = { resource_stockpile_compare = { resource = influence value >= 500 } } }
-		owner = { add_resource = { influence = -500 } }
+		allow = {
+			owner = { resource_stockpile_compare = { resource = influence value >= 500 } }
+			custom_tooltip_fail = {
+				text = ef_already_specialised_tt
+				NOR = {
+					has_planet_flag = ef_diplomacy_specialisation
+					has_planet_flag = ef_industry_specialisation
+					has_planet_flag = ef_trade_specialisation
+				}
+			}
+		}
 
+		owner = { add_resource = { influence = -500 } }
 		custom_tooltip = ef_path.1.b.tooltip
 		remove_planet_flag = ef_planet_specialisation_options_available
 		set_planet_flag = ef_industry_specialisation
@@ -60,9 +80,19 @@ planet_event = {
 	}
     option = {
 		name = ef_path.1.c
-		allow = { owner = { resource_stockpile_compare = { resource = influence value >= 500 } } }
-		owner = { add_resource = { influence = -500 } }
+		allow = {
+			owner = { resource_stockpile_compare = { resource = influence value >= 500 } }
+			custom_tooltip_fail = {
+				text = ef_already_specialised_tt
+				NOR = {
+					has_planet_flag = ef_diplomacy_specialisation
+					has_planet_flag = ef_industry_specialisation
+					has_planet_flag = ef_trade_specialisation
+				}
+			}
+		}
 
+		owner = { add_resource = { influence = -500 } }
 		custom_tooltip = ef_path.1.c.tooltip
 		remove_planet_flag = ef_planet_specialisation_options_available
 		set_planet_flag = ef_trade_specialisation
