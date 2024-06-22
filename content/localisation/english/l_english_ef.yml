@@ -36,8 +36,7 @@
   decision_ef_prepare_diplomatic_quarter_desc: "A large portion of our cityscape shall be dedicated to the embassies and ministries of intergalactic affairs."
 
   decision_ef_choose_path: "Choose a Planetary Specialization"
-  # TODO
-  decision_ef_choose_path_effects_short: "TODO"
+  decision_ef_choose_path_effects_short: "Enables us to pick a specialized path for this planet."
   decision_ef_choose_path_desc: "Embark on a program of investment and construction to focus this world's output."
 
   decision_ef_revise_industrial_policy: "Revise Industrial Environmental Policy"
