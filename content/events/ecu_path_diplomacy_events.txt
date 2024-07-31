@@ -49,6 +49,14 @@ planet_event = {
 	location = root
 	is_triggered_only = yes
 
+	trigger = {
+		not = { has_planet_flag = ef_recent_playground_of_the_elite}
+	}
+
+	immediate = {
+		set_timed_planet_flag = { flag = ef_recent_playground_of_the_elite years = 25 }
+	}
+
 	# Acknowledge
 	option = {
 		name = ef_diplo.20.a
