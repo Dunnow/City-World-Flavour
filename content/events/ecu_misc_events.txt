@@ -1,0 +1,137 @@
+namespace = ef_misc
+
+planet_event = {
+    id = ef_misc.1
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        not = { has_planet_flag = ef_recently_increased_urban_level}
+        num_pops >= 100
+    }
+
+    immediate = {
+        if = {
+            limit = {
+                num_pops >= 100
+                NOR = {
+                    has_modifier = ef_urban_level_1
+                    has_modifier = ef_urban_level_2
+                    has_modifier = ef_urban_level_3
+                }
+            }
+            planet_event = { id = ef_misc.2 }
+        }
+        if = {
+            limit = {
+                num_pops >= 125
+                has_modifier = ef_urban_level_1
+            }
+            planet_event = { id = ef_misc.3 }
+        }
+        if = {
+            limit = {
+                num_pops >= 150
+                has_modifier = ef_urban_level_2
+            }
+            planet_event = { id = ef_misc.4 }
+        }
+        if = {
+            limit = {
+                num_pops >= 175
+                has_modifier = ef_urban_level_3
+            }
+            # Offer to upgrade to ecu
+            planet_event = { id = ef_misc.5 }
+        }
+    }
+}
+
+# Level one urbanisation
+planet_event = {
+    id = ef_misc.2
+    title = ef_misc.2.name
+    desc = ef_misc.2.desc
+	picture  = GFX_evt_metropolis
+	location = root
+	is_triggered_only = yes
+
+    option = {
+        name = ef_misc.2.a
+        add_modifier = { modifier = ef_urban_level_1 }
+        hidden_effect = {
+            set_timed_planet_flag = { flag = ef_recently_increased_urban_level years = 15 }
+        }
+    }
+}
+
+# Level two urbanisation
+planet_event = {
+    id = ef_misc.3
+    title = ef_misc.3.name
+    desc = ef_misc.3.desc
+	picture  = GFX_evt_metropolis
+	location = root
+	is_triggered_only = yes
+
+    option = {
+        name = ef_misc.3.a
+        remove_modifier = ef_urban_level_1
+        add_modifier = { modifier = ef_urban_level_2 }
+        hidden_effect = {
+            set_timed_planet_flag = { flag = ef_recently_increased_urban_level years = 15 }
+        }
+    }
+}
+
+planet_event = {
+    id = ef_misc.4
+    title = ef_misc.4.name
+    desc = ef_misc.4.desc
+	picture  = GFX_evt_metropolis
+	location = root
+	is_triggered_only = yes
+
+    option = {
+        name = ef_misc.4.a
+        remove_modifier = ef_urban_level_2
+        add_modifier = { modifier = ef_urban_level_3 }
+        set_timed_planet_flag = { flag = ef_recently_increased_urban_level years = 15 }
+    }
+}
+
+# Offer to turn planet into ecu
+planet_event = {
+    id = ef_misc.5
+    title = ef_misc.5.name
+    desc = ef_misc.5.desc
+	picture  = GFX_evt_city_planet
+	location = root
+	is_triggered_only = yes
+
+    option = {
+        name = ef_misc.5.a
+
+        hidden_effect = {
+            set_timed_planet_flag = { flag = ef_recently_increased_urban_level years = 15 }
+        }
+    }
+}
+
+# Offer to turn planet into ecu
+planet_event = {
+    id = ef_misc.6
+    title = ef_misc.6.name
+    desc = ef_misc.6.desc
+	picture  = GFX_evt_city_planet
+	location = root
+	is_triggered_only = yes
+
+    option = {
+        name = ef_misc.6.a
+
+        hidden_effect = {
+            set_timed_planet_flag = { flag = ef_recently_increased_urban_level years = 15 }
+        }
+    }
+}

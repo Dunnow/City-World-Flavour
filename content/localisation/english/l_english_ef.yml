@@ -291,6 +291,15 @@
   ef_labour_disputes: "Labor Disputes"
   ef_labour_disputes_desc: "Large sections of this world's economy has ground to a halt amidst intense disagreements over working conditions."
 
+  ef_urban_level_1: "Major Urbanization"
+  ef_urban_level_1_desc: "TODO"
+
+  ef_urban_level_2: "Massive Urbanization"
+  ef_urban_level_2_desc: "TODO"
+
+  ef_urban_level_3: "Planet-Wide Urbanization"
+  ef_urban_level_3_desc: "TODO"
+
   ef_galactic_centre_of_diplomacy: "Galactic Center of Diplomacy"
   ef_galactic_centre_of_diplomacy_desc: "§LOne of this empire's worlds has become renowned for its heritage as a center of galactic affairs and statecraft.§!"
 
@@ -542,3 +551,23 @@
   ef_diplo.54.name: "Life Among the Primitives"
   ef_diplo.54.desc: "A recent holovid account from [This.GetName] of the pre-ftl §Y[event_target:ef_primitive_documentary_country.GetName]§! on §Y[event_target:ef_primitive_documentary_country.home_planet.GetName]§! has been developing a devoted following across the galaxy.\n\nAcclaimed as a 'breathtaking insight' into the lives of primitive races, this has helped develop [This.GetName]'s reputation as a solid and reputable source of information - excellent for the §Y[This.Owner.GetName]'s§! soft power across the galaxy."
   ef_diplo.54.a: "Good."
+
+  ef_misc.2.name: "TODO"
+  ef_misc.2.desc: "TODO: LEVEL 1"
+  ef_misc.2.a: "TODO"
+
+  ef_misc.3.name: "TODO"
+  ef_misc.3.desc: "TODO: LEVEL 2"
+  ef_misc.3.a: "TODO"
+
+  ef_misc.4.name: "TODO"
+  ef_misc.4.desc: "TODO: LEVEL 3"
+  ef_misc.4.a: "TODO"
+
+  ef_misc.5.name: "TODO"
+  ef_misc.5.desc: "TODO: ECU"
+  ef_misc.5.a: "TODO"
+
+  ef_misc.6.name: "TODO"
+  ef_misc.6.desc: "Over the past decades [This.GetName] has experienced remarkable growth in both population and the size of its cities. With the planet's surface all but covered in urban sprawl, [This.GetName] has gradually become a true ecumenopolis."
+  ef_misc.6.a: "Remarkable"

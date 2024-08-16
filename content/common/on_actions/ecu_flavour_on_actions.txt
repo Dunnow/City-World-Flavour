@@ -9,3 +9,9 @@ on_game_start = {
 		ef_flavour.2 # Set the flag to show the mod is active
 	}
 }
+
+on_colony_yearly_pulse = {
+	events = {
+		ef_misc.1
+	}
+}
