@@ -9,6 +9,7 @@ ef_is_valid_for_urbanisation = {
     ef_is_ecu = no
     NOT = { is_planet_class = pc_relic}
     owner = {
+        is_country_type = default
         NOR = {
             is_gestalt = yes
             is_hive_empire = yes
