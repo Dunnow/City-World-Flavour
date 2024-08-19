@@ -2,3 +2,19 @@
 ef_is_ecu = {
     is_planet_class = pc_city
 }
+
+# Planet scope
+ef_is_valid_for_urbanisation = {
+    is_artificial = no
+    ef_is_ecu = no
+    NOT = { is_planet_class = pc_relic}
+    owner = {
+        NOR = {
+            is_gestalt = yes
+            is_hive_empire = yes
+            is_machine_empire = yes
+            # The idea of a virtual empire having sprawling settlements is a bit silly.
+            is_virtual_empire = yes
+        }
+    }
+}

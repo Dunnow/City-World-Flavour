@@ -8,6 +8,7 @@ planet_event = {
     trigger = {
         not = { has_planet_flag = ef_recently_increased_urban_level}
         num_pops >= 100
+        ef_is_valid_for_urbanisation = yes
     }
 
     immediate = {
