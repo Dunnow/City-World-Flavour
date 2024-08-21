@@ -11,6 +11,7 @@ ef_is_valid_for_urbanisation = {
     owner = {
         is_country_type = default
         NOR = {
+            has_valid_civic = civic_agrarian_idyll
             is_gestalt = yes
             is_hive_empire = yes
             is_machine_empire = yes
