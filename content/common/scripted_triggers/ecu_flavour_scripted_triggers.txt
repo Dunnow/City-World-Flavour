@@ -20,3 +20,13 @@ ef_is_valid_for_urbanisation = {
         }
     }
 }
+ef_has_population_density = {
+    #count_owned_pops = {
+    #    count >= @\[$DENSITY$ * ef_planet_size]
+    #}
+    check_variable_arithmetic = {
+        which = trigger:planet_size
+        multiply = $DENSITY$
+        value <= trigger:count_owned_pop
+    }
+}

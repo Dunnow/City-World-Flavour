@@ -5,16 +5,21 @@ planet_event = {
     hide_window = yes
     is_triggered_only = yes
 
+    # Density 6 gives us level 1
+    # Density 7 gives us level 2
+    # Density 8 gives us ecu city textures. (level 3)
+    # Density 9 gives us an ecu
+
     trigger = {
         not = { has_planet_flag = ef_recently_increased_urban_level}
-        num_pops >= 100
+        ef_has_population_density = { DENSITY = 6 }
         ef_is_valid_for_urbanisation = yes
     }
 
     immediate = {
         if = {
             limit = {
-                num_pops >= 100
+                ef_has_population_density = { DENSITY = 6 }
                 NOR = {
                     has_modifier = ef_urban_level_1
                     has_modifier = ef_urban_level_2
@@ -25,21 +30,21 @@ planet_event = {
         }
         if = {
             limit = {
-                num_pops >= 125
+                ef_has_population_density = { DENSITY = 7 }
                 has_modifier = ef_urban_level_1
             }
             planet_event = { id = ef_misc.3 }
         }
         if = {
             limit = {
-                num_pops >= 150
+                ef_has_population_density = { DENSITY = 8 }
                 has_modifier = ef_urban_level_2
             }
             planet_event = { id = ef_misc.4 }
         }
         if = {
             limit = {
-                num_pops >= 175
+                ef_has_population_density = { DENSITY = 9 }
                 has_modifier = ef_urban_level_3
             }
             # Offer to upgrade to ecu
@@ -53,7 +58,7 @@ planet_event = {
     id = ef_misc.2
     title = ef_misc.2.name
     desc = ef_misc.2.desc
-	picture  = GFX_evt_metropolis
+	picture  = GFX_evt_busy_spaceport
 	location = root
 	is_triggered_only = yes
 
@@ -71,7 +76,7 @@ planet_event = {
     id = ef_misc.3
     title = ef_misc.3.name
     desc = ef_misc.3.desc
-	picture  = GFX_evt_metropolis
+	picture  = GFX_evt_ef_towers
 	location = root
 	is_triggered_only = yes
 
@@ -112,10 +117,17 @@ planet_event = {
 
     option = {
         name = ef_misc.5.a
-
+        custom_tooltip = ef_misc.5.a.tooltip
         hidden_effect = {
-            set_timed_planet_flag = { flag = ef_recently_increased_urban_level years = 15 }
+            ef_grow_ecu = yes
         }
+    }
+    option = {
+        name = ef_misc.5.b
+        hidden_effect = {
+            set_planet_flag = ef_rejected_ecu_upgrade
+        }
+        ai_chance = { base = 0 }
     }
 }
 
