@@ -29,4 +29,9 @@ spriteTypes = {
 		texturefile = gfx/event_pictures/ef_protest.dds
 		masking_texture = gfx/interface/situation_log/event_mask.dds
 	}
+	spriteType = {
+		name = GFX_evt_ef_towers
+		texturefile = gfx/event_pictures/ef_towers.dds
+		masking_texture = gfx/interface/situation_log/event_mask.dds
+	}
 }
