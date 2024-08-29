@@ -24,6 +24,6 @@ ef_has_population_density = {
     check_variable_arithmetic = {
         which = trigger:planet_size
         multiply = $DENSITY$
-        value <= trigger:count_owned_pops
+        value <= trigger:count_owned_pop
     }
 }
