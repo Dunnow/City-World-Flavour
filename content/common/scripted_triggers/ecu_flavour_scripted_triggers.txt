@@ -20,10 +20,21 @@ ef_is_valid_for_urbanisation = {
         }
     }
 }
+
+# Planet scope
 ef_has_population_density = {
     check_variable_arithmetic = {
         which = trigger:planet_size
         multiply = $DENSITY$
         value <= trigger:count_owned_pop
+    }
+}
+
+# Planet scope
+ef_is_specialised_ecu = {
+    OR = {
+        has_planet_flag = ef_diplomacy_specialisation
+        has_planet_flag = ef_industry_specialisation
+        has_planet_flag = ef_trade_specialisation
     }
 }

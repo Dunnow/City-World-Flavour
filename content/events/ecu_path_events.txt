@@ -9,9 +9,7 @@ planet_event = {
 	trigger = {
 		NOR = {
 			has_planet_flag = ef_planet_specialisation_options_available
-			has_planet_flag = ef_diplomacy_specialisation
-			has_planet_flag = ef_industry_specialisation
-			has_planet_flag = ef_trade_specialisation
+			ef_is_specialised_ecu = yes
 		}
 	}
 
@@ -41,11 +39,7 @@ planet_event = {
 			owner = { resource_stockpile_compare = { resource = influence value >= 500 } }
 			custom_tooltip_fail = {
 				text = ef_already_specialised_tt
-				NOR = {
-					has_planet_flag = ef_diplomacy_specialisation
-					has_planet_flag = ef_industry_specialisation
-					has_planet_flag = ef_trade_specialisation
-				}
+				ef_is_specialised_ecu = no
 			}
 		}
 
@@ -60,11 +54,7 @@ planet_event = {
 			owner = { resource_stockpile_compare = { resource = influence value >= 500 } }
 			custom_tooltip_fail = {
 				text = ef_already_specialised_tt
-				NOR = {
-					has_planet_flag = ef_diplomacy_specialisation
-					has_planet_flag = ef_industry_specialisation
-					has_planet_flag = ef_trade_specialisation
-				}
+				ef_is_specialised_ecu = no
 			}
 		}
 
@@ -84,11 +74,7 @@ planet_event = {
 			owner = { resource_stockpile_compare = { resource = influence value >= 500 } }
 			custom_tooltip_fail = {
 				text = ef_already_specialised_tt
-				NOR = {
-					has_planet_flag = ef_diplomacy_specialisation
-					has_planet_flag = ef_industry_specialisation
-					has_planet_flag = ef_trade_specialisation
-				}
+				ef_is_specialised_ecu = no
 			}
 		}
 
