@@ -209,6 +209,34 @@ ef_space_hollywood = {
 	icon_frame = 1
 }
 
+# Urbanization modifiers
+# 100 pops
+ef_urban_level_1 = {
+	pop_growth_speed = 0.05
+	planet_jobs_produces_mult = 0.05
+	icon = gfx/interface/icons/planet_modifiers/ef_level_one_urban.dds
+	icon_frame = 1
+}
+
+# 150 pops
+ef_urban_level_2 = {
+	pop_growth_speed = 0.05
+	planet_pop_assembly_mult = 0.05
+	planet_jobs_produces_mult = 0.1
+	icon = gfx/interface/icons/planet_modifiers/ef_level_two_urban.dds
+	icon_frame = 1
+}
+
+# 200 pops
+ef_urban_level_3 = {
+	pop_growth_speed = 0.1
+	planet_pop_assembly_mult = 0.1
+	planet_jobs_produces_mult = 0.15
+	icon = gfx/interface/icons/planet_modifiers/ef_level_three_urban.dds
+	icon_frame = 1
+}
+# After 15 years with level three we offer to turn it into an ecu
+
 # Country modifier
 ef_galactic_centre_of_diplomacy = {
 	diplo_weight_mult = 0.15

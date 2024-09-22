@@ -291,6 +291,15 @@
   ef_labour_disputes: "Labor Disputes"
   ef_labour_disputes_desc: "Large sections of this world's economy has ground to a halt amidst intense disagreements over working conditions."
 
+  ef_urban_level_1: "Major Urbanization"
+  ef_urban_level_1_desc: "This planet is densely populated and hosts several major settlements."
+
+  ef_urban_level_2: "Massive Urbanization"
+  ef_urban_level_2_desc: "This planet is very densely populated, with several enormous settlements and a large population."
+
+  ef_urban_level_3: "Planet-Wide Urbanization"
+  ef_urban_level_3_desc: "This planet is heavily urbanized with massive settlements and major arcologies spread across the surface. It is well on its way to becoming a true ecumenopolis."
+
   ef_galactic_centre_of_diplomacy: "Galactic Center of Diplomacy"
   ef_galactic_centre_of_diplomacy_desc: "§LOne of this empire's worlds has become renowned for its heritage as a center of galactic affairs and statecraft.§!"
 
@@ -542,3 +551,29 @@
   ef_diplo.54.name: "Life Among the Primitives"
   ef_diplo.54.desc: "A recent holovid account from [This.GetName] of the pre-ftl §Y[event_target:ef_primitive_documentary_country.GetName]§! on §Y[event_target:ef_primitive_documentary_country.home_planet.GetName]§! has been developing a devoted following across the galaxy.\n\nAcclaimed as a 'breathtaking insight' into the lives of primitive races, this has helped develop [This.GetName]'s reputation as a solid and reputable source of information - excellent for the §Y[This.Owner.GetName]'s§! soft power across the galaxy."
   ef_diplo.54.a: "Good."
+
+  ef_misc.2.name: "Urban Evolution"
+  ef_misc.2.desc: "As the inhabitants of [This.GetName] continue to thrive, the world's population has grown to unprecedented levels. \n\nThe planet's surface is dotted with the signs of urban development, with cities, industrial zones and countless smaller settlements scattered across every continent.\n\nAlthough a long way from a true city-world, every part of [This.GetName] has been indelibly touched by [This.owner_main_species.GetAdj] civilization."
+  ef_misc.2.a: "A sign of progress."
+
+  ef_misc.3.name: "Metropolis Ascendant"
+  ef_misc.3.desc: "Our colony world of [This.GetName] has grown to a truly remarkable level. The planet is host to enormous cities housing countless numbers of our citizens in skyscraper and massive arcologies.\n\nWith its massive population and dense urban landscapes, the potential for [This.GetName]'s future seems almost limitless."
+  ef_misc.3.a: "Excellent"
+
+  ef_misc.4.name: "The Teeming Masses"
+  ef_misc.4.desc: "The population of [This.GetName] has grown to enormous levels. Huge swathes of the planet are covered with urban sprawl to house its massive population.\n\nThe planet's cities have grown like mushrooms across the world. The biggest of [This.GetName]'s cities could be mistaken for the core of an ecumenopolis, with nothing but urban landscapes in every direction."
+  ef_misc.4.a: "Remarkable"
+
+  ef_misc.5.name: "A True World City"
+  ef_misc.5.desc: "After [ef_get_length_of_habitation] of hosting a sophisticated spacefaring civilization, [This.GetName] has organically grown to house countless millions of citizens.\n\nWith enormous sprawling settlements that cover most of the planet's habitable surface, it has more in common with the true ecumenopolis than the untouched natural world that it once was.\n\nWith so much of the planet already developed and inhabited, it would only take a modest effort to transform it into a true city-world."
+  ef_misc.5.a: "We shall take the efforts to make [This.GetName] an §H$pc_city$§!."
+  ef_misc.5.a.tooltip: "[This.GetName] will become a §H$pc_city$§!."
+  ef_misc.5.b: "No, we should not be so hasty."
+
+  ef_centuries: "centuries"
+  ef_decades: "decades"
+  ef_years: "years"
+
+  ef_misc.6.name: "[This.GetName] Urbanized"
+  ef_misc.6.desc: "After generations of steady growth and remarkable expansion, the cities of [This.GetName] have grown to house a truly enormous population.\n\nWith the planet's surface all but covered in urban sprawl the world has gradually become a true ecumenopolis.\n\nThe planet wide city now hums with activity from its brimming population and the clamor of construction fills the streets."
+  ef_misc.6.a: "Remarkable"
