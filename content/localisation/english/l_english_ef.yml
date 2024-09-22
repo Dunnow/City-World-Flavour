@@ -368,7 +368,7 @@
 
   ef_path.1.name: "[This.GetName] at the Crossroads"
   ef_path.1.desc: "As [This.GetName] grows in size and influence, more and more talent is being attracted to the bustling world. We have a unique opportunity to reap the benefits of specialisation by encouraging a particular path of development.\n\nAs one of the galaxy's greatest population centres, [This.GetName] naturally has a great deal of cultural weight. With deliberate outreach programs and sponsorship, we can develop the planet's reputation as a centre of culture and politics in the galaxy.\n\nAs a major source of labour and already well integrated into our logistics networks, [This.GetName] has enormous potential as a manufacturing hub. All it requries is a relatively minor investment.\n\nThe tremendous consumer markets of [This.GetName] have also drawn the attention of numerous conglomerates, who are eager to get their [This.Owner.GetSpeciesHandName]s on the planet's lucrative trade routes."
-  ef_path.1.a: "[This.GetName] has the potential to become a centre of galactic affairs."
+  ef_path.1.a: "[This.GetName] has the potential to become a center of galactic affairs."
   ef_path.1.a.tooltip: "Unlocks the §BPolitics§! special effects\n\n§RThis decision is permanent§!"
   ef_path.1.b: "Industrial might will bring us prosperity."
   ef_path.1.b.tooltip: "Unlocks the §BIndustry§! special effects\n\n§RThis decision is permanent§!"
