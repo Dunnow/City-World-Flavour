@@ -5,5 +5,5 @@ tags={
 }
 picture="thumbnail.png"
 name="City World Flavour"
-supported_version="v3.13.0"
+supported_version="v3.14.*"
 remote_file_id="3051471269"
