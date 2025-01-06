@@ -27,3 +27,11 @@ ef_has_population_density = {
         value <= trigger:count_owned_pop
     }
 }
+
+ef_check_urban_fraction = {
+    check_variable_arithmetic = {
+        which = value:ef_urban_district_count
+        divide = value:ef_max_districts_count
+        value >= $FRACTION$
+    }
+}

@@ -14,6 +14,7 @@ planet_event = {
         not = { has_planet_flag = ef_recently_increased_urban_level}
         ef_has_population_density = { DENSITY = 6 }
         ef_is_valid_for_urbanisation = yes
+        ef_check_urban_fraction=  { FRACTION = 0.5}
     }
 
     immediate = {

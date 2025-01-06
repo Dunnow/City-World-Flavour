@@ -6,7 +6,6 @@ decision_ef_choose_path = {
 		has_planet_flag = ef_planet_specialisation_options_available
 	}
 
-
 	effect = {
 		custom_tooltip = decision_ef_choose_path_effects_short
 		hidden_effect = {

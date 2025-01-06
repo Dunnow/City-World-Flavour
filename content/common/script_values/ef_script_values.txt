@@ -1,0 +1,129 @@
+# What num of the planet's district slots are urban districts. Doesn't support habs
+ef_urban_district_count = {
+	base = 0
+	complex_trigger_modifier = {
+		trigger = num_districts
+		parameters = {
+			type = district_arcology_housing
+		}
+		mode = add
+		mult = 1
+	}
+	complex_trigger_modifier = {
+		trigger = num_districts
+		parameters = {
+			type = district_rw_city
+		}
+		mode = add
+		mult = 1
+	}
+	complex_trigger_modifier = {
+		trigger = num_districts
+		parameters = {
+			type = district_slave
+		}
+		mode = add
+		mult = 1
+	}
+	complex_trigger_modifier = {
+		trigger = num_districts
+		parameters = {
+			type = district_nexus
+		}
+		mode = add
+		mult = 1
+	}
+	complex_trigger_modifier = {
+		trigger = num_districts
+		parameters = {
+			type = district_hive
+		}
+		mode = add
+		mult = 1
+	}
+	complex_trigger_modifier = {
+		trigger = num_districts
+		parameters = {
+			type = district_city
+		}
+		mode = add
+		mult = 1
+	}
+	complex_trigger_modifier = {
+		trigger = num_districts
+		parameters = {
+			type = district_prison
+		}
+		mode = add
+		mult = 1
+	}
+	complex_trigger_modifier = {
+		trigger = num_districts
+		parameters = {
+			type = district_resort
+		}
+		mode = add
+		mult = 1
+	}
+	# Non-city Urbans
+	complex_trigger_modifier = {
+		trigger = num_districts
+		parameters = {
+			type = district_industrial
+		}
+		mode = add
+		mult = 1
+	}
+	complex_trigger_modifier = {
+		trigger = num_districts
+		parameters = {
+			type = district_prison_industrial
+		}
+		mode = add
+		mult = 1
+	}
+	complex_trigger_modifier = {
+		trigger = num_districts
+		parameters = {
+			type = district_battle_thrall
+		}
+		mode = add
+		mult = 1
+	}
+	complex_trigger_modifier = {
+		trigger = num_districts
+		parameters = {
+			type = district_srw_commercial
+		}
+		mode = add
+		mult = 1
+	}
+	complex_trigger_modifier = {
+		trigger = num_districts
+		parameters = {
+			type = district_machine_coordination
+		}
+		mode = add
+		mult = 1
+	}
+}
+
+ef_max_districts_count = {
+	base = 0
+	complex_trigger_modifier = {
+		trigger = num_districts
+		parameters = { type = any }
+		mode = add
+		mult = 1
+	}
+	complex_trigger_modifier = {
+		trigger = free_district_slots
+		mode = add
+		mult = 1
+	}
+	complex_trigger_modifier = {
+		trigger = num_uncleared_blockers
+		mode = add
+		mult = 1
+	}
+}
