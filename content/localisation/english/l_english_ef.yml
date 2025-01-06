@@ -118,6 +118,11 @@
   job_ef_gemcutter_desc: "Skilled artisans cut and engrave rare crystals into galaxy-renowned works of art."
   job_ef_gemcutter_effect_desc: "£job_ef_gemcutter£ $job_ef_gemcutter_plural$ turn £rare_crystals£ §Y$rare_crystals$§! into £trade_value£ §YTrade Value§!"
 
+  job_ef_bounty_hunter: "Bounty Hunter"
+  job_ef_bounty_hunter_plural: "Bounty Hunters"
+  mod_job_ef_bounty_hunter_add: "$job_ef_bounty_hunter$ Jobs"
+  job_ef_bounty_hunter_desc: "Sometimes getting a job done requires actions outside the law."
+
   job_ef_recycler: "Recycler"
   job_ef_recycler_plural: "Recyclers"
   mod_job_ef_recycler_add: "$job_ef_recycler$ Jobs"
@@ -302,6 +307,9 @@
   ef_urban_level_3: "Planet-Wide Urbanization"
   ef_urban_level_3_desc: "This planet is heavily urbanized with massive settlements and major arcologies spread across the surface. It is well on its way to becoming a true ecumenopolis."
 
+  ef_bounty_hunters: "Bounty Hunters"
+  ef_bounty_hunters_desc: "This planet is host to a well developed and sophisticated network of guns for hire."
+
   ef_galactic_centre_of_diplomacy: "Galactic Center of Diplomacy"
   ef_galactic_centre_of_diplomacy_desc: "§LOne of this empire's worlds has become renowned for its heritage as a center of galactic affairs and statecraft.§!"
 
@@ -368,14 +376,19 @@
   ef_flavour.62.a: "Scrap it."
   ef_flavour.62.b: "Allow our researchers to examine it."
 
+  ef_flavour.70.name: "TODO"
+  ef_flavour.70.desc: "TODO"
+  ef_flavour.70.a: "TODO"
+  ef_flavour.70.b: "TODO"
+
   ef_flavour.80.name: "Traces in the Dust"
   ef_flavour.80.desc: "A small prospecting group operating out of [This.GetName] claims to have discovered "
   ef_flavour.80.a: "Dispatch an expedition to investigate these claims."
   ef_flavour.80.b: "Fascinating, but not really our concern."
   ef_flavour.80.c: "How charming. Sell it."
-
+  
   ef_path.1.name: "[This.GetName] at the Crossroads"
-  ef_path.1.desc: "As [This.GetName] grows in size and influence, more and more talent is being attracted to the bustling world. We have a unique opportunity to reap the benefits of specialisation by encouraging a particular path of development.\n\nAs one of the galaxy's greatest population centres, [This.GetName] naturally has a great deal of cultural weight. With deliberate outreach programs and sponsorship, we can develop the planet's reputation as a centre of culture and politics in the galaxy.\n\nAs a major source of labour and already well integrated into our logistics networks, [This.GetName] has enormous potential as a manufacturing hub. All it requries is a relatively minor investment.\n\nThe tremendous consumer markets of [This.GetName] have also drawn the attention of numerous conglomerates, who are eager to get their [This.Owner.GetSpeciesHandName]s on the planet's lucrative trade routes."
+  ef_path.1.desc: "As [This.GetName] grows in size and influence, more and more talent is being attracted to the bustling world. We have a unique opportunity to reap the benefits of specialization by encouraging a particular path of development.\n\nAs one of the galaxy's greatest population centres, [This.GetName] naturally has a great deal of cultural weight. With deliberate outreach programs and sponsorship, we can develop the planet's reputation as a centre of culture and politics in the galaxy.\n\nAs a major source of labour and already well integrated into our logistics networks, [This.GetName] has enormous potential as a manufacturing hub. All it requries is a relatively minor investment.\n\nThe tremendous consumer markets of [This.GetName] have also drawn the attention of numerous conglomerates, who are eager to get their [This.Owner.GetSpeciesHandName]s on the planet's lucrative trade routes."
   ef_path.1.a: "[This.GetName] has the potential to become a centre of galactic affairs."
   ef_path.1.a.tooltip: "Unlocks the §BPolitics§! special effects\n\n§RThis decision is permanent§!"
   ef_path.1.b: "Industrial might will bring us prosperity."

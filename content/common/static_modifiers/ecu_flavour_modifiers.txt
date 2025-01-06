@@ -236,6 +236,11 @@ ef_urban_level_3 = {
 }
 # After 15 years with level three we offer to turn it into an ecu
 
+ef_bounty_hunters = {
+	job_ef_bounty_hunter_add = 4
+	planet_crime_add = 10
+}
+
 # Country modifier
 ef_galactic_centre_of_diplomacy = {
 	diplo_weight_mult = 0.15
