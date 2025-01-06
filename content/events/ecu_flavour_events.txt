@@ -553,12 +553,46 @@ planet_event = {
 	}
 }
 
+# Bounty Hunters
+planet_event = {
+	id = ef_flavour.70
+	title = ef_flavour.70.name
+	desc = "ef_flavour.70.desc"
+	picture  = GFX_evt_mercenary_enclave
+	location = root
+	is_triggered_only = yes
+
+	trigger = {
+		not = { has_modifier = ef_bounty_hunters }
+	}
+
+	option = {
+		name = ef_flavour.70.a
+		add_modifier = { modifier = ef_bounty_hunters }
+	}
+
+	option = {
+		name = ef_flavour.70.b
+		allow = {
+			owner = {
+				resource_stockpile_compare = {
+					resource = influence
+					value > 50
+				}
+			}
+		}
+		owner = {
+			add_resource = { influence = -50 }
+		}
+	}
+}
+
 # Archaeological Dig # TODO
 planet_event = {
 	id = ef_flavour.80
 	title = ef_flavour.80.name
 	desc = "ef_flavour.80.desc"
-	picture  = GFX_evt_barren_dig_site
+	picture = GFX_evt_barren_dig_site
 	location = event_target:ef_ancient_alien_activity_planet
 	is_triggered_only = yes
 
@@ -579,7 +613,7 @@ planet_event = {
 	}
 
 	immediate = {
-		owner = { set_country_flag = ef_ancient_alien_activity_has_happened}
+		owner = { set_country_flag = ef_ancient_alien_activity_has_happened }
 		solar_system = {
 			random_system_planet = {
 				limit = {
