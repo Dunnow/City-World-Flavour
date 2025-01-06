@@ -368,6 +368,12 @@
   ef_flavour.62.a: "Scrap it."
   ef_flavour.62.b: "Allow our researchers to examine it."
 
+  ef_flavour.80.name: "Traces in the Dust"
+  ef_flavour.80.desc: "A small prospecting group operating out of [This.GetName] claims to have discovered "
+  ef_flavour.80.a: "Dispatch an expedition to investigate these claims."
+  ef_flavour.80.b: "Fascinating, but not really our concern."
+  ef_flavour.80.c: "How charming. Sell it."
+
   ef_path.1.name: "[This.GetName] at the Crossroads"
   ef_path.1.desc: "As [This.GetName] grows in size and influence, more and more talent is being attracted to the bustling world. We have a unique opportunity to reap the benefits of specialisation by encouraging a particular path of development.\n\nAs one of the galaxy's greatest population centres, [This.GetName] naturally has a great deal of cultural weight. With deliberate outreach programs and sponsorship, we can develop the planet's reputation as a centre of culture and politics in the galaxy.\n\nAs a major source of labour and already well integrated into our logistics networks, [This.GetName] has enormous potential as a manufacturing hub. All it requries is a relatively minor investment.\n\nThe tremendous consumer markets of [This.GetName] have also drawn the attention of numerous conglomerates, who are eager to get their [This.Owner.GetSpeciesHandName]s on the planet's lucrative trade routes."
   ef_path.1.a: "[This.GetName] has the potential to become a centre of galactic affairs."
