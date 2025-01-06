@@ -553,6 +553,52 @@ planet_event = {
 	}
 }
 
+# Archaeological Dig # TODO
+planet_event = {
+	id = ef_flavour.80
+	title = ef_flavour.80.name
+	desc = "ef_flavour.80.desc"
+	picture  = GFX_evt_barren_dig_site
+	location = event_target:ef_ancient_alien_activity_planet
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			NOT = {
+				has_country_flag = ef_ancient_alien_activity_has_happened
+			}
+		}
+		solar_system = {
+			any_system_planet = {
+				OR = {
+					is_planet_class = pc_barren
+					is_planet_class = pc_barren_cold
+				}
+			}
+		}
+	}
+
+	immediate = {
+		owner = { set_country_flag = ef_ancient_alien_activity_has_happened}
+		solar_system = {
+			random_system_planet = {
+				limit = {
+					OR = {
+						is_planet_class = pc_barren
+						is_planet_class = pc_barren_cold
+					}
+				}
+				save_event_target_as = ef_ancient_alien_activity_planet
+			}
+		}
+	}
+
+	option = {
+		name = ef_flavour.80.a
+		# pass
+	}
+}
+
 # Property bought up by rivals
 # TODO
 #planet_event = {
@@ -577,18 +623,3 @@ planet_event = {
 #	}
 #}
 
-# Archaeological Dig # TODO
-#planet_event = {
-#	id = ef_flavour.1
-#	title = ef_flavour.1.name
-#	desc = "ef_flavour.1.desc"
-#	picture  = GFX_evt_archaeological_dig
-#	location = root
-#	is_triggered_only = yes
-
-
-#	option = {
-#		name = ef_flavour.1.a
-#		# pass
-#	}
-#}
