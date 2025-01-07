@@ -12,15 +12,16 @@ planet_event = {
 
     trigger = {
         not = { has_planet_flag = ef_recently_increased_urban_level}
+        ef_is_majority_urban = yes
         ef_has_population_density = { DENSITY = 6 }
         ef_is_valid_for_urbanisation = yes
-        ef_check_urban_fraction=  { FRACTION = 0.5}
     }
 
     immediate = {
         if = {
             limit = {
                 ef_has_population_density = { DENSITY = 6 }
+                ef_is_majority_urban = yes
                 NOR = {
                     has_modifier = ef_urban_level_1
                     has_modifier = ef_urban_level_2
@@ -32,6 +33,7 @@ planet_event = {
         if = {
             limit = {
                 ef_has_population_density = { DENSITY = 7 }
+                ef_is_majority_urban = yes
                 has_modifier = ef_urban_level_1
             }
             planet_event = { id = ef_misc.3 }
@@ -39,6 +41,7 @@ planet_event = {
         if = {
             limit = {
                 ef_has_population_density = { DENSITY = 8 }
+                ef_is_majority_urban = yes
                 has_modifier = ef_urban_level_2
             }
             planet_event = { id = ef_misc.4 }
@@ -46,6 +49,7 @@ planet_event = {
         if = {
             limit = {
                 ef_has_population_density = { DENSITY = 9 }
+                ef_is_majority_urban = yes
                 has_modifier = ef_urban_level_3
             }
             # Offer to upgrade to ecu

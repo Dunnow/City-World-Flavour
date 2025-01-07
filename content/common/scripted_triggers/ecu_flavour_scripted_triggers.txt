@@ -28,10 +28,9 @@ ef_has_population_density = {
     }
 }
 
-ef_check_urban_fraction = {
+ef_is_majority_urban = {
     check_variable_arithmetic = {
-        which = value:ef_urban_district_count
-        divide = value:ef_max_districts_count
-        value >= $FRACTION$
+        which = value:ef_urbanisation_fraction
+        value >= 0.5 # Unfortunately it seems we can't use params here
     }
 }
