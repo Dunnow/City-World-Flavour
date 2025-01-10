@@ -120,11 +120,23 @@ planet_event = {
 	location = root
 	is_triggered_only = yes
 
+    trigger = {
+        owner = {
+            NOT = { has_country_flag = ef_recent_free_ecu }
+        }
+    }
+
     option = {
         name = ef_misc.5.a
         custom_tooltip = ef_misc.5.a.tooltip
         hidden_effect = {
             ef_grow_ecu = yes
+            owner = {
+                set_timed_country_flag = {
+                    flag = ef_recent_free_ecu
+                    years = 15
+                }
+            }
         }
     }
     option = {
