@@ -569,6 +569,9 @@
   ef_misc.5.a: "We shall take the efforts to make [This.GetName] an §H$pc_city$§!."
   ef_misc.5.a.tooltip: "[This.GetName] will become a §H$pc_city$§!."
   ef_misc.5.b: "No, we should not be so hasty."
+  ef_misc.5.b.tooltip: "We will have the opportunity to choose further urbanization at a §Ylater date§!."
+  ef_misc.5.c: "Do not bother me with this again."
+  ef_misc.5.c.tooltip: "[This.GetName] will §Rnot§! receive any further urbanization events."
 
   ef_centuries: "centuries"
   ef_decades: "decades"

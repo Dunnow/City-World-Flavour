@@ -51,6 +51,7 @@ planet_event = {
                 ef_has_population_density = { DENSITY = 9 }
                 ef_is_majority_urban = yes
                 has_modifier = ef_urban_level_3
+                not = { has_planet_flag = ef_rejected_ecu_upgrade}
             }
             # Offer to upgrade to ecu
             planet_event = { id = ef_misc.5 }
@@ -141,6 +142,18 @@ planet_event = {
     }
     option = {
         name = ef_misc.5.b
+        custom_tooltip = ef_misc.5.b.tooltip
+        hidden_effect = {
+            set_timed_planet_flag= {
+                flag = ef_rejected_ecu_upgrade
+                years = 20
+            }
+        }
+        ai_chance = { base = 0 }
+    }
+    option = {
+        name = ef_misc.5.c
+        custom_tooltip = ef_misc.5.c.tooltip
         hidden_effect = {
             set_planet_flag = ef_rejected_ecu_upgrade
         }
