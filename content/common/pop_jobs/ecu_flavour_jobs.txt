@@ -1,8 +1,11 @@
 ef_satellite_operator = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = building_research_lab_1
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_pre_ftl_radio_telescope
+		}
+	}
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -52,13 +55,28 @@ ef_satellite_operator = {
 			has_slavery_type = { type = slavery_indentured }
 		}
 	}
+
+	inline_script = "jobs/automodding_priority_research"
+
+	promotion = {
+		time = @standard_promotion_time
+		effect = {
+			pop_amount_change_category = {
+				CATEGORY = specialist
+				AMOUNT = local_pop_amount
+			}
+		}
+	}
 }
 
 ef_habitation_technician = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = building_research_lab_1
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_xeno_zoo
+		}
+	}
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -108,13 +126,28 @@ ef_habitation_technician = {
 			has_slavery_type = { type = slavery_indentured }
 		}
 	}
+
+	inline_script = "jobs/automodding_priority_research"
+
+	promotion = {
+		time = @standard_promotion_time
+		effect = {
+			pop_amount_change_category = {
+				CATEGORY = specialist
+				AMOUNT = local_pop_amount
+			}
+		}
+	}
 }
 
 ef_deep_level_engineer = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = building_research_lab_1
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_research_lab_1
+		}
+	}
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -164,14 +197,28 @@ ef_deep_level_engineer = {
 			has_slavery_type = { type = slavery_indentured }
 		}
 	}
+
+	inline_script = "jobs/automodding_priority_research"
+
+	promotion = {
+		time = @standard_promotion_time
+		effect = {
+			pop_amount_change_category = {
+				CATEGORY = specialist
+				AMOUNT = local_pop_amount
+			}
+		}
+	}
 }
 
 ef_freighter_pilot = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = building_galactic_stock_exchange
-	clothes_texture_index = 3
-	#icon = overlord_trader
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_galactic_stock_exchange
+		}
+	}
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -198,13 +245,28 @@ ef_freighter_pilot = {
 		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
 		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_trade_mult|
 	}
+
+	inline_script = "jobs/automodding_priority_trade"
+
+	promotion = {
+		time = @standard_promotion_time
+		effect = {
+			pop_amount_change_category = {
+				CATEGORY = specialist
+				AMOUNT = local_pop_amount
+			}
+		}
+	}
 }
 
 ef_recycler = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = building_wrecking_yards
-	clothes_texture_index = 3
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_wrecking_yards
+		}
+	}
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -242,14 +304,29 @@ ef_recycler = {
 			has_trait = trait_cyborg_creed_of_construction
 		}
 	}
+
+	inline_script = "jobs/automodding_priority_alloys"
+
+	promotion = {
+		time = @standard_promotion_time
+		effect = {
+			pop_amount_change_category = {
+				CATEGORY = specialist
+				AMOUNT = local_pop_amount
+			}
+		}
+	}
 }
 
 ef_gemcutter = {
 	category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-	building_icon = building_ef_hologem_bourse
-	clothes_texture_index = 3
-	icon = ef_gemcutter
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_ef_hologem_bourse
+		}
+	}
+	#icon = ef_gemcutter
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -303,16 +380,31 @@ ef_gemcutter = {
 			}
 		}
 	}
+
+	inline_script = "jobs/automodding_priority_trade"
+
+	promotion = {
+		time = @standard_promotion_time
+		effect = {
+			pop_amount_change_category = {
+				CATEGORY = specialist
+				AMOUNT = local_pop_amount
+			}
+		}
+	}
 }
 
 ef_vent_tribal = {
 	category = ef_undercity
 	is_capped_by_modifier = yes
 	can_set_priority = no
-	clothes_texture_index = 2
-	building_icon = building_residence
 	contributes_to_diplo_weight = no
-	ignores_favorite = yes #this means that if you favorite e.g. clerks, the +1000 bonus will not matter for jobs working as criminals
+
+	swappable_data = {
+		default = {
+			building_icon = building_primitive_dwellings
+		}
+	}
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -346,10 +438,13 @@ ef_surface_smuggler = {
 	category = ef_undercity
 	is_capped_by_modifier = yes
 	can_set_priority = no
-	clothes_texture_index = 2
-	building_icon = building_residence
 	contributes_to_diplo_weight = no
-	ignores_favorite = yes #this means that if you favorite e.g. clerks, the +1000 bonus will not matter for jobs working as criminals
+
+	swappable_data = {
+		default = {
+			building_icon = building_residence
+		}
+	}
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -398,10 +493,13 @@ ef_deep_dweller = {
 	category = ef_undercity
 	is_capped_by_modifier = yes
 	can_set_priority = no
-	clothes_texture_index = 2
-	building_icon = building_residence
 	contributes_to_diplo_weight = no
-	ignores_favorite = yes #this means that if you favorite e.g. clerks, the +1000 bonus will not matter for jobs working as criminals
+
+	swappable_data = {
+		default = {
+			building_icon = building_primitive_dwellings
+		}
+	}
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -441,10 +539,13 @@ ef_hive_ganger = {
 	category = ef_undercity
 	is_capped_by_modifier = yes
 	can_set_priority = no
-	clothes_texture_index = 2
-	building_icon = building_residence
 	contributes_to_diplo_weight = no
-	ignores_favorite = yes #this means that if you favorite e.g. clerks, the +1000 bonus will not matter for jobs working as criminals
+
+	swappable_data = {
+		default = {
+			building_icon = building_residence
+		}
+	}
 
 	possible_pre_triggers = {
 		has_owner = yes
