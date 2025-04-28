@@ -1,7 +1,6 @@
 # Crowded Spacelanes
 ef_crowded_spacelanes ={
-	planet_jobs_trade_produces_mult = -0.2
-    pop_growth_from_immigration = -0.25
+	planet_jobs_trade_produces_mult = -0.25
 	icon = "gfx/interface/icons/planet_modifiers/ef_crowded_spacelanes.dds"
 	icon_frame = 3
 }
@@ -203,7 +202,7 @@ ef_luxury_goods_exports = {
 }
 
 ef_space_hollywood = {
-	planet_culture_workers_produces_mult = 0.15
+	planet_amenities_mult= 0.1
 	job_culture_worker_per_pop = 0.05
 	icon = gfx/interface/icons/planet_modifiers/pm_minor_artifact_decision.dds
 	icon_frame = 1
