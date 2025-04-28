@@ -5,22 +5,22 @@ planet_event = {
     hide_window = yes
     is_triggered_only = yes
 
-    # Density 6 gives us level 1
-    # Density 7 gives us level 2
-    # Density 8 gives us ecu city textures. (level 3)
-    # Density 9 gives us an ecu
+    # Density 500 gives us level 1
+    # Density 600 gives us level 2
+    # Density 700 gives us ecu city textures. (level 3)
+    # Density 800 gives us an ecu
 
     trigger = {
         not = { has_planet_flag = ef_recently_increased_urban_level}
         ef_is_majority_urban = yes
-        ef_has_population_density = { DENSITY = 6 }
+        ef_has_population_density = { DENSITY = 500 }
         ef_is_valid_for_urbanisation = yes
     }
 
     immediate = {
         if = {
             limit = {
-                ef_has_population_density = { DENSITY = 6 }
+                ef_has_population_density = { DENSITY = 500 }
                 ef_is_majority_urban = yes
                 NOR = {
                     has_modifier = ef_urban_level_1
@@ -32,7 +32,7 @@ planet_event = {
         }
         if = {
             limit = {
-                ef_has_population_density = { DENSITY = 7 }
+                ef_has_population_density = { DENSITY = 600 }
                 ef_is_majority_urban = yes
                 has_modifier = ef_urban_level_1
             }
@@ -40,7 +40,7 @@ planet_event = {
         }
         if = {
             limit = {
-                ef_has_population_density = { DENSITY = 8 }
+                ef_has_population_density = { DENSITY = 700 }
                 ef_is_majority_urban = yes
                 has_modifier = ef_urban_level_2
             }
@@ -48,7 +48,7 @@ planet_event = {
         }
         if = {
             limit = {
-                ef_has_population_density = { DENSITY = 9 }
+                ef_has_population_density = { DENSITY = 800 }
                 ef_is_majority_urban = yes
                 has_modifier = ef_urban_level_3
                 not = { has_planet_flag = ef_rejected_ecu_upgrade}
