@@ -406,6 +406,8 @@ ef_vent_tribal = {
 		}
 	}
 
+	tags = { crime }
+
 	possible_pre_triggers = {
 		has_owner = yes
 		is_sapient = yes
@@ -445,6 +447,8 @@ ef_surface_smuggler = {
 			building_icon = building_residence
 		}
 	}
+
+	tags = { crime }
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -501,6 +505,8 @@ ef_deep_dweller = {
 		}
 	}
 
+	tags = { crime }
+
 	possible_pre_triggers = {
 		has_owner = yes
 		is_sapient = yes
@@ -547,6 +553,8 @@ ef_hive_ganger = {
 		}
 	}
 
+	tags = { crime }
+
 	possible_pre_triggers = {
 		has_owner = yes
 		is_sapient = yes
@@ -566,7 +574,6 @@ ef_hive_ganger = {
 	}
 
 	planet_modifier = {
-		trade_value_add = -1
 		planet_crime_add = 7.5
 		branch_office_criminal_syndicate_value_add = 1.5
 	}
@@ -583,6 +590,13 @@ ef_hive_ganger = {
 
 		branch_office_criminal_syndicate_value_add = 0.25
 		mult = value:pop_branch_office_councilor_level|TYPE|councilor_criminal_heritage|
+	}
+
+	resources = {
+		category = planet_ef_underworlders
+		upkeep = {
+			trade = 1
+		}
 	}
 
 	weight = {
