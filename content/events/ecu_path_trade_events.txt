@@ -292,7 +292,12 @@ situation_event = {
 		add_situation_progress = 10
 		target = {
 			add_planet_devastation = 10
-			random_owned_pop = { kill_pop = yes }
+			random_owned_pop_group = {
+				kill_pop_group = {
+					pop_group = this
+					amount = 100
+				}
+			}
 			ef_decrease_stock_market = yes
 		}
 	}
@@ -333,7 +338,12 @@ situation_event = {
 		add_situation_progress = 10
 		target = {
 			add_planet_devastation = 25
-			random_owned_pop = { kill_pop = yes }
+			random_owned_pop_group = {
+				kill_pop_group = {
+					pop_group = this
+					amount = 200
+				}
+			}
 			ef_decrease_stock_market = yes
 		}
 	}

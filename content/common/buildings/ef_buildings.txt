@@ -4,6 +4,10 @@ building_ef_hologem_bourse = {
 	category = trade
 	base_cap_amount = 1
 
+	building_sets = {
+		trade
+	}
+
 	potential = {
 		exists = owner
 		owner = { is_regular_empire = yes }

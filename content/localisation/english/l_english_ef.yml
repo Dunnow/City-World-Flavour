@@ -45,6 +45,8 @@
 
   # Misc Loc
   mod_planet_rangers_unity_produces_add: "£unity£$unity$ from £job_ranger£$job_ranger_plural$"
+  mod_planet_biologists_unity_produces_add: "£unity£$unity$ per 100 [biologist.GetIcon] [biologist.GetNamePlural]"
+  planet_ef_underworlders: "$pop_cat_ef_undercity_plural$"
 
   # Deposits
   d_ef_ventilation_system: "Ventilation Systems"

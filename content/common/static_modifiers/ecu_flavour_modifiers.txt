@@ -1,7 +1,6 @@
 # Crowded Spacelanes
 ef_crowded_spacelanes ={
-	trade_value_mult = -0.2
-    pop_growth_from_immigration = -0.25
+	planet_jobs_trade_produces_mult = -0.25
 	icon = "gfx/interface/icons/planet_modifiers/ef_crowded_spacelanes.dds"
 	icon_frame = 3
 }
@@ -56,20 +55,20 @@ ef_deep_levels_5 ={
 }
 
 ef_financial_hub = {
-	trade_value_mult = 0.15
+	planet_jobs_trade_produces_mult = 0.15
 	icon = "gfx/interface/icons/planet_modifiers/ef_financial_hub.dds"
 	icon_frame = 1
 }
 
 ef_marketplace = {
-	trade_value_mult = 0.10
+	planet_jobs_trade_produces_mult = 0.10
 	planet_crime_mult = 0.25
 	icon = "gfx/interface/icons/planet_modifiers/ef_marketplace.dds"
 	icon_frame = 1
 }
 
 ef_glitchy_machines = {
-	trade_value_mult = -0.10
+	planet_jobs_trade_produces_mult = -0.10
 	icon = "gfx/interface/icons/planet_modifiers/pm_synth_sabotage.dds"
 	icon_frame = 3
 }
@@ -81,13 +80,13 @@ ef_ai_insight = {
 }
 
 ef_stock_market_1 = {
-	trade_value_mult = -0.25
+	planet_jobs_trade_produces_mult = -0.25
 	icon = gfx/interface/icons/planet_modifiers/ef_stock_market.dds
 	icon_frame = 3
 }
 
 ef_stock_market_2 = {
-	trade_value_mult = -0.1
+	planet_jobs_trade_produces_mult = -0.1
 	icon = gfx/interface/icons/planet_modifiers/ef_stock_market.dds
 	icon_frame = 3
 }
@@ -98,26 +97,26 @@ ef_stock_market_3 = {
 }
 
 ef_stock_market_4 = {
-	trade_value_mult = 0.1
+	planet_jobs_trade_produces_mult = 0.1
 	icon = gfx/interface/icons/planet_modifiers/ef_stock_market.dds
 	icon_frame = 1
 }
 
 ef_stock_market_5 = {
-	trade_value_mult = 0.25
+	planet_jobs_trade_produces_mult = 0.25
 	icon = gfx/interface/icons/planet_modifiers/ef_stock_market.dds
 	icon_frame = 1
 }
 
 ef_embedded_corruption = {
-	trade_value_mult = -0.1
+	planet_jobs_trade_produces_mult = -0.1
 	planet_crime_add = 10
 	icon = gfx/interface/icons/planet_modifiers/pm_stellar_culture_shock.dds
 	icon_frame = 3
 }
 
 ef_corrupt_collusion = {
-	trade_value_mult = -0.2
+	planet_jobs_trade_produces_mult = -0.2
 	planet_crime_add = 30
 	job_criminal_per_crime = 0.05
 	icon = gfx/interface/icons/planet_modifiers/pm_stellar_culture_shock.dds
@@ -132,21 +131,21 @@ ef_labour_disputes = {
 }
 
 ef_robust_law_enforcement = {
-	trade_value_mult = 0.1
+	planet_jobs_trade_produces_mult = 0.1
 	planet_crime_add = -10
 	icon = gfx/interface/icons/planet_modifiers/pm_default.dds
 	icon_frame = 1
 }
 
 ef_financial_chaos = {
-	trade_value_mult = -0.1
+	planet_jobs_trade_produces_mult = -0.1
 	planet_stability_add = -5
 	icon = gfx/interface/icons/planet_modifiers/ef_stock_market.dds
 	icon_frame = 3
 }
 
 ef_corporate_monopoly = {
-	trade_value_mult = 0.15
+	planet_jobs_trade_produces_mult = 0.15
 	pop_happiness = -0.10
 	icon = gfx/interface/icons/planet_modifiers/ef_inequality.dds
 	icon_frame = 2
@@ -167,7 +166,7 @@ ef_shattered_economy = {
 }
 
 ef_economic_boom = {
-	trade_value_mult = 0.15
+	planet_jobs_trade_produces_mult = 0.15
 	planet_jobs_produces_mult = 0.05
 	icon = gfx/interface/icons/planet_modifiers/ef_shipping_hub.dds
 	icon_frame = 1
@@ -178,7 +177,7 @@ ef_polluted_forge_world = {
 	planet_jobs_alloys_produces_mult = 0.4
 	planet_jobs_consumer_goods_produces_mult = 0.4
 	pop_happiness = -0.25
-	pop_growth_speed = -0.25
+	logistic_growth_mult = -0.25
 	icon = gfx/interface/icons/planet_modifiers/pm_irradiated.dds
 	icon_frame = 2
 }
@@ -190,20 +189,20 @@ ef_orbital_waste_disposal = {
 
 ef_playground_of_the_elite = {
 	planet_jobs_unity_produces_mult = 0.1
-	trade_value_mult = 0.1
+	planet_jobs_trade_produces_mult = 0.1
 	icon = gfx/interface/icons/planet_modifiers/pm_museum.dds
 	icon_frame = 1
 }
 
 ef_luxury_goods_exports = {
-	trade_value_mult = 0.1
+	planet_jobs_trade_produces_mult = 0.1
 	diplo_weight_mult = 0.05
 	icon = gfx/interface/icons/planet_modifiers/pm_resources.dds
 	icon_frame = 1
 }
 
 ef_space_hollywood = {
-	planet_culture_workers_produces_mult = 0.15
+	planet_amenities_mult= 0.1
 	job_culture_worker_per_pop = 0.05
 	icon = gfx/interface/icons/planet_modifiers/pm_minor_artifact_decision.dds
 	icon_frame = 1
@@ -212,7 +211,7 @@ ef_space_hollywood = {
 # Urbanization modifiers
 # 100 pops
 ef_urban_level_1 = {
-	pop_growth_speed = 0.05
+	logistic_growth_mult = 0.05
 	planet_jobs_produces_mult = 0.05
 	icon = gfx/interface/icons/planet_modifiers/ef_level_one_urban.dds
 	icon_frame = 1
@@ -220,7 +219,7 @@ ef_urban_level_1 = {
 
 # 150 pops
 ef_urban_level_2 = {
-	pop_growth_speed = 0.05
+	logistic_growth_mult = 0.05
 	planet_pop_assembly_mult = 0.05
 	planet_jobs_produces_mult = 0.1
 	icon = gfx/interface/icons/planet_modifiers/ef_level_two_urban.dds
@@ -229,7 +228,7 @@ ef_urban_level_2 = {
 
 # 200 pops
 ef_urban_level_3 = {
-	pop_growth_speed = 0.1
+	logistic_growth_mult = 0.1
 	planet_pop_assembly_mult = 0.1
 	planet_jobs_produces_mult = 0.15
 	icon = gfx/interface/icons/planet_modifiers/ef_level_three_urban.dds

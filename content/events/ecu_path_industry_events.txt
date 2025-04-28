@@ -277,8 +277,12 @@ planet_event = {
 		random_list = {
 			50 = {}
 			50 = {
-				random_owned_pop = {
-					kill_pop = yes
+				random_owned_pop_group = {
+					limit = { is_pop_category = worker }
+					kill_pop_group = {
+						pop_group = this
+						percentage = 20
+					}
 				}
 			}
 		}
