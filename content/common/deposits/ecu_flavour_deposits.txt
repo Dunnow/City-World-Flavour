@@ -6,7 +6,7 @@ d_ef_ventilation_system = {
 
 	planet_modifier = {
 		planet_max_districts_add = 1
-		job_ef_vent_tribal_add = 1==
+		job_ef_vent_tribal_add = 100
 	}
 
 	drop_weight = {
