@@ -69,14 +69,6 @@ ef_urban_district_count = {
 	complex_trigger_modifier = {
 		trigger = num_districts
 		parameters = {
-			type = district_industrial
-		}
-		mode = add
-		mult = 1
-	}
-	complex_trigger_modifier = {
-		trigger = num_districts
-		parameters = {
 			type = district_prison_industrial
 		}
 		mode = add
@@ -94,14 +86,6 @@ ef_urban_district_count = {
 		trigger = num_districts
 		parameters = {
 			type = district_srw_commercial
-		}
-		mode = add
-		mult = 1
-	}
-	complex_trigger_modifier = {
-		trigger = num_districts
-		parameters = {
-			type = district_machine_coordination
 		}
 		mode = add
 		mult = 1
