@@ -27,7 +27,7 @@ ef_situation_corpo_war = {
 			target_modifier = {
 				planet_stability_add = -10
 				planet_crime_add = 25
-				trade_value_mult = -0.15
+				planet_jobs_trade_produces_mult = -0.15
 			}
 			custom_tooltip = ef_stage_corpo_war_1
 		}
@@ -38,7 +38,7 @@ ef_situation_corpo_war = {
 			target_modifier = {
 				planet_stability_add = -20
 				planet_crime_add = 50
-				trade_value_mult = -0.25
+				planet_jobs_trade_produces_mult = -0.25
 			}
 			custom_tooltip = ef_stage_corpo_war_2
 		}
@@ -49,7 +49,7 @@ ef_situation_corpo_war = {
 			target_modifier = {
 				planet_stability_add = -50
 				planet_crime_add = 100
-				trade_value_mult = -0.5
+				planet_jobs_trade_produces_mult = -0.5
 			}
 			custom_tooltip = ef_stage_corpo_war_3
 		}

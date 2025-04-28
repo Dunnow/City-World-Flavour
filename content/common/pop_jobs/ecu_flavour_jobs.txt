@@ -237,7 +237,7 @@ ef_freighter_pilot = {
 	}
 
 	planet_modifier = {
-		trade_value_mult = 0.05
+		planet_jobs_trade_produces_mult = 0.05
 	}
 
 	weight = {
