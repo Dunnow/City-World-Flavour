@@ -208,9 +208,12 @@ planet_event = {
 
     immediate = {
         add_planet_devastation = 10
-		random_owned_pop = {
-			limit = { is_pop_category = ef_undercity}
-			kill_pop = yes
+		random_owned_pop_group = {
+			limit = { is_pop_category = ef_undercity }
+			kill_pop_group = {
+				pop_group = this
+				percentage = 35
+			}
 		}
     }
 
@@ -249,9 +252,12 @@ planet_event = {
 		name = ef_flavour.20.a
 
 		add_planet_devastation = 10
-		random_owned_pop = {
-			limit = { always = yes}
-			kill_pop = yes
+		random_owned_pop_group = {
+			limit = { always = yes }
+			kill_pop_group = {
+				pop_group = this
+				percentage = 35
+			}
 		}
 	}
 }
@@ -268,19 +274,16 @@ planet_event = {
 	# TODO: Add xenophobe/auth options to eradicate them
 	option = {
 		name = ef_flavour.21.a
-		while = {
-			count = 5
-			random_owned_pop = {
-				limit = {
-					is_same_species = ROOT
-					OR = {
-						is_pop_category = worker
-						is_pop_category = ef_undercity
-					}
+		random_owned_pop_group = {
+			limit = {
+				is_same_species = ROOT
+				OR = {
+					is_pop_category = worker
+					is_pop_category = ef_undercity
 				}
-				modify_species = {
-					add_trait = trait_ef_mutant
-				}
+			}
+			modify_species = {
+				add_trait = trait_ef_mutant
 			}
 		}
 	}
@@ -297,19 +300,16 @@ planet_event = {
 
 	option = {
 		name = ef_flavour.22.a
-		while = {
-			count = 5
-			random_owned_pop = {
-				limit = {
-					is_same_species = ROOT
-					OR = {
-						is_pop_category = worker
-						is_pop_category = ef_undercity
-					}
+		random_owned_pop_group = {
+			limit = {
+				is_same_species = ROOT
+				OR = {
+					is_pop_category = worker
+					is_pop_category = ef_undercity
 				}
-				modify_species = {
-					add_trait = trait_latent_psionic
-				}
+			}
+			modify_species = {
+				add_trait = trait_latent_psionic
 			}
 		}
 	}
@@ -324,22 +324,22 @@ planet_event = {
 				}
 			}
 		}
-		while = {
-			count = 5
-			random_owned_pop = {
-				limit = {
-					is_same_species = ROOT
-					OR = {
-						is_pop_category = worker
-						is_pop_category = ef_undercity
-					}
+		random_owned_pop_group = {
+			limit = {
+				is_same_species = ROOT
+				OR = {
+					is_pop_category = worker
+					is_pop_category = ef_undercity
 				}
-				kill_pop = yes
+			}
+			kill_pop_group = {
+				pop_group = this
+				percentage = 85
 			}
 		}
 		owner = {
 			add_resource = { society_research = 5000 }
-			add_tech_progress = { tech = tech_psionic_theory progress = 0.25}
+			add_tech_progress = { tech = tech_psionic_theory progress = 0.25 }
 		}
 	}
 }
