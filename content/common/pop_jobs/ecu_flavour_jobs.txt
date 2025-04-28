@@ -231,7 +231,7 @@ ef_freighter_pilot = {
 	weight = {
 		weight = @specialist_job_weight
 		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
-		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_trade_mult|
+		mult = value:job_weights_modifier|JOB|ef_freighter_pilot|RESOURCE|trade|
 	}
 
 	inline_script = "jobs/automodding_priority_trade"
@@ -335,7 +335,7 @@ ef_gemcutter = {
 	weight = {
 		weight = @specialist_job_weight
 		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
-		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_trade_mult|
+		mult = value:job_weights_modifier|JOB|ef_gemcutter|RESOURCE|trade|
 		# crisis purge
 		modifier = {
 			factor = 0.01
