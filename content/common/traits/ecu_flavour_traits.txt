@@ -3,7 +3,6 @@ trait_ef_mutant = {
 	icon = "gfx/interface/icons/traits/trait_repugnant.dds"
     initial = no
 
-	potential_crossbreeding_chance = 1.0
 	species_potential_add = {
 		always = no
 	}
