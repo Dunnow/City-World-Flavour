@@ -46,10 +46,6 @@ ef_satellite_operator = {
 			can_take_servant_job = yes
 		}
 		modifier = {
-			factor = 1.5
-			has_job = researcher
-		}
-		modifier = {
 			factor = 0.8
 			is_enslaved = yes
 			has_slavery_type = { type = slavery_indentured }
@@ -117,10 +113,6 @@ ef_habitation_technician = {
 			can_take_servant_job = yes
 		}
 		modifier = {
-			factor = 1.5
-			has_job = researcher
-		}
-		modifier = {
 			factor = 0.8
 			is_enslaved = yes
 			has_slavery_type = { type = slavery_indentured }
@@ -186,10 +178,6 @@ ef_deep_level_engineer = {
 		modifier = {
 			factor = 0.1
 			can_take_servant_job = yes
-		}
-		modifier = {
-			factor = 1.5
-			has_job = researcher
 		}
 		modifier = {
 			factor = 0.8
@@ -297,10 +285,6 @@ ef_recycler = {
 		}
 		modifier = {
 			factor = 5
-			has_job = ef_recycler
-		}
-		modifier = {
-			factor = 5
 			has_trait = trait_cyborg_creed_of_construction
 		}
 	}
@@ -343,23 +327,15 @@ ef_gemcutter = {
 			consumer_goods = 1
 			rare_crystals = 1
 		}
+		produces = {
+			trade = 15
+		}
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			always = yes
-		}
-		trade_value_add = 15
-		mult = value:scripted_modifier_mult|MODIFIER|pop_job_trade_mult|
-	}
 	weight = {
 		weight = @specialist_job_weight
 		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
 		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_trade_mult|
-		modifier = {
-			factor = 5
-			has_job = trader
-		}
 		# crisis purge
 		modifier = {
 			factor = 0.01
@@ -468,8 +444,14 @@ ef_surface_smuggler = {
 		}
 	}
 
+	resources = {
+		category = planet_ef_underworlders
+		produces = {
+			trade = 2
+		}
+	}
+
 	planet_modifier = {
-		trade_value_add = 2
 		planet_crime_add = 2
 		branch_office_criminal_syndicate_value_add = 7.5
 	}
