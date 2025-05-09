@@ -44,7 +44,7 @@
   ef_decision_revise_industrial_policy_tt: "§BThis will restart the Pollution on [This.GetName] situation.§!"
 
   # Misc Loc
-  mod_planet_rangers_unity_produces_add: "£unity£$unity$ from £job_ranger£$job_ranger_plural$"
+  mod_planet_rangers_unity_produces_add: "£unity£$unity$ per 100 £job_ranger£$job_ranger_plural$"
   mod_planet_biologists_unity_produces_add: "£unity£$unity$ per 100 [biologist.GetIcon] [biologist.GetNamePlural]"
   planet_ef_underworlders: "$pop_cat_ef_undercity_plural$"
 
@@ -382,7 +382,7 @@
   ef_flavour.70.b: "TODO"
 
   ef_flavour.80.name: "Traces in the Dust"
-  ef_flavour.80.desc: "A small prospecting group operating out of [This.GetName] claims to have discovered "
+  ef_flavour.80.desc: "A small prospecting group operating out of [This.GetName] claims to have discovered TODO TODO"
   ef_flavour.80.a: "Dispatch an expedition to investigate these claims."
   ef_flavour.80.b: "Fascinating, but not really our concern."
   ef_flavour.80.c: "How charming. Sell it."
