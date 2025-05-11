@@ -239,6 +239,8 @@ ef_urban_level_3 = {
 ef_bounty_hunters = {
 	job_ef_bounty_hunter_add = 400
 	planet_crime_add = 10
+	icon = gfx/interface/icons/planet_modifiers/pm_landing_ship.dds
+	icon_frame = 2
 }
 
 # Country modifier
