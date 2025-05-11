@@ -121,7 +121,7 @@
   job_ef_bounty_hunter: "Bounty Hunter"
   job_ef_bounty_hunter_plural: "Bounty Hunters"
   mod_job_ef_bounty_hunter_add: "$job_ef_bounty_hunter$ Jobs"
-  job_ef_bounty_hunter_desc: "Sometimes getting a job done requires actions outside the law."
+  job_ef_bounty_hunter_desc: "Sometimes getting a job done requires working outside the law."
 
   job_ef_recycler: "Recycler"
   job_ef_recycler_plural: "Recyclers"
