@@ -172,13 +172,10 @@ planet_event = {
 
 	option = {
 		name = ef_flavour.11.a
-        create_pop = {
+		create_pop_group = {
 			species = this.owner_main_species
 			ethos = random
-		}
-		create_pop = {
-			species = this.owner_main_species
-			ethos = random
+			size = 200
 		}
 	}
 }
@@ -380,17 +377,20 @@ planet_event = {
 
 	option = {
 		name = ef_flavour.30.a
-		create_pop = {
+		create_pop_group = {
 			species = event_target:ef_primitive_species
 			ethos = { ethic = ethic_egalitarian }
+			size = 100
 		}
-		create_pop = {
+		create_pop_group = {
 			species = event_target:ef_primitive_species
 			ethos = { ethic = ethic_xenophobe }
+			size = 100
 		}
-		create_pop = {
+		create_pop_group = {
 			species = event_target:ef_primitive_species
 			ethos = { ethic = ethic_materialist }
+			size = 100
 		}
 	}
 	option = {
