@@ -2,7 +2,7 @@ decision_ef_choose_path = {
 	owned_planets_only = yes
 
 	potential = {
-		is_planet_class = pc_city
+		ef_is_ecu = yes
 		has_planet_flag = ef_planet_specialisation_options_available
 	}
 
@@ -26,7 +26,7 @@ decision_ef_revise_industrial_policy = {
 	}
 
 	potential = {
-		is_planet_class = pc_city
+		ef_is_ecu = yes
 		has_modifier = ef_polluted_forge_world
 	}
 

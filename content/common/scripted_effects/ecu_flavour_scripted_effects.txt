@@ -3,7 +3,7 @@
 ef_add_ecu_terraformed_modifiers = {
     # I'd rather keep these focused on the narrative of vanilla city worlds, so non vanilla types don't have these.
     if = {
-        limit = { is_planet_class = pc_city }
+        limit = { ef_is_ecu = yes }
         if = {
             limit = {
                 not = {  has_deposit = d_ef_orbital_control_network  }

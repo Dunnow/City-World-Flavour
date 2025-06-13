@@ -252,7 +252,7 @@ decision_ef_designate_parklands = {
 	}
 
 	potential = {
-		is_planet_class = pc_city
+		ef_is_ecu = yes
 		has_planet_flag = ef_diplomacy_specialisation
 		NOT = { has_deposit = d_ef_urban_parklands}
 	}
@@ -293,7 +293,7 @@ decision_ef_terraform_urban_lakes = {
 	}
 
 	potential = {
-		is_planet_class = pc_city
+		ef_is_ecu = yes
 		has_planet_flag = ef_diplomacy_specialisation
 		NOT = { has_deposit = d_ef_lake_district}
 	}
@@ -342,7 +342,7 @@ decision_ef_establish_imperial_academies= {
 	}
 
 	potential = {
-		is_planet_class = pc_city
+		ef_is_ecu = yes
 		has_planet_flag = ef_diplomacy_specialisation
 		NOT = { has_deposit = d_ef_imperial_conservatory}
 	}
@@ -387,7 +387,7 @@ decision_ef_prepare_diplomatic_quarter= {
 	}
 
 	potential = {
-		is_planet_class = pc_city
+		ef_is_ecu = yes
 		has_planet_flag = ef_diplomacy_specialisation
 		NOT = { has_deposit = d_ef_grand_presidium}
 	}
@@ -432,7 +432,7 @@ decision_ef_host_galactic_exhibitions= {
 	}
 
 	potential = {
-		is_planet_class = pc_city
+		ef_is_ecu = yes
 		has_planet_flag = ef_diplomacy_specialisation
 		NOT = { has_deposit = d_ef_galactic_expo_centre}
 	}
