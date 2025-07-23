@@ -222,10 +222,9 @@ ef_freighter_pilot = {
 		upkeep = {
 			consumer_goods = 5
 		}
-	}
-
-	planet_modifier = {
-		planet_jobs_trade_produces_mult = 0.05
+		produces = {
+			trade = 5
+		}
 	}
 
 	weight = {

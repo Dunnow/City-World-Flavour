@@ -73,6 +73,7 @@ d_ef_spaceport= {
 
 	planet_modifier = {
 		job_ef_freighter_pilot_add = 200
+		planet_jobs_trade_produces_mult = 0.1
 		planet_max_districts_add = -1
 	}
 
