@@ -161,7 +161,7 @@ d_ef_lake_district = {
 	planet_modifier = {
 		planet_amenities_add = 2000
 		job_ef_park_warden_add = 500
-		job_culture_worker_add = 500
+		job_bureaucrat_add = 500
 		planet_max_districts_add = -1
 	}
 
@@ -177,7 +177,7 @@ d_ef_imperial_conservatory = {
 	category = deposit_cat_rare
 
 	planet_modifier = {
-		job_culture_worker_add = 800
+		job_bureaucrat_add= 800
 		planet_amenities_add = 2000
 		planet_jobs_unity_produces_mult = 0.15
 		planet_max_districts_add = -1
@@ -215,7 +215,7 @@ d_ef_galactic_expo_centre = {
 	category = deposit_cat_rare
 
 	planet_modifier = {
-		job_culture_worker_add = 600
+		job_bureaucrat_add = 600
 		planet_amenities_add = 1000
 		planet_max_districts_add = -1
 	}
