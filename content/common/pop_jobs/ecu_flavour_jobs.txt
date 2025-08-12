@@ -369,6 +369,36 @@ ef_gemcutter = {
 	}
 }
 
+ef_park_warden = {
+	category = specialist
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			building_icon = building_ranger_lodge
+			icon = ranger
+		}
+	}
+
+	resources = {
+		category = planet_biologists
+		produces = {
+			society_research = 6
+			unity = 2
+		}
+		upkeep = {
+			consumer_goods = 1
+		}
+	}
+
+	planet_modifier = {
+		planet_amenities_add = 600
+	}
+
+	tags = { research amenities unity }
+
+	inline_script = "jobs/automodding_priority_research"
+}
+
 ef_bounty_hunter = {
 	category = worker
 	swappable_data = {
