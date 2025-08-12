@@ -36,8 +36,8 @@ building_ef_hologem_bourse = {
 	}
 
 	planet_modifier = {
-		job_clerk_add = 1
-		job_ef_gemcutter_add = 2
+		job_clerk_add = 100
+		job_ef_gemcutter_add = 200
 	}
 
 	triggered_desc = {
