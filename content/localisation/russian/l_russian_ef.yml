@@ -116,6 +116,11 @@
   job_ef_gemcutter_desc: "Искусные мастера ограняют и гравируют редкие кристаллы, превращая их в знаменитые на всю галактику произведения искусства."
   job_ef_gemcutter_effect_desc: "£job_ef_gemcutter£ $job_ef_gemcutter_plural$ turn £rare_crystals£ §Y$rare_crystals$§! into £trade_value£ §YTrade Value§!"
 
+  job_ef_park_warden: "Park Warden"
+  job_ef_park_warden_plural: "Park Wardens"
+  mod_job_ef_park_warden_add: "$job_ef_park_warden$ Jobs"
+  job_ef_park_warden_desc: "The upkeep of entire ecosystems among the world-city is a never ending task. Even the simplest of jobs become daunting writ so large."
+
   job_ef_recycler: "Мусорщик"
   job_ef_recycler_plural: "Мусорщики"
   mod_job_ef_recycler_add: "$job_ef_recycler$ Jobs"
