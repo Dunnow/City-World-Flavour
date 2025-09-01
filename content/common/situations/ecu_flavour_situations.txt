@@ -16,7 +16,7 @@ ef_situation_corpo_war = {
 		hidden_effect = { target = { planet_event = { id = ef_trade.55} } }
 		destroy_situation = this
 	}
-	start_value = 50
+	start_value = 25
 	#fail_category = positive
 	#complete_category = negative
 	stages = {

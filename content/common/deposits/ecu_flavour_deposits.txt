@@ -9,6 +9,10 @@ d_ef_ventilation_system = {
 		job_ef_vent_tribal_add = 100
 	}
 
+	potential = {
+		always = no
+	}
+
 	drop_weight = {
 		weight = 0 # Only added by decision
 	}
@@ -23,6 +27,10 @@ d_ef_subterranean_habitation_zones = {
 	planet_modifier = {
 		planet_max_districts_add = 1
 		job_ef_surface_smuggler_add = 100
+	}
+
+	potential = {
+		always = no
 	}
 
 	drop_weight = {
@@ -42,6 +50,10 @@ d_ef_underground_tramways= {
 		job_ef_hive_ganger_add = 100
 	}
 
+	potential = {
+		always = no
+	}
+
 	drop_weight = {
 		weight = 0 # Only added by decision
 	}
@@ -57,6 +69,10 @@ d_ef_deep_level_districts= {
 	planet_modifier = {
 		planet_max_districts_add = 1
 		job_ef_deep_dweller_add = 100
+	}
+
+	potential = {
+		always = no
 	}
 
 	drop_weight = {
@@ -77,6 +93,10 @@ d_ef_spaceport= {
 		planet_max_districts_add = -1
 	}
 
+	potential = {
+		always = no
+	}
+
 	drop_weight = {
 		weight = 0 # Only added by decision
 	}
@@ -92,6 +112,10 @@ d_ef_orbital_control_network= {
 	planet_modifier = {
 		job_ef_satellite_operator_add = 400
 		planet_max_districts_add = -1
+	}
+
+	potential = {
+		always = no
 	}
 
 	drop_weight = {
@@ -111,6 +135,10 @@ d_ef_climate_management_centre= {
 		planet_max_districts_add = -1
 	}
 
+	potential = {
+		always = no
+	}
+
 	drop_weight = {
 		weight = 0 # Only added by decision
 	}
@@ -126,6 +154,10 @@ d_ef_seismic_stabilization_stations= {
 	planet_modifier = {
 		job_ef_deep_level_engineer_add = 400
 		planet_max_districts_add = -1
+	}
+
+	potential = {
+		always = no
 	}
 
 	drop_weight = {
