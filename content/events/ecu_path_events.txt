@@ -9,9 +9,7 @@ planet_event = {
 	trigger = {
 		NOR = {
 			has_planet_flag = ef_planet_specialisation_options_available
-			has_planet_flag = ef_diplomacy_specialisation
-			has_planet_flag = ef_industry_specialisation
-			has_planet_flag = ef_trade_specialisation
+			has_planet_flag = ef_has_ecu_specialisation
 		}
 	}
 
@@ -35,16 +33,15 @@ planet_event = {
         has_planet_flag = ef_planet_specialisation_options_available
     }
 
+	# Diplomacy
 	option = {
 		name = ef_path.1.a
 		allow = {
 			owner = { resource_stockpile_compare = { resource = influence value >= 500 } }
 			custom_tooltip_fail = {
 				text = ef_already_specialised_tt
-				NOR = {
-					has_planet_flag = ef_diplomacy_specialisation
-					has_planet_flag = ef_industry_specialisation
-					has_planet_flag = ef_trade_specialisation
+				NOT = {
+					has_planet_flag = ef_has_ecu_specialisation
 				}
 			}
 		}
@@ -53,17 +50,18 @@ planet_event = {
 		custom_tooltip = ef_path.1.a.tooltip
 		remove_planet_flag = ef_planet_specialisation_options_available
 		set_planet_flag = ef_diplomacy_specialisation
+		set_planet_flag = ef_has_ecu_specialisation
 	}
+
+	# Industry
     option = {
 		name = ef_path.1.b
 		allow = {
 			owner = { resource_stockpile_compare = { resource = influence value >= 500 } }
 			custom_tooltip_fail = {
 				text = ef_already_specialised_tt
-				NOR = {
-					has_planet_flag = ef_diplomacy_specialisation
-					has_planet_flag = ef_industry_specialisation
-					has_planet_flag = ef_trade_specialisation
+				NOT = {
+					has_planet_flag = ef_has_ecu_specialisation
 				}
 			}
 		}
@@ -72,22 +70,23 @@ planet_event = {
 		custom_tooltip = ef_path.1.b.tooltip
 		remove_planet_flag = ef_planet_specialisation_options_available
 		set_planet_flag = ef_industry_specialisation
+		set_planet_flag = ef_has_ecu_specialisation
 
 		# Init pollution
 		hidden_effect = {
 			planet_event = { id = ef_industry.10 days = 360 }
 		}
 	}
+
+	# Trade
     option = {
 		name = ef_path.1.c
 		allow = {
 			owner = { resource_stockpile_compare = { resource = influence value >= 500 } }
 			custom_tooltip_fail = {
 				text = ef_already_specialised_tt
-				NOR = {
-					has_planet_flag = ef_diplomacy_specialisation
-					has_planet_flag = ef_industry_specialisation
-					has_planet_flag = ef_trade_specialisation
+				NOT = {
+					has_planet_flag = ef_has_ecu_specialisation
 				}
 			}
 		}
@@ -96,10 +95,12 @@ planet_event = {
 		custom_tooltip = ef_path.1.c.tooltip
 		remove_planet_flag = ef_planet_specialisation_options_available
 		set_planet_flag = ef_trade_specialisation
+		set_planet_flag = ef_has_ecu_specialisation
 		# Init the stock market
 		hidden_effect = { add_modifier = { modifier = ef_stock_market_4 days = -1 } }
 
 	}
+
     option = {
 		name = ef_path.1.d
 		custom_tooltip = ef_path.1.d.tooltip
