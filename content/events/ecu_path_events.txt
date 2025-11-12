@@ -98,11 +98,71 @@ planet_event = {
 		set_planet_flag = ef_has_ecu_specialisation
 		# Init the stock market
 		hidden_effect = { add_modifier = { modifier = ef_stock_market_4 days = -1 } }
-
 	}
 
-    option = {
+	# Military
+	option = {
 		name = ef_path.1.d
+		allow = {
+			owner = { resource_stockpile_compare = { resource = influence value >= 500 } }
+			custom_tooltip_fail = {
+				text = ef_already_specialised_tt
+				NOT = {
+					has_planet_flag = ef_has_ecu_specialisation
+				}
+			}
+		}
+
+		owner = { add_resource = { influence = -500 } }
 		custom_tooltip = ef_path.1.d.tooltip
+		remove_planet_flag = ef_planet_specialisation_options_available
+		set_planet_flag = ef_military_specialisation
+		set_planet_flag = ef_has_ecu_specialisation
+	}
+
+	# Religion
+	option = {
+		name = ef_path.1.e
+		allow = {
+			owner = { resource_stockpile_compare = { resource = influence value >= 500 } }
+			custom_tooltip_fail = {
+				text = ef_already_specialised_tt
+				NOT = {
+					has_planet_flag = ef_has_ecu_specialisation
+				}
+			}
+		}
+
+		owner = { add_resource = { influence = -500 } }
+		custom_tooltip = ef_path.1.e.tooltip
+		remove_planet_flag = ef_planet_specialisation_options_available
+		set_planet_flag = ef_religion_specialisation
+		set_planet_flag = ef_has_ecu_specialisation
+	}
+
+	# Research
+	option = {
+		name = ef_path.1.f
+		allow = {
+			owner = { resource_stockpile_compare = { resource = influence value >= 500 } }
+			custom_tooltip_fail = {
+				text = ef_already_specialised_tt
+				NOT = {
+					has_planet_flag = ef_has_ecu_specialisation
+				}
+			}
+		}
+
+		owner = { add_resource = { influence = -500 } }
+		custom_tooltip = ef_path.1.f.tooltip
+		remove_planet_flag = ef_planet_specialisation_options_available
+		set_planet_flag = ef_research_specialisation
+		set_planet_flag = ef_has_ecu_specialisation
+	}
+
+	# Default
+	option = {
+		name = ef_path.1.g
+		custom_tooltip = ef_path.1.g.tooltip
 	}
 }
