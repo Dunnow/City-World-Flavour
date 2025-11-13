@@ -259,7 +259,7 @@ planet_event = {
 					is_country_type = marauder_raiders
 				}
 			}
-			save_event_target_as = ef_maruader_expy_country
+			save_event_target_as = ef_marauder_expy_country
 		}
 		owner = {
 			set_timed_country_flag = {
