@@ -212,7 +212,7 @@
   ef_vertical_sprawl_desc: "Layers upon layers of arcologies and habitation blocks make navigating the urban cityscape a challenging prospect."
 
   ef_unstable_climate: "Unstable Climate"
-  ef_unstable_climate_desc: "The absence of a natural biosphere to regulate the planet's climate is keenly felt. Artificial intervention is nessecary to restore the environment's habitability."
+  ef_unstable_climate_desc: "The absence of a natural biosphere to regulate the planet's climate is keenly felt. Artificial intervention is necessary to restore the environment's habitability."
 
   ef_deep_levels_1: "Deep Levels: §BMinor§!"
   ef_deep_levels_1_desc: "This world's urban sprawl descends several layers beneath the surface."
@@ -333,7 +333,7 @@
   ef_flavour.13.a: "Unfortunate."
 
   ef_flavour.20.name: "Freighter Crash on [This.GetName]"
-  ef_flavour.20.desc: "Tragedy has struck [This.GetName] today as a large freighter broke up in the upper atmosphere, dropping debris and cargo throughout the Southern hemisphere of the planet.\n\nAlthough the falling wreckage has cause some damage, much of it was burned up during the descent. Casualties are relatively light, but it appears that freighter was carrying a large quantity of hazardous materials for a major research laboratory on [This.GetName]. We have no idea what the effect of these substances will be on the planet's enviroment."
+  ef_flavour.20.desc: "Tragedy has struck [This.GetName] today as a large freighter broke up in the upper atmosphere, dropping debris and cargo throughout the Southern hemisphere of the planet.\n\nAlthough the falling wreckage has cause some damage, much of it was burned up during the descent. Casualties are relatively light, but it appears that freighter was carrying a large quantity of hazardous materials for a major research laboratory on [This.GetName]. We have no idea what the effect of these substances will be on the planet's environment."
   ef_flavour.20.a: "A great tragedy."
 
   ef_flavour.21.name: "Freighter: Public Health Crisis"
@@ -374,8 +374,8 @@
   ef_flavour.62.b: "Allow our researchers to examine it."
 
   ef_path.1.name: "[This.GetName] at the Crossroads"
-  ef_path.1.desc: "As [This.GetName] grows in size and influence, more and more talent is being attracted to the bustling world. We have a unique opportunity to reap the benefits of specialization by encouraging a particular path of development.\n\nAs one of the galaxy's greatest population centres, [This.GetName] naturally has a great deal of cultural weight. With deliberate outreach programs and sponsorship, we can develop the planet's reputation as a centre of culture and politics in the galaxy.\n\nAs a major source of labour and already well integrated into our logistics networks, [This.GetName] has enormous potential as a manufacturing hub. All it requries is a relatively minor investment.\n\nThe tremendous consumer markets of [This.GetName] have also drawn the attention of numerous conglomerates, who are eager to get their [This.Owner.GetSpeciesHandName]s on the planet's lucrative trade routes."
-  ef_path.1.a: "[This.GetName] has the potential to become a centre of galactic affairs."
+  ef_path.1.desc: "As [This.GetName] grows in size and influence, more and more talent is being attracted to the bustling world. We have a unique opportunity to reap the benefits of specialization by encouraging a particular path of development.\n\nAs one of the galaxy's greatest population centers, [This.GetName] naturally has a great deal of cultural weight. With deliberate outreach programs and sponsorship, we can develop the planet's reputation as a center of culture and politics in the galaxy.\n\nAs a major source of labour and already well integrated into our logistics networks, [This.GetName] has enormous potential as a manufacturing hub. All it requires is a relatively minor investment.\n\nThe tremendous consumer markets of [This.GetName] have also drawn the attention of numerous conglomerates, who are eager to get their [This.Owner.GetSpeciesHandName]s on the planet's lucrative trade routes."
+  ef_path.1.a: "[This.GetName] has the potential to become a center of galactic affairs."
   ef_path.1.a.tooltip: "Unlocks the §BPolitics§! special effects\n\n§RThis decision is permanent§!"
   ef_path.1.b: "Industrial might will bring us prosperity."
   ef_path.1.b.tooltip: "Unlocks the §BIndustry§! special effects\n\n§RThis decision is permanent§!"
@@ -558,7 +558,7 @@
   ef_diplo.52.a: "The premise is a bit implausible."
 
   ef_diplo.53.name: "Khan of the Void"
-  ef_diplo.53.desc: "One of [This.GetName]'s most recent media offerings has been gathering a cult following.\n\nSet in a fictionalized version of the §Y[event_target:ef_maruader_expy_country.GetName]§!, the story follows a §Y[event_target:ef_maruader_expy_country.species.GetName]§! youth as they unite their warring clans and establish themselves as a mighty Khan.\n\nThe producers assure viewers that any resemblance to real or historical characters is §Rstrictly§! coincidental. It's certainly garnered a great deal of attention and interest in [This.GetName]'s other entertainment media."
+  ef_diplo.53.desc: "One of [This.GetName]'s most recent media offerings has been gathering a cult following.\n\nSet in a fictionalized version of the §Y[event_target:ef_marauder_expy_country.GetName]§!, the story follows a §Y[event_target:ef_marauder_expy_country.species.GetName]§! youth as they unite their warring clans and establish themselves as a mighty Khan.\n\nThe producers assure viewers that any resemblance to real or historical characters is §Rstrictly§! coincidental. It's certainly garnered a great deal of attention and interest in [This.GetName]'s other entertainment media."
   ef_diplo.53.a: "Purely coincidental..."
 
   ef_diplo.54.name: "Life Among the Primitives"
