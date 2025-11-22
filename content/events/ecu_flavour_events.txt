@@ -71,6 +71,17 @@ planet_event = {
 						}
 					}
 				}
+				# Military events
+				ef_military_specialisation = {
+					random_list = {
+						95 = { } # Approximately a new event every 20 years or so. (Ideally)
+						5 = {
+							random_list = {
+								1 = { planet_event = { id = ef_military.10 }}
+							}
+						}
+					}
+				}
 			}
 		}
 		# Loop the event
