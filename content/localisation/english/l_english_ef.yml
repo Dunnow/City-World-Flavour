@@ -565,6 +565,11 @@
   ef_diplo.54.desc: "A recent holovid account from [This.GetName] of the pre-ftl §Y[event_target:ef_primitive_documentary_country.GetName]§! on §Y[event_target:ef_primitive_documentary_country.home_planet.GetName]§! has been developing a devoted following across the galaxy.\n\nAcclaimed as a 'breathtaking insight' into the lives of primitive races, this has helped develop [This.GetName]'s reputation as a solid and reputable source of information - excellent for the §Y[This.Owner.GetName]'s§! soft power across the galaxy."
   ef_diplo.54.a: "Good."
 
+  ef_military.10.name: "The Mighty Warriors of [event_target:ef_varangian_candidate_country.species.home_planet.GetName]"
+  ef_military.10.desc: "The §Y[event_target:ef_varangian_candidate_country.species.GetName]§! are a species with a proud martial history. Their soldiers have a well deserved reputation for skill, discipline and ferocity in battle.\n\nSome of the senior military advisors on [This.GetName] have expressed a desire for a regiment of soldiers of similar quality. They argue that their skills and separation from [This.Owner.Species.GetName] politics would provide the [This.Owner.GetRulerTitle] with a valuable tool for the protection of the [This.Owner.GetName]."
+  ef_military.10.a: "We should recruit a cohort of these warriors to serve [This.GetName]."
+  ef_military.10.b: "This is not in our interests."
+
   ef_misc.2.name: "Urban Evolution"
   ef_misc.2.desc: "As the inhabitants of [This.GetName] continue to thrive, the world's population has grown to unprecedented levels. \n\nThe planet's surface is dotted with the signs of urban development, with cities, industrial zones and countless smaller settlements scattered across every continent.\n\nAlthough a long way from a true city-world, every part of [This.GetName] has been indelibly touched by [This.owner_main_species.GetAdj] civilization."
   ef_misc.2.a: "A sign of progress."

@@ -1,0 +1,138 @@
+namespace = ef_military
+
+planet_event = {
+	id = ef_military.10
+	title = ef_military.10.name
+	desc = "ef_military.10.desc"
+	picture  = GFX_evt_victorious_army
+	location = root
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			NOT = {
+				has_country_flag = ef_varangians_has_happened
+			}
+		}
+		# We have to be using a foreign country
+		any_playable_country = {
+			not = { is_same_value = root.owner}
+		}
+	}
+
+	immediate = {
+		owner = { set_country_flag = ef_varangians_has_happened }
+        random_playable_country = {
+            save_event_target_as = ef_varangian_candidate_country
+			limit = {
+				has_established_contact = root.owner
+				is_primitive = no # I love the larp of it, but this would cause some issues.
+				is_gestalt = no
+				is_individual_machine = no
+			}
+			weights = {
+				base = 10
+				# We only want this if there are absolutely no other options
+				modifier = {
+					mult = 0.01
+					is_same_species = root.owner
+				}
+				# Total disqualifiers
+				modifier = {
+					mult = 0
+					is_gestalt = yes
+					species = {
+						OR = {
+							has_trait = trait_tankbound
+						}
+					}
+				}
+				# 200% if militarist, 400% if fan mil
+				modifier = {
+					mult = 2
+					is_militarist = yes
+				}
+				modifier = {
+					mult = 2
+					has_ethic = ethic_fanatic_militarist
+				}
+				# 50% if pacifist, 25% if fan pac
+				modifier = {
+					mult = 0.5
+					is_pacifist = yes
+				}
+				modifier = {
+					mult = 0.5
+					has_ethic = ethic_fanatic_pacifist
+				}
+				# Positive for good army traits
+				modifier = {
+					mult = 1.5
+					species = {
+						OR = {
+							has_trait = trait_strong
+							has_trait = trait_very_strong
+							has_trait = trait_resilient
+							has_trait = trait_camouflage
+							has_trait = trait_flight
+							has_trait = trait_spatial_mastery
+							has_trait = trait_unplugged_cybernetic_positives_1
+							has_trait = trait_unplugged_cybernetic_positives_2
+							has_trait = trait_unplugged_cybernetic_positives_3
+							has_trait = trait_clone_soldier_fertile
+							has_trait = trait_cyborg_creed_of_war
+							has_trait = trait_juiced_power
+							has_trait = trait_presapient_earthbound
+							has_trait = trait_limited_regeneration
+							has_trait = trait_drake_scaled
+						}
+					}
+				}
+				# Negative for bad army traits
+				modifier = {
+					mult = 0.5
+					species = {
+						OR = {
+							has_trait = trait_weak
+							has_trait = trait_hollow_bones
+							has_trait = trait_humanoid_psychological_infertility
+							has_trait = trait_humanoid_jinxed
+							has_trait = trait_brittle
+							has_trait = trait_nascent_stage
+							has_trait = trait_presapient_forcefully_devolved
+						}
+					}
+				}
+				# These traits totally disqualify a species
+				modifier = {
+					mult = 0
+					species = {
+						OR = {
+							has_trait = trait_tankbound
+							# These would cause pops to decline
+							has_trait = trait_clone_soldier_infertile
+							has_trait = trait_clone_soldier_infertile_full_potential
+						}
+					}
+				}
+			}
+        }
+	}
+
+	option = {
+		name = ef_military.10.a
+		event_target:ef_varangian_candidate_country.species = {
+			save_global_event_target_as = ef_varangian_species_@root
+			set_species_flag = ef_varangian_species_@root
+		}
+		root = {
+			create_pop_group = {
+				species = event_target:ef_varangian_species_@root
+			}
+		}
+	}
+
+	option = {
+		name = ef_military.10.b
+	}
+}
