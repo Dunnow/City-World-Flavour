@@ -274,3 +274,18 @@ d_ef_ship_breaking_yards = {
 		weight = 0 # Only added by decision
 	}
 }
+
+d_ef_varangian_fortress = {
+	is_for_colonizable = yes
+	icon = "d_quarantine_zone"
+
+	category = deposit_cat_rare
+
+	planet_modifier = {
+		job_ef_varangian_add = 300
+	}
+
+	drop_weight = {
+		weight = 0 # Only added by event
+	}
+}

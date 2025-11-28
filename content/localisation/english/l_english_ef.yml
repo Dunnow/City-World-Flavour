@@ -91,6 +91,9 @@
   d_ef_grand_presidium: "Grand Presidium"
   d_ef_grand_presidium_desc: "An enormous diplomatic quarter capable of accommodating masses of diplomats in tasteful splendor."
 
+  d_ef_varangian_fortress: "Offworlder Garrison"
+  d_ef_varangian_fortress_desc: "A militarized complex that houses a contingent of alien warriors."
+
   # Jobs
   job_ef_satellite_operator: "Satellite Operator"
   job_ef_satellite_operator_plural: "Satellite Operators"
@@ -149,6 +152,11 @@
   mod_job_ef_hive_ganger_add: "$job_ef_hive_ganger$ Jobs"
   mod_job_ef_hive_ganger_per_pop: "§G+1§! $job_ef_hive_ganger$ Job per §Y20§! Pops"
   job_ef_hive_ganger_desc: "Control over the trade routes and populations of the deepest levels requires constant violence."
+
+  job_ef_varangian: "Offworld Guard"
+  job_ef_varangian_plural: "Offworld Guards"
+  mod_job_ef_varangian_add: "$job_ef_varangian$ Jobs"
+  job_ef_varangian_desc: "Doughty mercenaries recruited from a warrior race. Prized for their discipline and loyalty to our empire."
 
   # Pop Category Loc
   pop_cat_ef_undercity: "Underworlder"

@@ -125,11 +125,10 @@ planet_event = {
 			save_global_event_target_as = ef_varangian_species_@root
 			set_species_flag = ef_varangian_species_@root
 		}
-		root = {
-			create_pop_group = {
-				species = event_target:ef_varangian_species_@root
-			}
+		create_pop_group = {
+			species = event_target:ef_varangian_species_@root
 		}
+		add_deposit = d_ef_varangian_fortress
 	}
 
 	option = {
