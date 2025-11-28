@@ -399,6 +399,69 @@ ef_park_warden = {
 	inline_script = "jobs/automodding_priority_research"
 }
 
+ef_varangian = {
+	category = worker
+	swappable_data = {
+		default = {
+			condition_string = SOLDIER_JOB_TRIGGER
+			building_icon = building_stronghold
+			icon = knight
+		}
+	}
+
+	tags = { soldier }
+
+	country_modifier = {
+		country_naval_cap_add = 8
+	}
+
+	resources = {
+		category = planet_soldiers
+		inline_script = "output/soldier_output"
+	}
+
+	inline_script = "output/soldier_triggered_modifiers"
+
+	planet_modifier = {
+		planet_defense_armies_add = 3
+	}
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible = {
+		soldier_job_check_trigger = yes
+		owner = { is_gestalt = no }
+		species = {
+			has_species_flag = ef_varangian_species_@root.planet
+		}
+	}
+
+	weight = {
+		weight = @soldier_job_weight
+		modifier = {
+			factor = 1000
+			species = {
+				has_species_flag = ef_varangian_species_@root.planet
+			}
+		}
+	}
+
+	promotion = {
+		time = @standard_promotion_time
+		effect = {
+			pop_amount_change_category = {
+				CATEGORY = worker
+				AMOUNT = local_pop_amount
+			}
+		}
+	}
+}
+
 ef_vent_tribal = {
 	category = ef_undercity
 	is_capped_by_modifier = yes
