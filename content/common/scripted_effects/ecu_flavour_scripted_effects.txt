@@ -146,14 +146,14 @@ ef_decrease_stock_market = {
 # Root scope = situation
 ef_increase_pollution = {
     if = {
-        limit = {situation_progress < 95}
+        limit = { situation_progress < 95 }
         add_situation_progress = 5
     }
 }
 # Root scope = situation
 ef_increase_pollution_major = {
     if = {
-        limit = {situation_progress < 90}
+        limit = { situation_progress < 90 }
         add_situation_progress = 10
     }
 }
@@ -161,7 +161,7 @@ ef_increase_pollution_major = {
 # Root scope = situation
 ef_decrease_pollution = {
     if = {
-        limit = {situation_progress > 5}
+        limit = { situation_progress > 5 }
         add_situation_progress = -5
     }
 }
@@ -169,7 +169,7 @@ ef_decrease_pollution = {
 # Root scope = situation
 ef_decrease_pollution_major = {
     if = {
-        limit = {situation_progress > 10}
+        limit = { situation_progress > 10 }
         add_situation_progress = -10
     }
 }
@@ -177,12 +177,13 @@ ef_decrease_pollution_major = {
 # Root scope = situation
 ef_decrease_pollution_massive = {
     if = {
-        limit = {situation_progress > 15}
+        limit = { situation_progress > 15 }
         add_situation_progress = -15
     }
 }
 
 # Works for relic or normal worlds. Has its own event announcement to state that this was natural growth
+# TODO: add RWF integration to keep their unique deposits. Maybe a custom on_action?
 ef_grow_ecu = {
     # Make city-planet
     save_deposits = yes
@@ -194,17 +195,11 @@ ef_grow_ecu = {
         add_deposit = d_former_relic_world
     }
     restore_saved_deposits = yes
-    set_industrial_focus_flags = yes
     change_pc = pc_city
     relic_world_conversion_effect = {
         DISTRICT = district_arcology_housing
         VARIABLE = num_housing_districts
     }
-    relic_world_conversion_effect = {
-        DISTRICT = district_arcology_arms_industry
-        VARIABLE = num_industrial_districts
-    }
-    set_ecu_industrial_districts_effect = yes
     set_planet_entity = {
         entity = "city_planet_entity"
         graphical_culture = owner
