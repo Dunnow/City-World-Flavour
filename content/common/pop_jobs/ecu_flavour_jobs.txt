@@ -415,11 +415,6 @@ ef_varangian = {
 		country_naval_cap_add = 8
 	}
 
-	resources = {
-		category = planet_soldiers
-		inline_script = "output/soldier_output"
-	}
-
 	inline_script = "output/soldier_triggered_modifiers"
 
 	planet_modifier = {
