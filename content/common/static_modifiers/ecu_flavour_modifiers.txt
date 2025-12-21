@@ -201,10 +201,18 @@ ef_luxury_goods_exports = {
 	icon_frame = 1
 }
 
+# TODO need to scrap culture workers
 ef_space_hollywood = {
 	planet_amenities_mult= 0.1
 	job_culture_worker_per_pop = 0.05
 	icon = gfx/interface/icons/planet_modifiers/pm_minor_artifact_decision.dds
+	icon_frame = 1
+}
+
+ef_thriving_cultural_scene = {
+	planet_amenities_mult= 0.1
+	planet_jobs_unity_produces_mult = 0.1
+	icon = gfx/interface/icons/planet_modifiers/pm_alien_propaganda.dds
 	icon_frame = 1
 }
 

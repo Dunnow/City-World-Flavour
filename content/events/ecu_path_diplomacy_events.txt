@@ -11,9 +11,10 @@ planet_event = {
 			24 = {} # 1 in 25 of something happening - we don't have that many event so we have to ration them
 			1 = {
 				random_list = {
-					1 = { planet_event = { id =  ef_diplo.20 } }
-					1 = { planet_event = { id =  ef_diplo.30 } }
-					1 = { planet_event = { id =  ef_diplo.50 } }
+					1 = { planet_event = { id = ef_diplo.20 } }
+					1 = { planet_event = { id = ef_diplo.30 } }
+					1 = { planet_event = { id = ef_diplo.50 } }
+					1 = { planet_event = { id = ef_diplo.70 }}
 				}
 			}
 		}
@@ -322,5 +323,104 @@ planet_event = {
 				unity = 5000
 			}
 		}
+	}
+}
+
+# We've attracted cultural talent
+planet_event = {
+	id = ef_diplo.70
+	title = ef_diplo.70.name
+	desc = "ef_diplo.70.desc"
+	picture  = GFX_evt_announcement
+	location = root
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			owner = { has_country_flag = ef_recent_cultural_talent}
+		}
+	}
+
+	immediate = {
+		owner = {
+			set_timed_country_flag = {
+				flag = ef_recent_cultural_talent
+				years = 25
+			}
+		}
+		random_galaxy_species = {
+			save_event_target_as = ef_talented_creative_species
+			weights = {
+				base = 100
+				modifier = {
+					mult = 0
+					# We don't want random aliens we've never seen before showing up.
+					NOT = {
+						any_country = {
+							is_same_species = prev
+							has_established_contact = root.owner
+						}
+					}
+				}
+				# Fallback only
+				modifier = {
+					mult = 0.01
+					is_same_species = root.owner
+				}
+			}
+		}
+	}
+
+	# Wow! Sponsor them.
+	option = {
+		name = ef_diplo.70.a
+		custom_tooltip = ef_diplo.70.a.tt
+		owner = {
+			create_leader = {
+				class = official
+				species = event_target:ef_talented_creative_species
+				name = random
+				skill = 6
+				background_job = entertainer
+				background_ethic = ethic_xenophile
+				randomize_traits = no
+				traits = {
+					trait = subclass_official_delegate
+					trait = leader_trait_ef_artist_2
+				}
+			}
+		}
+	}
+
+	# Let's get a local talent instead
+	option = {
+		name = ef_diplo.70.b
+		custom_tooltip = ef_diplo.70.b.tt
+		trigger = {
+			owner = {
+				is_xenophobe = yes
+			}
+		}
+		owner = {
+			create_leader = {
+				class = official
+				species = owner_main_species
+				name = random
+				skill = 4
+				background_job = entertainer
+				background_ethic = ethic_xenophile
+				randomize_traits = no
+				traits = {
+					trait = subclass_official_delegate
+					trait = leader_trait_ef_artist_1
+				}
+			}
+		}
+	}
+
+	# We're not gonna sponsor them, just enjoy the benefits
+	option = {
+		name = ef_diplo.70.c
+		add_modifier = { modifier = ef_thriving_cultural_scene years = 10 }
 	}
 }

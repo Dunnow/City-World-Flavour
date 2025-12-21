@@ -306,6 +306,9 @@
   ef_labour_disputes: "Labor Disputes"
   ef_labour_disputes_desc: "Large sections of this world's economy has ground to a halt amidst intense disagreements over working conditions."
 
+  ef_thriving_cultural_scene: "Thriving Cultural Scene"
+  ef_thriving_cultural_scene_desc: "This planet is enjoying a boom in the arts. Creative works and a cultural output are flourishing."
+
   ef_urban_level_1: "Major Urbanization"
   ef_urban_level_1_desc: "This planet is densely populated and hosts several major settlements."
 
@@ -321,6 +324,12 @@
   # Trait Loc
   trait_ef_mutant: "Mutant"
   trait_ef_mutant_desc: "This species is afflicted with uncontrolled mutations. Their bodies are breaking down under the pressure."
+
+  leader_trait_ef_artist_1: "Talented Creative"
+  leader_trait_ef_artist_1_desc: "This leader has a remarkable aptitude for the creative arts."
+
+  leader_trait_ef_artist_2: "Creative Genius"
+  leader_trait_ef_artist_2_desc: "This leader is widely acclaimed as a visionary creative."
 
   # Event Loc
   ef_flavour.10.name: "Into the Deep"
@@ -572,6 +581,14 @@
   ef_diplo.54.name: "Life Among the Primitives"
   ef_diplo.54.desc: "A recent holovid account from [This.GetName] of the pre-ftl §Y[event_target:ef_primitive_documentary_country.GetName]§! on §Y[event_target:ef_primitive_documentary_country.home_planet.GetName]§! has been developing a devoted following across the galaxy.\n\nAcclaimed as a 'breathtaking insight' into the lives of primitive races, this has helped develop [This.GetName]'s reputation as a solid and reputable source of information - excellent for the §Y[This.Owner.GetName]'s§! soft power across the galaxy."
   ef_diplo.54.a: "Good."
+
+  ef_diplo.70.name: "A Talented Creative"
+  ef_diplo.70.desc: "The vast agglomeration of cultural output and resources present on [This.GetName] have attracted talented individuals from across the galaxy.\n\nOne of these arrivals, a [event_target:ef_talented_creative_species.GetName], has been making waves among the social elite of [This.GetName]. This reflects well on the [This.Owner.GetName]."
+  ef_diplo.70.a: "Marvellous! We should sponsor them."
+  ef_diplo.70.a.tt: "A high level §H[event_target:ef_talented_creative_species.GetName]§! £official£ §BOfficial§! will appear on [This.GetName]."
+  ef_diplo.70.b: "A Xeno? Surely we have our own, [This.Owner.Species.GetName], talents."
+  ef_diplo.70.b.tt: "A §H[This.Owner.Species.GetName]§! £official£ §BOfficial§! will appear on [This.GetName]."
+  ef_diplo.70.c: "We should support the whole industry rather than pick favorites."
 
   ef_military.10.name: "The Mighty Warriors of [event_target:ef_varangian_candidate_country.species.home_planet.GetName]"
   ef_military.10.desc: "The §Y[event_target:ef_varangian_candidate_country.species.GetName]§! are a species with a proud martial history. Their soldiers have a well deserved reputation for skill, discipline and ferocity in battle.\n\nSome of the senior military advisors on [This.GetName] have expressed a desire for a regiment of soldiers of similar quality. They argue that their skills and separation from [This.Owner.Species.GetName] politics would provide the [This.Owner.GetRulerTitle] with a valuable tool for the protection of the [This.Owner.GetName]."
