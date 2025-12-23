@@ -14,6 +14,7 @@ planet_event = {
 					1 = { planet_event = { id = ef_diplo.20 } }
 					1 = { planet_event = { id = ef_diplo.30 } }
 					1 = { planet_event = { id = ef_diplo.50 } }
+					1 = { planet_event = { id = ef_diplo.60 }}
 					1 = { planet_event = { id = ef_diplo.70 }}
 				}
 			}
@@ -321,6 +322,42 @@ planet_event = {
 		owner = {
 			add_resource = {
 				unity = 5000
+			}
+		}
+	}
+}
+
+# The last peak of [This.GetName]
+planet_event = {
+	id = ef_diplo.60
+	title = ef_diplo.60.name
+	desc = "ef_diplo.60.desc"
+	picture  = GFX_evt_ef_skyline
+	location = root
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			owner = { has_country_flag = ef_last_peak_has_happened}
+		}
+	}
+
+	immediate = {
+		owner = { set_country_flag = ef_last_peak_has_happened }
+	}
+
+	option = {
+		name = ef_diplo.60.a
+		add_deposit = d_ef_mountain_reserve
+	}
+
+	option = {
+		name = ef_diplo.60.b
+		owner = {
+			add_resource = {
+				minerals = 2000
+				engineering_research = 400
+				volatile_motes = 200
 			}
 		}
 	}

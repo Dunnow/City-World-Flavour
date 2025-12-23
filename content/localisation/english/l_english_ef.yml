@@ -94,6 +94,9 @@
   d_ef_varangian_fortress: "Offworlder Garrison"
   d_ef_varangian_fortress_desc: "A militarized complex that houses a contingent of alien warriors."
 
+  d_ef_mountain_reserve: "Mountain Reserve"
+  d_ef_mountain_reserve_desc: "A carefully curated slice of this world's natural biosphere. Now a quaint novelty for the rich and powerful."
+
   # Jobs
   job_ef_satellite_operator: "Satellite Operator"
   job_ef_satellite_operator_plural: "Satellite Operators"
@@ -581,6 +584,11 @@
   ef_diplo.54.name: "Life Among the Primitives"
   ef_diplo.54.desc: "A recent holovid account from [This.GetName] of the pre-ftl §Y[event_target:ef_primitive_documentary_country.GetName]§! on §Y[event_target:ef_primitive_documentary_country.home_planet.GetName]§! has been developing a devoted following across the galaxy.\n\nAcclaimed as a 'breathtaking insight' into the lives of primitive races, this has helped develop [This.GetName]'s reputation as a solid and reputable source of information - excellent for the §Y[This.Owner.GetName]'s§! soft power across the galaxy."
   ef_diplo.54.a: "Good."
+
+  ef_diplo.60.name: "The Last Peak on [This.GetName]"
+  ef_diplo.60.desc: "The endless urban development of [This.GetName] swallows up available space with a ravenous, unending appetite. Even the most broken and undesirable terrain can have potential to house new hab-blocks of the world-city.\n\nUntouched until now, one of [This.GetName]'s final mountain ranges has been earmarked for development. This has caused unrest among some inhabitants, who wish to preserve the land as one of the only surviving examples of [This.GetName]'s native environment."
+  ef_diplo.60.a: "Perhaps we can put aside a small region for future generations."
+  ef_diplo.60.b: "Progress waits for nobody. Level the range."
 
   ef_diplo.70.name: "A Talented Creative"
   ef_diplo.70.desc: "The vast agglomeration of cultural output and resources present on [This.GetName] have attracted talented individuals from across the galaxy.\n\nOne of these arrivals, a [event_target:ef_talented_creative_species.GetName], has been making waves among the social elite of [This.GetName]. This reflects well on the [This.Owner.GetName]."

@@ -289,3 +289,18 @@ d_ef_varangian_fortress = {
 		weight = 0 # Only added by event
 	}
 }
+
+d_ef_mountain_reserve = {
+	is_for_colonizable = yes
+
+	category = deposit_cat_rare
+
+	planet_modifier = {
+		planet_max_districts_add = -1
+		job_ef_park_warden_add = 600
+	}
+
+	drop_weight = {
+		weight = 0 # Only added by event
+	}
+}

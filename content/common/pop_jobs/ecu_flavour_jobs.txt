@@ -374,7 +374,7 @@ ef_park_warden = {
 	swappable_data = {
 		default = {
 			condition_string = SPECIALIST_JOB_TRIGGER
-			building_icon = building_ranger_lodge
+			building_icon = holding_park_ranger_lodge
 			icon = ranger
 		}
 	}
