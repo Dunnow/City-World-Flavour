@@ -563,3 +563,40 @@ planet_event = {
 		add_modifier = { modifier = ef_ai_insight years = 30 }
 	}
 }
+
+# TODO: It might be nice to have some follow on events here around smuggling.
+# Smuggling Rings
+planet_event = {
+	id = ef_flavour.70
+	title = ef_flavour.70.name
+	desc = "ef_flavour.70.desc"
+	picture  = GFX_evt_ship_offloading_cargo
+	location = root
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			NOT = {
+				has_country_flag = ef_smugglers_port_has_happened
+			}
+		}
+	}
+	immediate = {
+		owner = { set_country_flag = ef_smugglers_port_has_happened }
+	}
+
+	# Crack down (take a negative trade modifier for a while)
+	option = {
+		name = ef_flavour.70.a
+		add_modifier = { modifier = ef_increased_trade_restrictions years = 10 }
+	}
+
+	# Add smugglers port deposit
+	option = {
+		name = ef_flavour.70.b
+		owner = {
+			add_resource = { trade = 5000 }
+		}
+		add_deposit = d_ef_smugglers_port
+	}
+}

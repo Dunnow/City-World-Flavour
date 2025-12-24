@@ -97,6 +97,9 @@
   d_ef_mountain_reserve: "Mountain Reserve"
   d_ef_mountain_reserve_desc: "A carefully curated slice of this world's natural biosphere. Now a quaint novelty for the rich and powerful."
 
+  d_ef_smugglers_port: "Smuggler's Port"
+  d_ef_smugglers_port_desc: "An illicit gateway for ill-gotten goods and contraband to disperse into the under-city."
+
   # Jobs
   job_ef_satellite_operator: "Satellite Operator"
   job_ef_satellite_operator_plural: "Satellite Operators"
@@ -312,6 +315,9 @@
   ef_thriving_cultural_scene: "Thriving Cultural Scene"
   ef_thriving_cultural_scene_desc: "This planet is enjoying a boom in the arts. Creative works and a cultural output are flourishing."
 
+  ef_increased_trade_restrictions: "Increased Trade Restrictions"
+  ef_increased_trade_restrictions_desc: "Commercial traffic between this planet and the wider galaxy is being hamstrung by increased regulations and enforcement."
+
   ef_urban_level_1: "Major Urbanization"
   ef_urban_level_1_desc: "This planet is densely populated and hosts several major settlements."
 
@@ -392,6 +398,11 @@
   ef_flavour.62.desc: "Our investigation on [This.GetName] has borne fruit. It appears that a minor criminal syndicate was attempting to develop a homegrown artificial intelligence.\n\nUnfortunately for the criminals, they were unable to achieve a fully functional intelligence. The program performed poorly and left telltale traces on public systems when used, allowing our investigators to follow the tracks.\n\nAlthough the criminal's work was shoddy, there are some novel solutions they developed that certain members of our scientific community are interested in."
   ef_flavour.62.a: "Scrap it."
   ef_flavour.62.b: "Allow our researchers to examine it."
+
+  ef_flavour.70.name: "Illicit Deliveries"
+  ef_flavour.70.desc: "A routine customs raid on [This.GetName] has uncovered an enormous smuggling network with connections deep into the city-planets's criminal underworld.\n\nHowever, the volume of cargo is significant, and although illicit, seems to be relatively inoffensive. Several major commercial figures have expressed concern that an attempt to root out these criminal groups would unacceptably affect their legitimate operations."
+  ef_flavour.70.a: "We have to crack down on these criminal organizations."
+  ef_flavour.70.b: "Perhaps we can look the other way, for a price."
 
   ef_path.1.name: "[This.GetName] at the Crossroads"
   ef_path.1.desc: "As [This.GetName] grows in size and influence, more and more talent is being attracted to the bustling world. We have a unique opportunity to reap the benefits of specialization by encouraging a particular path of development.\n\nAs one of the galaxy's greatest population centers, [This.GetName] naturally has a great deal of cultural weight. With deliberate outreach programs and sponsorship, we can develop the planet's reputation as a center of culture and politics in the galaxy.\n\nAs a major source of labour and already well integrated into our logistics networks, [This.GetName] has enormous potential as a manufacturing hub. All it requires is a relatively minor investment.\n\nThe tremendous consumer markets of [This.GetName] have also drawn the attention of numerous conglomerates, who are eager to get their [This.Owner.GetSpeciesHandName]s on the planet's lucrative trade routes."

@@ -304,3 +304,19 @@ d_ef_mountain_reserve = {
 		weight = 0 # Only added by event
 	}
 }
+
+d_ef_smugglers_port = {
+	is_for_colonizable = yes
+	icon = d_ef_cargo_bay
+
+	category = deposit_cat_rare
+
+	planet_modifier = {
+		planet_stability_add = -5
+		job_ef_surface_smuggler_add = 500
+	}
+
+	drop_weight = {
+		weight = 0 # Only added by event
+	}
+}

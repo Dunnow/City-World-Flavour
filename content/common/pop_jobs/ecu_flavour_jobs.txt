@@ -457,6 +457,9 @@ ef_varangian = {
 	}
 }
 
+# UNDERCITY JOBS
+# I'd quite like to do more of these, but I'm not sure it's too useful to do extra pop fragmentation for cosmetics.
+
 ef_vent_tribal = {
 	category = ef_undercity
 	is_capped_by_modifier = yes

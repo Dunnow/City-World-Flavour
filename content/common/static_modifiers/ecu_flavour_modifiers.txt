@@ -216,6 +216,13 @@ ef_thriving_cultural_scene = {
 	icon_frame = 1
 }
 
+ef_increased_trade_restrictions = {
+	planet_jobs_trade_produces_mult = -0.25
+
+	icon = gfx/interface/icons/planet_modifiers/pm_federation_fleet.dds
+	icon_frame = 3
+}
+
 # Urbanization modifiers
 # 100 pops
 ef_urban_level_1 = {
