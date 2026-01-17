@@ -10,7 +10,7 @@ defined_text = {
 		localization_key = ef_centuries
 	}
 	text = {
-		trigger = { colony_age > 20}
+		trigger = { colony_age > 20 }
 		localization_key = ef_decades
 	}
     default = ef_years

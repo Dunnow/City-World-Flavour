@@ -614,8 +614,13 @@
   ef_military.10.a: "We should recruit a cohort of these warriors to serve [This.GetName]."
   ef_military.10.b: "This is not in our interests."
 
+  ef_military.20.name: "TODO Title"
+  ef_military.20.desc: "TODO Desc"
+  ef_military.20.a: "TODO Yes"
+  ef_military.20.b: "TODO No"
+
   ef_misc.2.name: "Urban Evolution"
-  ef_misc.2.desc: "As the inhabitants of [This.GetName] continue to thrive, the world's population has grown to unprecedented levels. \n\nThe planet's surface is dotted with the signs of urban development, with cities, industrial zones and countless smaller settlements scattered across every continent.\n\nAlthough a long way from a true city-world, every part of [This.GetName] has been indelibly touched by [This.owner_main_species.GetAdj] civilization."
+  ef_misc.2.desc: "As the inhabitants of [This.GetName] continue to thrive, the world's population has grown to unprecedented levels.\n\nThe planet's surface is dotted with the signs of urban development, with cities, industrial zones and countless smaller settlements scattered across every continent.\n\nAlthough a long way from a true city-world, every part of [This.GetName] has been indelibly touched by [This.owner_main_species.GetAdj] civilization."
   ef_misc.2.a: "A sign of progress."
 
   ef_misc.3.name: "Metropolis Ascendant"

@@ -1,0 +1,32 @@
+namespace = ef_research
+
+# Mad scientist super duper spaceship megaproject
+planet_event = {
+	id = ef_research.20
+	title = ef_research.20.name
+	desc = "ef_research.20.desc"
+	picture  = GFX_evt_engineering_research
+	location = root
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			NOT = {
+				has_country_flag = ef_titan_project_has_happened
+			}
+		}
+	}
+	immediate = {
+		owner = { set_country_flag = ef_titan_project_has_happened }
+	}
+
+	# We love mad science
+	option = {
+		name = ef_research.20.a
+	}
+
+	# We are LAME and hate cool shit 🤓
+	option = {
+		name = ef_research.20.b
+	}
+}

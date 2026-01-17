@@ -135,3 +135,4 @@ planet_event = {
 		name = ef_military.10.b
 	}
 }
+
