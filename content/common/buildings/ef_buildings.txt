@@ -56,3 +56,47 @@ building_ef_hologem_bourse = {
 		is_regular_empire = yes
 	}
 }
+
+building_ef_planetary_defense_silos = {
+	base_buildtime = @b3_time
+	planet_limit = 1
+	position_priority = 100
+	can_be_ruined = no
+	category = army
+
+	building_sets = {
+		fortress
+	}
+
+	potential = {
+		exists = owner
+		owner = { is_wilderness_empire = no } # see 'building_ozone_thickener'
+		has_planet_flag = ef_military_specialisation
+	}
+
+	inline_script = {
+		script = jobs/soldiers_add
+		AMOUNT = @building_static_jobs
+	}
+
+	allow = {
+		has_upgraded_capital = yes
+	}
+
+	show_tech_unlock_if = {
+		is_wilderness_empire = no
+	}
+
+	planet_modifier = {
+		planet_orbital_bombardment_damage = -0.25
+	}
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+		}
+		upkeep = {
+			energy = @b2_upkeep
+		}
+	}
+}

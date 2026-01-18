@@ -171,7 +171,9 @@
 
   # Building Loc
   building_ef_hologem_bourse: "Hologem Bourse"
-  building_ef_hologem_bourse_desc: "These enormous halls are host to sophisticated network of acquisitions, artisans and traders. "
+  building_ef_hologem_bourse_desc: "These enormous halls are host to sophisticated network of acquisitions, artisans and traders."
+  building_ef_planetary_defense_silos: "Planetary Defense Silos"
+  building_ef_planetary_defense_silos_desc: "Armored arrays of ground-to-space missiles promise sudden death for any hostile warships foolish enough to enter close orbit."
 
   # Situation Loc
   ef_situation_corpo_war: "Corporate War"
