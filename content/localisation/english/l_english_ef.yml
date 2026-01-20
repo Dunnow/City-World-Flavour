@@ -164,6 +164,11 @@
   mod_job_ef_varangian_add: "$job_ef_varangian$ Jobs"
   job_ef_varangian_desc: "Doughty mercenaries recruited from a warrior race. Prized for their discipline and loyalty to our empire."
 
+  job_ef_commander: "Commander"
+  job_ef_commander_plural: "Commanders"
+  mod_job_ef_commander_add: "$job_ef_commander$ Jobs"
+  job_ef_commander_desc: "Interstellar warfare requires a keen mind for the formidable challenges of strategy and logistics among the stars."
+
   # Pop Category Loc
   pop_cat_ef_undercity: "Underworlder"
   pop_cat_ef_undercity_plural: "Underworlders"
@@ -174,6 +179,8 @@
   building_ef_hologem_bourse_desc: "These enormous halls are host to sophisticated network of acquisitions, artisans and traders."
   building_ef_planetary_defense_silos: "Planetary Defense Silos"
   building_ef_planetary_defense_silos_desc: "Armored arrays of ground-to-space missiles promise sudden death for any hostile warships foolish enough to enter close orbit."
+  building_ef_sector_command_centre: "Sector Command Center"
+  building_ef_sector_command_centre_desc: "Beneath layers of reinforced plascrete and durasteel, officers plot the defense and logistics of entire military sectors."
 
   # Situation Loc
   ef_situation_corpo_war: "Corporate War"

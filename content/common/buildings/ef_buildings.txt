@@ -100,3 +100,48 @@ building_ef_planetary_defense_silos = {
 		}
 	}
 }
+
+building_ef_sector_command_centre = {
+	base_buildtime = @b3_time
+	planet_limit = 1
+	position_priority = 100
+	can_be_ruined = no
+	category = army
+
+	building_sets = {
+		fortress
+	}
+
+	potential = {
+		exists = owner
+		owner = { is_wilderness_empire = no }
+		has_planet_flag = ef_military_specialisation
+	}
+
+	# This does not work for gestalts atm, but we don't support gestalts at all tbh, so this isn't the place to start.
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		job_ef_commander_add = 600
+	}
+
+	allow = {
+		has_upgraded_capital = yes
+	}
+
+	show_tech_unlock_if = {
+		is_wilderness_empire = no
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+		}
+		upkeep = {
+			energy = @b3_upkeep
+		}
+	}
+}
