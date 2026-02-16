@@ -175,6 +175,7 @@ decision_ef_construct_orbital_control_network = {
 		weight = 1
 	}
 }
+
 decision_ef_establish_climate_regulation_systems = {
 	owned_planets_only = yes
 	icon = "decision_drilling_for_gas"
@@ -452,6 +453,38 @@ decision_ef_host_galactic_exhibitions= {
 			}
 			planet_event = { id = ef_diplo.40 }
 		}
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+decision_ef_create_training_fields= {
+	owned_planets_only = yes
+	icon = "decision_martial_law"
+
+	enactment_time = 180
+	resources = {
+		category = decisions
+		cost = {
+			influence = 50
+			minerals = 1000
+		}
+	}
+
+	allow = {
+		free_district_slots >= 1
+	}
+
+	potential = {
+		ef_is_ecu = yes
+		has_planet_flag = ef_military_specialisation
+		NOT = { has_deposit = d_ef_staging_yards}
+	}
+
+	effect = {
+		add_deposit = d_ef_staging_yards
 	}
 
 	ai_weight = {

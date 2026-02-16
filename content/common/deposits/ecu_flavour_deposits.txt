@@ -290,6 +290,30 @@ d_ef_varangian_fortress = {
 	}
 }
 
+d_ef_staging_yards = {
+	is_for_colonizable = yes
+	icon = "unused/d_colony_settlement"
+
+	category = deposit_cat_rare
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		job_ef_commander_add = 100
+		job_soldier_add = 400
+	}
+
+	planet_modifier = {
+		planet_army_build_speed_mult = -0.25
+	}
+
+	drop_weight = {
+		weight = 0 # Only added by event
+	}
+}
+
 d_ef_mountain_reserve = {
 	is_for_colonizable = yes
 
