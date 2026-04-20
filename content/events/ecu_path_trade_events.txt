@@ -38,7 +38,7 @@ planet_event = {
 	}
 }
 
-# Tax Irregularites
+# Tax Irregularities
 planet_event = {
 	id = ef_trade.20
 	title = ef_trade.20.name
@@ -72,7 +72,7 @@ planet_event = {
 		hidden_effect = {
 			planet_event = {
 				id = ef_trade.21
-				days = 2#70 # Test
+				days = 70
 			}
 		}
 	}
@@ -86,7 +86,7 @@ planet_event = {
 	}
 }
 
-# Tax Irregularites: Conspiracy Uncovered
+# Tax Irregularities: Conspiracy Uncovered
 planet_event = {
 	id = ef_trade.21
 	title = ef_trade.21.name
@@ -106,7 +106,7 @@ planet_event = {
 					10 = {
 						planet_event = {
 							id = ef_trade.22
-							days = 2#70 # TEST
+							days = 70
 						}
 					}
 				}
@@ -124,7 +124,7 @@ planet_event = {
 	}
 }
 
-# Tax Irregularites: Governor implicated
+# Tax Irregularities: Governor implicated
 planet_event = {
 	id = ef_trade.22
 	title = ef_trade.22.name
@@ -154,7 +154,7 @@ planet_event = {
 	}
 }
 
-# Tax Irregularites: Ringleaders caught
+# Tax Irregularities: Ringleaders caught
 # Mutually exclusive with governor outcome
 planet_event = {
 	id = ef_trade.23
