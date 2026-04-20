@@ -1,9 +1,9 @@
-version="1.3.9"
+version="1.3.10"
 tags={
 	"Economy"
 	"Events"
 }
 picture="thumbnail.png"
 name="City World Flavour"
-supported_version="v4.2.*"
+supported_version="v4.3.*"
 remote_file_id="3051471269"
