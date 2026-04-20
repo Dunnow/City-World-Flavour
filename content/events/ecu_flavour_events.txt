@@ -96,6 +96,9 @@ planet_event = {
 		if = {
 			limit = { ef_is_ecu = yes }
 			ef_add_ecu_terraformed_modifiers = yes
+			remove_modifier = ef_urban_level_1
+			remove_modifier = ef_urban_level_2
+			remove_modifier = ef_urban_level_3
 			planet_event = { id = ef_flavour.0 days = 360}
 		}
 	}
