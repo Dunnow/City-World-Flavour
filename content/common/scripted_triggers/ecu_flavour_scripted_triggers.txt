@@ -34,3 +34,12 @@ ef_is_majority_urban = {
         value >= 0.5 # Unfortunately it seems we can't use params here
     }
 }
+
+# Planet scope. True when all five diplomacy specialisation deposits are present.
+ef_diplomacy_quarter_complete = {
+    has_deposit = d_ef_grand_presidium
+    has_deposit = d_ef_imperial_conservatory
+    has_deposit = d_ef_urban_parklands
+    has_deposit = d_ef_lake_district
+    has_deposit = d_ef_galactic_expo_centre
+}

@@ -43,7 +43,7 @@ decision_ef_expand_deep_levels = {
 					value = 1
 				}
 			}
-			ef_set_deep_levels_modifier= yes
+			ef_set_deep_levels_modifier = yes
 		}
 	}
 
@@ -107,7 +107,7 @@ decision_ef_block_off_deep_levels = {
 				which = ef_deep_level_count
 				value = -1
 			}
-			ef_set_deep_levels_modifier= yes
+			ef_set_deep_levels_modifier = yes
 		}
 	}
 
@@ -259,17 +259,8 @@ decision_ef_designate_parklands = {
 
 	effect = {
 		add_deposit = d_ef_urban_parklands
-		# Event for collecting all the deposits
 		if = {
-			limit = {
-				AND = {
-					has_deposit = d_ef_grand_presidium
-					has_deposit = d_ef_imperial_conservatory
-					has_deposit = d_ef_urban_parklands
-					has_deposit = d_ef_lake_district
-					has_deposit = d_ef_galactic_expo_centre
-				}
-			}
+			limit = { ef_diplomacy_quarter_complete = yes }
 			planet_event = { id = ef_diplo.40 }
 		}
 	}
@@ -304,17 +295,8 @@ decision_ef_terraform_urban_lakes = {
 
 	effect = {
 		add_deposit = d_ef_lake_district
-		# Event for collecting all the deposits
 		if = {
-			limit = {
-				AND = {
-					has_deposit = d_ef_grand_presidium
-					has_deposit = d_ef_imperial_conservatory
-					has_deposit = d_ef_urban_parklands
-					has_deposit = d_ef_lake_district
-					has_deposit = d_ef_galactic_expo_centre
-				}
-			}
+			limit = { ef_diplomacy_quarter_complete = yes }
 			planet_event = { id = ef_diplo.40 }
 		}
 	}
@@ -324,7 +306,7 @@ decision_ef_terraform_urban_lakes = {
 	}
 }
 
-decision_ef_establish_imperial_academies= {
+decision_ef_establish_imperial_academies = {
 	owned_planets_only = yes
 	icon = "decision_art_monument"
 
@@ -349,17 +331,8 @@ decision_ef_establish_imperial_academies= {
 
 	effect = {
 		add_deposit = d_ef_imperial_conservatory
-		# Event for collecting all the deposits
 		if = {
-			limit = {
-				AND = {
-					has_deposit = d_ef_grand_presidium
-					has_deposit = d_ef_imperial_conservatory
-					has_deposit = d_ef_urban_parklands
-					has_deposit = d_ef_lake_district
-					has_deposit = d_ef_galactic_expo_centre
-				}
-			}
+			limit = { ef_diplomacy_quarter_complete = yes }
 			planet_event = { id = ef_diplo.40 }
 		}
 	}
@@ -369,7 +342,7 @@ decision_ef_establish_imperial_academies= {
 	}
 }
 
-decision_ef_prepare_diplomatic_quarter= {
+decision_ef_prepare_diplomatic_quarter = {
 	owned_planets_only = yes
 	icon = "decision_deal"
 
@@ -394,17 +367,8 @@ decision_ef_prepare_diplomatic_quarter= {
 
 	effect = {
 		add_deposit = d_ef_grand_presidium
-		# Event for collecting all the deposits
 		if = {
-			limit = {
-				AND = {
-					has_deposit = d_ef_grand_presidium
-					has_deposit = d_ef_imperial_conservatory
-					has_deposit = d_ef_urban_parklands
-					has_deposit = d_ef_lake_district
-					has_deposit = d_ef_galactic_expo_centre
-				}
-			}
+			limit = { ef_diplomacy_quarter_complete = yes }
 			planet_event = { id = ef_diplo.40 }
 		}
 	}
@@ -414,7 +378,7 @@ decision_ef_prepare_diplomatic_quarter= {
 	}
 }
 
-decision_ef_host_galactic_exhibitions= {
+decision_ef_host_galactic_exhibitions = {
 	owned_planets_only = yes
 	icon = "decision_alien_propaganda"
 
@@ -439,17 +403,8 @@ decision_ef_host_galactic_exhibitions= {
 
 	effect = {
 		add_deposit = d_ef_galactic_expo_centre
-		# Event for collecting all the deposits
 		if = {
-			limit = {
-				AND = {
-					has_deposit = d_ef_grand_presidium
-					has_deposit = d_ef_imperial_conservatory
-					has_deposit = d_ef_urban_parklands
-					has_deposit = d_ef_lake_district
-					has_deposit = d_ef_galactic_expo_centre
-				}
-			}
+			limit = { ef_diplomacy_quarter_complete = yes }
 			planet_event = { id = ef_diplo.40 }
 		}
 	}

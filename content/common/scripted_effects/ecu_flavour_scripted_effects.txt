@@ -26,7 +26,7 @@ ef_add_ecu_terraformed_modifiers = {
 }
 
 # Planet Scope
-ef_set_deep_levels_modifier= {
+ef_set_deep_levels_modifier = {
     remove_modifier = ef_deep_levels_1
     remove_modifier = ef_deep_levels_2
     remove_modifier = ef_deep_levels_3
