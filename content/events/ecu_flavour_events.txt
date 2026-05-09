@@ -212,7 +212,7 @@ planet_event = {
 			limit = { is_pop_category = ef_undercity }
 			kill_pop_group = {
 				pop_group = this
-				percentage = 35
+				percentage = 0.35
 			}
 		}
     }
@@ -256,7 +256,7 @@ planet_event = {
 			limit = { always = yes }
 			kill_pop_group = {
 				pop_group = this
-				percentage = 35
+				percentage = 0.35
 			}
 		}
 	}
@@ -334,7 +334,7 @@ planet_event = {
 			}
 			kill_pop_group = {
 				pop_group = this
-				percentage = 85
+				percentage = 0.85
 			}
 		}
 		owner = {
