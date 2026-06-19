@@ -253,7 +253,7 @@ decision_ef_designate_parklands = {
 
 	potential = {
 		ef_is_ecu = yes
-		has_planet_flag = ef_diplomacy_specialisation
+		has_carrier_flag = ef_diplomacy_specialisation
 		NOT = { has_deposit = d_ef_urban_parklands}
 	}
 
@@ -261,7 +261,7 @@ decision_ef_designate_parklands = {
 		add_deposit = d_ef_urban_parklands
 		if = {
 			limit = { ef_diplomacy_quarter_complete = yes }
-			planet_event = { id = ef_diplo.40 }
+			carrier_event = { id = ef_diplo.40 }
 		}
 	}
 
@@ -285,7 +285,7 @@ decision_ef_terraform_urban_lakes = {
 
 	potential = {
 		ef_is_ecu = yes
-		has_planet_flag = ef_diplomacy_specialisation
+		has_carrier_flag = ef_diplomacy_specialisation
 		NOT = { has_deposit = d_ef_lake_district}
 	}
 
@@ -297,7 +297,7 @@ decision_ef_terraform_urban_lakes = {
 		add_deposit = d_ef_lake_district
 		if = {
 			limit = { ef_diplomacy_quarter_complete = yes }
-			planet_event = { id = ef_diplo.40 }
+			carrier_event = { id = ef_diplo.40 }
 		}
 	}
 
@@ -325,7 +325,7 @@ decision_ef_establish_imperial_academies = {
 
 	potential = {
 		ef_is_ecu = yes
-		has_planet_flag = ef_diplomacy_specialisation
+		has_carrier_flag = ef_diplomacy_specialisation
 		NOT = { has_deposit = d_ef_imperial_conservatory}
 	}
 
@@ -333,7 +333,7 @@ decision_ef_establish_imperial_academies = {
 		add_deposit = d_ef_imperial_conservatory
 		if = {
 			limit = { ef_diplomacy_quarter_complete = yes }
-			planet_event = { id = ef_diplo.40 }
+			carrier_event = { id = ef_diplo.40 }
 		}
 	}
 
@@ -361,7 +361,7 @@ decision_ef_prepare_diplomatic_quarter = {
 
 	potential = {
 		ef_is_ecu = yes
-		has_planet_flag = ef_diplomacy_specialisation
+		has_carrier_flag = ef_diplomacy_specialisation
 		NOT = { has_deposit = d_ef_grand_presidium}
 	}
 
@@ -369,7 +369,7 @@ decision_ef_prepare_diplomatic_quarter = {
 		add_deposit = d_ef_grand_presidium
 		if = {
 			limit = { ef_diplomacy_quarter_complete = yes }
-			planet_event = { id = ef_diplo.40 }
+			carrier_event = { id = ef_diplo.40 }
 		}
 	}
 
@@ -397,7 +397,7 @@ decision_ef_host_galactic_exhibitions = {
 
 	potential = {
 		ef_is_ecu = yes
-		has_planet_flag = ef_diplomacy_specialisation
+		has_carrier_flag = ef_diplomacy_specialisation
 		NOT = { has_deposit = d_ef_galactic_expo_centre}
 	}
 
@@ -405,7 +405,7 @@ decision_ef_host_galactic_exhibitions = {
 		add_deposit = d_ef_galactic_expo_centre
 		if = {
 			limit = { ef_diplomacy_quarter_complete = yes }
-			planet_event = { id = ef_diplo.40 }
+			carrier_event = { id = ef_diplo.40 }
 		}
 	}
 

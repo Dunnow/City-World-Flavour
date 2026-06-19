@@ -3,13 +3,13 @@ decision_ef_choose_path = {
 
 	potential = {
 		ef_is_ecu = yes
-		has_planet_flag = ef_planet_specialisation_options_available
+		has_carrier_flag = ef_planet_specialisation_options_available
 	}
 
 	effect = {
 		custom_tooltip = decision_ef_choose_path_effects_short
 		hidden_effect = {
-			planet_event= { id = ef_path.1 }
+			carrier_event= { id = ef_path.1 }
 		}
 	}
 }

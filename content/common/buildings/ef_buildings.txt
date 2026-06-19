@@ -13,7 +13,7 @@ building_ef_hologem_bourse = {
 		owner = { is_regular_empire = yes }
 		NOT = { has_modifier = slave_colony }
 		NOT = { has_building = building_low_tech_capital }
-		has_planet_flag = ef_has_hologems_industry
+		has_carrier_flag = ef_has_hologems_industry
 	}
 
 	destroy_trigger = {
@@ -21,7 +21,7 @@ building_ef_hologem_bourse = {
 		OR = {
 			owner = { is_regular_empire = no }
 			has_modifier = slave_colony
-            NOT = { has_planet_flag = ef_has_hologems_industry }
+            NOT = { has_carrier_flag = ef_has_hologems_industry }
 		}
 	}
 

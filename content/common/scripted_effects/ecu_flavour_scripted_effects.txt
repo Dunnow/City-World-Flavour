@@ -204,8 +204,8 @@ ef_grow_ecu = {
         entity = "city_planet_entity"
         graphical_culture = owner
     }
-    planet_event = { id = action.68 }
-    planet_event = { id = ef_misc.6 }
+    carrier_event = { id = action.68 }
+    carrier_event = { id = ef_misc.6 }
     owner = {
         country_event = { id = distar.201 } # port for living planet distar.197, triggers in event
     }
@@ -229,5 +229,5 @@ ef_grow_ecu = {
             set_timed_country_flag = { flag = resolution_breached_terraformed days = 3600 }
         }
     }
-    set_planet_flag = ef_naturally_grown_ecu
+    set_carrier_flag = ef_naturally_grown_ecu
 }

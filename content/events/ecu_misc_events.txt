@@ -1,6 +1,6 @@
 namespace = ef_misc
 
-planet_event = {
+carrier_event = {
     id = ef_misc.1
     hide_window = yes
     is_triggered_only = yes
@@ -11,7 +11,7 @@ planet_event = {
     # Density 800 gives us an ecu
 
     trigger = {
-        not = { has_planet_flag = ef_recently_increased_urban_level}
+        not = { has_carrier_flag = ef_recently_increased_urban_level}
         ef_is_majority_urban = yes
         ef_has_population_density = { DENSITY = 500 }
         ef_is_valid_for_urbanisation = yes
@@ -28,7 +28,7 @@ planet_event = {
                     has_modifier = ef_urban_level_3
                 }
             }
-            planet_event = { id = ef_misc.2 }
+            carrier_event = { id = ef_misc.2 }
         }
         if = {
             limit = {
@@ -36,7 +36,7 @@ planet_event = {
                 ef_is_majority_urban = yes
                 has_modifier = ef_urban_level_1
             }
-            planet_event = { id = ef_misc.3 }
+            carrier_event = { id = ef_misc.3 }
         }
         if = {
             limit = {
@@ -44,23 +44,23 @@ planet_event = {
                 ef_is_majority_urban = yes
                 has_modifier = ef_urban_level_2
             }
-            planet_event = { id = ef_misc.4 }
+            carrier_event = { id = ef_misc.4 }
         }
         if = {
             limit = {
                 ef_has_population_density = { DENSITY = 800 }
                 ef_is_majority_urban = yes
                 has_modifier = ef_urban_level_3
-                not = { has_planet_flag = ef_rejected_ecu_upgrade}
+                not = { has_carrier_flag = ef_rejected_ecu_upgrade}
             }
             # Offer to upgrade to ecu
-            planet_event = { id = ef_misc.5 }
+            carrier_event = { id = ef_misc.5 }
         }
     }
 }
 
 # Level one urbanisation
-planet_event = {
+carrier_event = {
     id = ef_misc.2
     title = ef_misc.2.name
     desc = ef_misc.2.desc
@@ -72,13 +72,13 @@ planet_event = {
         name = ef_misc.2.a
         add_modifier = { modifier = ef_urban_level_1 }
         hidden_effect = {
-            set_timed_planet_flag = { flag = ef_recently_increased_urban_level years = 15 }
+            set_timed_carrier_flag = { flag = ef_recently_increased_urban_level years = 15 }
         }
     }
 }
 
 # Level two urbanisation
-planet_event = {
+carrier_event = {
     id = ef_misc.3
     title = ef_misc.3.name
     desc = ef_misc.3.desc
@@ -91,12 +91,12 @@ planet_event = {
         remove_modifier = ef_urban_level_1
         add_modifier = { modifier = ef_urban_level_2 }
         hidden_effect = {
-            set_timed_planet_flag = { flag = ef_recently_increased_urban_level years = 15 }
+            set_timed_carrier_flag = { flag = ef_recently_increased_urban_level years = 15 }
         }
     }
 }
 
-planet_event = {
+carrier_event = {
     id = ef_misc.4
     title = ef_misc.4.name
     desc = ef_misc.4.desc
@@ -108,12 +108,12 @@ planet_event = {
         name = ef_misc.4.a
         remove_modifier = ef_urban_level_2
         add_modifier = { modifier = ef_urban_level_3 }
-        set_timed_planet_flag = { flag = ef_recently_increased_urban_level years = 15 }
+        set_timed_carrier_flag = { flag = ef_recently_increased_urban_level years = 15 }
     }
 }
 
 # Offer to turn planet into ecu
-planet_event = {
+carrier_event = {
     id = ef_misc.5
     title = ef_misc.5.name
     desc = ef_misc.5.desc
@@ -144,7 +144,7 @@ planet_event = {
         name = ef_misc.5.b
         custom_tooltip = ef_misc.5.b.tooltip
         hidden_effect = {
-            set_timed_planet_flag= {
+            set_timed_carrier_flag= {
                 flag = ef_rejected_ecu_upgrade
                 years = 20
             }
@@ -155,14 +155,14 @@ planet_event = {
         name = ef_misc.5.c
         custom_tooltip = ef_misc.5.c.tooltip
         hidden_effect = {
-            set_planet_flag = ef_rejected_ecu_upgrade
+            set_carrier_flag = ef_rejected_ecu_upgrade
         }
         ai_chance = { base = 0 }
     }
 }
 
 # Offer to turn planet into ecu
-planet_event = {
+carrier_event = {
     id = ef_misc.6
     title = ef_misc.6.name
     desc = ef_misc.6.desc
@@ -174,7 +174,7 @@ planet_event = {
         name = ef_misc.6.a
 
         hidden_effect = {
-            set_timed_planet_flag = { flag = ef_recently_increased_urban_level years = 15 }
+            set_timed_carrier_flag = { flag = ef_recently_increased_urban_level years = 15 }
         }
     }
 }

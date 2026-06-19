@@ -6,14 +6,14 @@ ef_situation_corpo_war = {
 	# Progress has reached 0%. Order restored
 	on_fail = {
 		# Yay you fixed it
-		hidden_effect = { target = { planet_event = { id = ef_trade.56} } }
+		hidden_effect = { target = { carrier_event = { id = ef_trade.56} } }
 		destroy_situation = this
 	}
 
 	# Progress has reached 100%. Anarchy reigns
 	on_progress_complete = {
 		# Oh no the burger king militia has taken over
-		hidden_effect = { target = { planet_event = { id = ef_trade.55} } }
+		hidden_effect = { target = { carrier_event = { id = ef_trade.55} } }
 		destroy_situation = this
 	}
 	start_value = 25
@@ -159,7 +159,7 @@ ef_situation_pollution = {
 
 	# Progress has reached 100%. Pollution reigns
 	on_progress_complete = {
-		target = { planet_event = { id = ef_industry.11 } }
+		target = { carrier_event = { id = ef_industry.11 } }
 		destroy_situation = this
 	}
 	start_value = 0

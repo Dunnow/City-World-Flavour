@@ -1,7 +1,7 @@
 namespace = ef_diplo
 
 # Diplo gatekeeper
-planet_event = {
+carrier_event = {
 	id = ef_diplo.10
 	hide_window = yes
 	is_triggered_only = yes
@@ -11,37 +11,37 @@ planet_event = {
 			24 = {} # 1 in 25 of something happening - we don't have that many event so we have to ration them
 			1 = {
 				random_list = {
-					1 = { planet_event = { id =  ef_diplo.20 } }
-					1 = { planet_event = { id =  ef_diplo.30 } }
-					1 = { planet_event = { id =  ef_diplo.50 } }
+					1 = { carrier_event = { id =  ef_diplo.20 } }
+					1 = { carrier_event = { id =  ef_diplo.30 } }
+					1 = { carrier_event = { id =  ef_diplo.50 } }
 				}
 			}
 		}
 		# Roll for movies
 		if = {
 			limit = {
-				has_planet_flag = ef_space_hollywood
+				has_carrier_flag = ef_space_hollywood
 			}
 			random_list = {
 				14 = {  }
 				# 1 in 15 chance of a movie - there's also triggers and cooldowns so will be less than this in practice
 				1 = {
 					random_list = {
-						1 = { planet_event = { id = ef_diplo.51 }}
-						1 = { planet_event = { id = ef_diplo.52 }}
-						1 = { planet_event = { id = ef_diplo.53 }}
-						1 = { planet_event = { id = ef_diplo.54 }}
+						1 = { carrier_event = { id = ef_diplo.51 }}
+						1 = { carrier_event = { id = ef_diplo.52 }}
+						1 = { carrier_event = { id = ef_diplo.53 }}
+						1 = { carrier_event = { id = ef_diplo.54 }}
 					}
 				}
 			}
 		}
 		# Refresh
-		planet_event = { id = ef_diplo.10 days = 360 }
+		carrier_event = { id = ef_diplo.10 days = 360 }
 	}
 }
 
 # Playground of the elite
-planet_event = {
+carrier_event = {
 	id = ef_diplo.20
 	title = ef_diplo.20.name
 	desc = "ef_diplo.20.desc"
@@ -50,11 +50,11 @@ planet_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		not = { has_planet_flag = ef_recent_playground_of_the_elite}
+		not = { has_carrier_flag = ef_recent_playground_of_the_elite}
 	}
 
 	immediate = {
-		set_timed_planet_flag = { flag = ef_recent_playground_of_the_elite years = 25 }
+		set_timed_carrier_flag = { flag = ef_recent_playground_of_the_elite years = 25 }
 	}
 
 	# Acknowledge
@@ -79,7 +79,7 @@ planet_event = {
 }
 
 # Hologems
-planet_event = {
+carrier_event = {
 	id = ef_diplo.30
 	title = ef_diplo.30.name
 	desc = "ef_diplo.30.desc"
@@ -96,7 +96,7 @@ planet_event = {
 	}
 
 	immediate = {
-		set_planet_flag = ef_has_hologems_industry
+		set_carrier_flag = ef_has_hologems_industry
 		owner = { set_country_flag = ef_hologems_industry_has_happened }
 	}
 
@@ -107,7 +107,7 @@ planet_event = {
 }
 
 # Built all special deposits
-planet_event = {
+carrier_event = {
 	id = ef_diplo.40
 	title = ef_diplo.40.name
 	desc = "ef_diplo.40.desc"
@@ -124,7 +124,7 @@ planet_event = {
 }
 
 # Rise of Space hollywood
-planet_event = {
+carrier_event = {
 	id = ef_diplo.50
 	title = ef_diplo.50.name
 	desc = "ef_diplo.50.desc"
@@ -136,14 +136,14 @@ planet_event = {
 		NOT = {
 			owner = {
 				any_owned_planet = {
-					has_planet_flag = ef_space_hollywood
+					has_carrier_flag = ef_space_hollywood
 				}
 			}
 		}
 	}
 
 	immediate = {
-		set_planet_flag = ef_space_hollywood
+		set_carrier_flag = ef_space_hollywood
 	}
 
 	# Acknowledge
@@ -154,7 +154,7 @@ planet_event = {
 }
 
 # Successful historical drama
-planet_event = {
+carrier_event = {
 	id = ef_diplo.51
 	title = ef_diplo.51.name
 	desc = "ef_diplo.51.desc"
@@ -163,7 +163,7 @@ planet_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_planet_flag = ef_space_hollywood
+		has_carrier_flag = ef_space_hollywood
 		NOT = {
 			owner = { has_country_flag = ef_recent_history_drama}
 		}
@@ -190,7 +190,7 @@ planet_event = {
 }
 
 # Invasion drama
-planet_event = {
+carrier_event = {
 	id = ef_diplo.52
 	title = ef_diplo.52.name
 	desc = "ef_diplo.52.desc"
@@ -199,7 +199,7 @@ planet_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_planet_flag = ef_space_hollywood
+		has_carrier_flag = ef_space_hollywood
 		NOT = {
 			owner = { has_country_flag = ef_recent_invasion_drama}
 		}
@@ -226,7 +226,7 @@ planet_event = {
 }
 
 # Badly written Khan expy
-planet_event = {
+carrier_event = {
 	id = ef_diplo.53
 	title = ef_diplo.53.name
 	desc = "ef_diplo.53.desc"
@@ -235,7 +235,7 @@ planet_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_planet_flag = ef_space_hollywood
+		has_carrier_flag = ef_space_hollywood
 		NOT = {
 			owner = { has_country_flag = ef_recent_khan_expy}
 		}
@@ -281,7 +281,7 @@ planet_event = {
 }
 
 # Pre-ftl documentary
-planet_event = {
+carrier_event = {
 	id = ef_diplo.54
 	title = ef_diplo.54.name
 	desc = "ef_diplo.54.desc"
@@ -290,7 +290,7 @@ planet_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_planet_flag = ef_space_hollywood
+		has_carrier_flag = ef_space_hollywood
 		NOT = {
 			owner = { has_country_flag = ef_recent_preftl_documentary}
 		}

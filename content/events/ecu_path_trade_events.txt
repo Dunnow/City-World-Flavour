@@ -1,7 +1,7 @@
 namespace = ef_trade
 
 # Stock market goes up. Repeatable
-planet_event = {
+carrier_event = {
 	id = ef_trade.10
 	title = ef_trade.10.name
 	desc = "ef_trade.10.desc"
@@ -20,7 +20,7 @@ planet_event = {
 }
 
 # Stock market goes down. Repeatable
-planet_event = {
+carrier_event = {
 	id = ef_trade.15
 	title = ef_trade.15.name
 	desc = "ef_trade.15.desc"
@@ -39,7 +39,7 @@ planet_event = {
 }
 
 # Tax Irregularities
-planet_event = {
+carrier_event = {
 	id = ef_trade.20
 	title = ef_trade.20.name
 	desc = "ef_trade.20.desc"
@@ -70,7 +70,7 @@ planet_event = {
 			add_resource = { influence = -50 }
 		}
 		hidden_effect = {
-			planet_event = {
+			carrier_event = {
 				id = ef_trade.21
 				days = 70
 			}
@@ -87,7 +87,7 @@ planet_event = {
 }
 
 # Tax Irregularities: Conspiracy Uncovered
-planet_event = {
+carrier_event = {
 	id = ef_trade.21
 	title = ef_trade.21.name
 	desc = "ef_trade.21.desc"
@@ -104,7 +104,7 @@ planet_event = {
 				random_list = {
 					10 = {}
 					10 = {
-						planet_event = {
+						carrier_event = {
 							id = ef_trade.22
 							days = 70
 						}
@@ -116,7 +116,7 @@ planet_event = {
 	option = {
 		name = ef_trade.21.investigate_further
 		hidden_effect = {
-			planet_event = {
+			carrier_event = {
 				id = ef_trade.23
 				days = 2# 70 TEST
 			}
@@ -125,7 +125,7 @@ planet_event = {
 }
 
 # Tax Irregularities: Governor implicated
-planet_event = {
+carrier_event = {
 	id = ef_trade.22
 	title = ef_trade.22.name
 	desc = "ef_trade.22.desc"
@@ -156,7 +156,7 @@ planet_event = {
 
 # Tax Irregularities: Ringleaders caught
 # Mutually exclusive with governor outcome
-planet_event = {
+carrier_event = {
 	id = ef_trade.23
 	title = ef_trade.23.name
 	desc = "ef_trade.23.desc"
@@ -192,7 +192,7 @@ planet_event = {
 
 # Megacorp Merger
 # Repeatable
-planet_event = {
+carrier_event = {
 	id = ef_trade.30
 	title = ef_trade.30.name
 	desc = "ef_trade.30.desc"
@@ -222,7 +222,7 @@ planet_event = {
 
 # Corporate Espionage
 # Repeatable
-planet_event = {
+carrier_event = {
 	id = ef_trade.40
 	title = ef_trade.40.name
 	desc = ef_trade.40.desc
@@ -240,13 +240,13 @@ planet_event = {
 		custom_tooltip = ef_trade.40.dispute_warning_tt
 		random_list = {
 			50 = {}
-			25 = { planet_event = { id = ef_trade.50 days = 180 }}
+			25 = { carrier_event = { id = ef_trade.50 days = 180 }}
 		}
 	}
 }
 
 # Corporate War
-planet_event = {
+carrier_event = {
 	id = ef_trade.50
 	title = ef_trade.50.name
 	desc = ef_trade.50.desc
@@ -353,7 +353,7 @@ situation_event = {
 }
 
 # Corporate War - A Victor
-planet_event = {
+carrier_event = {
 	id = ef_trade.55
 	title = ef_trade.55.name
 	desc = ef_trade.55.desc
@@ -370,7 +370,7 @@ planet_event = {
 }
 
 # Corporate War - Order restored
-planet_event = {
+carrier_event = {
 	id = ef_trade.56
 	title = ef_trade.56.name
 	desc = "ef_trade.56.desc"
@@ -388,7 +388,7 @@ planet_event = {
 }
 
 # Trade conference. Repeatable
-planet_event = {
+carrier_event = {
 	id = ef_trade.60
 	title = ef_trade.60.name
 	desc = "ef_trade.60.desc"
@@ -400,15 +400,15 @@ planet_event = {
 		name = ef_trade.60.a
 		hidden_effect = {
 			random_list = {
-				75 = { planet_event = { id = ef_trade.61 days = 90 } }
-				25 = { planet_event = { id = ef_trade.62 days = 90 } }
+				75 = { carrier_event = { id = ef_trade.61 days = 90 } }
+				25 = { carrier_event = { id = ef_trade.62 days = 90 } }
 			}
 		}
 	}
 }
 
 # Trade conference. Things went great!
-planet_event = {
+carrier_event = {
 	id = ef_trade.61
 	title = ef_trade.61.name
 	desc = "ef_trade.61.desc"
@@ -423,7 +423,7 @@ planet_event = {
 }
 
 # Trade conference. Things went poorly
-planet_event = {
+carrier_event = {
 	id = ef_trade.62
 	title = ef_trade.62.name
 	desc = "ef_trade.62.desc"
@@ -437,7 +437,7 @@ planet_event = {
 }
 
 # Escalating corporate rivalry. Repeatable
-planet_event = {
+carrier_event = {
 	id = ef_trade.70
 	title = ef_trade.70.name
 	desc = "ef_trade.70.desc"
@@ -454,8 +454,8 @@ planet_event = {
 		add_modifier = { modifier = ef_corrupt_collusion years = 15 }
 		hidden_effect = {
 			random_list = {
-				40 = { planet_event = { id = ef_trade.71 days = 90 } }
-				10 = { planet_event = { id = ef_trade.50 days = 90 } }
+				40 = { carrier_event = { id = ef_trade.71 days = 90 } }
+				10 = { carrier_event = { id = ef_trade.50 days = 90 } }
 			}
 		}
 	}
@@ -466,8 +466,8 @@ planet_event = {
 		custom_tooltip = ef_trade.40.dispute_warning_tt
 		hidden_effect = {
 			random_list = {
-				25 = { planet_event = { id = ef_trade.71 days = 90 } }
-				50 = { planet_event = { id = ef_trade.50 days = 90 } }
+				25 = { carrier_event = { id = ef_trade.71 days = 90 } }
+				50 = { carrier_event = { id = ef_trade.50 days = 90 } }
 			}
 		}
 	}
@@ -485,13 +485,13 @@ planet_event = {
 		}
 
 		hidden_effect = {
-			planet_event = { id = ef_trade.71 days = 90 }
+			carrier_event = { id = ef_trade.71 days = 90 }
 		}
 	}
 }
 
 # Corpo rivalry resolved
-planet_event = {
+carrier_event = {
 	id = ef_trade.71
 	title = ef_trade.71.name
 	desc = "ef_trade.71.desc"

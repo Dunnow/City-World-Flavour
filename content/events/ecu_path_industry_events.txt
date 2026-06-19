@@ -20,7 +20,7 @@ situation_event = {
 }
 
 # Introduce pollution situation
-planet_event = {
+carrier_event = {
 	id = ef_industry.10
 	title = ef_industry.10.name
 	desc = ef_industry.10.desc
@@ -35,7 +35,7 @@ planet_event = {
 	}
 }
 # Situation conclusion: Max pollution
-planet_event = {
+carrier_event = {
 	id = ef_industry.11
 	title = ef_industry.11.name
 	desc = ef_industry.11.desc
@@ -59,11 +59,11 @@ situation_event = {
 	location = target
 	is_triggered_only = yes
 
-	trigger = { target = { NOT = { has_planet_flag = ef_recent_generic_pollution_event } } }
+	trigger = { target = { NOT = { has_carrier_flag = ef_recent_generic_pollution_event } } }
 
 	immediate = {
 		target = {
-			set_timed_planet_flag =  {
+			set_timed_carrier_flag =  {
 				flag = ef_recent_generic_pollution_event
 				days = 720
 			}
@@ -139,11 +139,11 @@ situation_event = {
 	location = target
 	is_triggered_only = yes
 
-	trigger = { target = { NOT = { has_planet_flag = ef_recent_overproduction_event } } }
+	trigger = { target = { NOT = { has_carrier_flag = ef_recent_overproduction_event } } }
 
 	immediate = {
 		target = {
-			set_timed_planet_flag =  {
+			set_timed_carrier_flag =  {
 				flag = ef_recent_overproduction_event
 				days = 720
 			}
@@ -173,12 +173,12 @@ situation_event = {
 	trigger = {
 		target = {
 			NOT = {
-				has_planet_flag = ef_waste_eating_microbes_has_happened
+				has_carrier_flag = ef_waste_eating_microbes_has_happened
 			}
 		}
 	}
 	immediate = {
-		target = { set_planet_flag = ef_waste_eating_microbes_has_happened  }
+		target = { set_carrier_flag = ef_waste_eating_microbes_has_happened  }
 	}
 
 	# Spread the xenobacteria
@@ -245,7 +245,7 @@ situation_event = {
 # Nice to have: An event about a kidnapping ring to get labour for sweatshops
 
 # Strikes, repeatable
-planet_event = {
+carrier_event = {
 	id = ef_industry.20
 	title = ef_industry.20.name
 	desc = ef_industry.20.desc
@@ -290,7 +290,7 @@ planet_event = {
 }
 
 # Accidental overproduction
-planet_event = {
+carrier_event = {
 	id = ef_industry.30
 	title = ef_industry.30.name
 	desc = ef_industry.30.desc
@@ -312,7 +312,7 @@ planet_event = {
 }
 
 # Ship breaking yards
-planet_event = {
+carrier_event = {
 	id = ef_industry.40
 	title = ef_industry.40.name
 	desc = ef_industry.40.desc

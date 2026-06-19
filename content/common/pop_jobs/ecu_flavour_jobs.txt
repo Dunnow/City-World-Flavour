@@ -31,7 +31,6 @@ ef_satellite_operator = {
 
 	weight = {
 		weight = @specialist_job_weight
-		mult = value:job_weights_research_modifier|JOB|researcher|
 		modifier = {
 			factor = 0.2
 			has_citizenship_rights = no
@@ -54,15 +53,6 @@ ef_satellite_operator = {
 
 	inline_script = "jobs/automodding_priority_research"
 
-	promotion = {
-		time = @standard_promotion_time
-		effect = {
-			pop_amount_change_category = {
-				CATEGORY = specialist
-				AMOUNT = local_pop_amount
-			}
-		}
-	}
 }
 
 ef_habitation_technician = {
@@ -98,7 +88,6 @@ ef_habitation_technician = {
 
 	weight = {
 		weight = @specialist_job_weight
-		mult = value:job_weights_research_modifier|JOB|researcher|
 		modifier = {
 			factor = 0.2
 			has_citizenship_rights = no
@@ -121,15 +110,6 @@ ef_habitation_technician = {
 
 	inline_script = "jobs/automodding_priority_research"
 
-	promotion = {
-		time = @standard_promotion_time
-		effect = {
-			pop_amount_change_category = {
-				CATEGORY = specialist
-				AMOUNT = local_pop_amount
-			}
-		}
-	}
 }
 
 ef_deep_level_engineer = {
@@ -165,7 +145,6 @@ ef_deep_level_engineer = {
 
 	weight = {
 		weight = @specialist_job_weight
-		mult = value:job_weights_research_modifier|JOB|researcher|
 		modifier = {
 			factor = 0.2
 			has_citizenship_rights = no
@@ -188,15 +167,6 @@ ef_deep_level_engineer = {
 
 	inline_script = "jobs/automodding_priority_research"
 
-	promotion = {
-		time = @standard_promotion_time
-		effect = {
-			pop_amount_change_category = {
-				CATEGORY = specialist
-				AMOUNT = local_pop_amount
-			}
-		}
-	}
 }
 
 ef_freighter_pilot = {
@@ -230,20 +200,10 @@ ef_freighter_pilot = {
 	weight = {
 		weight = @specialist_job_weight
 		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
-		mult = value:job_weights_modifier|JOB|ef_freighter_pilot|RESOURCE|trade|
 	}
 
 	inline_script = "jobs/automodding_priority_trade"
 
-	promotion = {
-		time = @standard_promotion_time
-		effect = {
-			pop_amount_change_category = {
-				CATEGORY = specialist
-				AMOUNT = local_pop_amount
-			}
-		}
-	}
 }
 
 ef_recycler = {
@@ -276,7 +236,6 @@ ef_recycler = {
 
 	weight = {
 		weight = 10
-		mult = value:job_weights_modifier|JOB|foundry|RESOURCE|alloys|
 		modifier = {
 			factor = 2
 			is_enslaved = yes
@@ -290,15 +249,6 @@ ef_recycler = {
 
 	inline_script = "jobs/automodding_priority_alloys"
 
-	promotion = {
-		time = @standard_promotion_time
-		effect = {
-			pop_amount_change_category = {
-				CATEGORY = specialist
-				AMOUNT = local_pop_amount
-			}
-		}
-	}
 }
 
 ef_gemcutter = {
@@ -334,7 +284,6 @@ ef_gemcutter = {
 	weight = {
 		weight = @specialist_job_weight
 		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
-		mult = value:job_weights_modifier|JOB|ef_gemcutter|RESOURCE|trade|
 		# crisis purge
 		modifier = {
 			factor = 0.01
@@ -358,15 +307,6 @@ ef_gemcutter = {
 
 	inline_script = "jobs/automodding_priority_trade"
 
-	promotion = {
-		time = @standard_promotion_time
-		effect = {
-			pop_amount_change_category = {
-				CATEGORY = specialist
-				AMOUNT = local_pop_amount
-			}
-		}
-	}
 }
 
 ef_park_warden = {

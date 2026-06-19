@@ -1,7 +1,7 @@
 namespace = ef_flavour
 
 # Yearly repeating hidden event to trigger these.
-planet_event = {
+carrier_event = {
 	id = ef_flavour.0
 	hide_window = yes
 	is_triggered_only = yes
@@ -14,22 +14,22 @@ planet_event = {
 				95 = { } # Approximately a new event every 20 years or so. (Ideally)
 				5 = {
 					random_list = {
-						1 = { planet_event = { id = ef_flavour.10 }}
-						1 = { planet_event = { id = ef_flavour.20 }}
-						1 = { planet_event = { id = ef_flavour.30 }}
-						1 = { planet_event = { id = ef_flavour.40 }}
-						1 = { planet_event = { id = ef_flavour.50 }}
-						1 = { planet_event = { id = ef_flavour.60 }}
+						1 = { carrier_event = { id = ef_flavour.10 }}
+						1 = { carrier_event = { id = ef_flavour.20 }}
+						1 = { carrier_event = { id = ef_flavour.30 }}
+						1 = { carrier_event = { id = ef_flavour.40 }}
+						1 = { carrier_event = { id = ef_flavour.50 }}
+						1 = { carrier_event = { id = ef_flavour.60 }}
 					}
 				}
 			}
 			# TODO: consider revisiting how we do this, it's inconsistent
 			switch = {
-				trigger = has_planet_flag
+				trigger = has_carrier_flag
 				# Diplo events
 				ef_diplomacy_specialisation = {
 					# This has its own gatekeeper event
-					planet_event = { id = ef_diplo.10 }
+					carrier_event = { id = ef_diplo.10 }
 				}
 				# Industry events
 				# At the moment (15/06/2024) all the industry content is in the situation
@@ -38,9 +38,9 @@ planet_event = {
 						95 = { } # Approximately a new event every 20 years or so. (Ideally)
 						5 = {
 							random_list = {
-								1 = { planet_event = { id = ef_industry.20 }}
-								1 = { planet_event = { id = ef_industry.30 }}
-								1 = { planet_event = { id = ef_industry.40 }}
+								1 = { carrier_event = { id = ef_industry.20 }}
+								1 = { carrier_event = { id = ef_industry.30 }}
+								1 = { carrier_event = { id = ef_industry.40 }}
 							}
 						}
 					}
@@ -52,8 +52,8 @@ planet_event = {
 						80 = { } # Approximately a new event every 5 years or so. (Ideally)
 						20 = {
 							random_list = {
-								10 = { planet_event = { id = ef_trade.10 }}
-								10 = { planet_event = { id = ef_trade.15 }}
+								10 = { carrier_event = { id = ef_trade.10 }}
+								10 = { carrier_event = { id = ef_trade.15 }}
 							}
 						}
 					}
@@ -62,11 +62,11 @@ planet_event = {
 						95 = { } # Approximately a new event every 20 years or so. (Ideally)
 						5 = {
 							random_list = {
-								1 = { planet_event = { id = ef_trade.20 }}
-								1 = { planet_event = { id = ef_trade.30 }}
-								1 = { planet_event = { id = ef_trade.40 }}
-								1 = { planet_event = { id = ef_trade.60 }}
-								1 = { planet_event = { id = ef_trade.70 }}
+								1 = { carrier_event = { id = ef_trade.20 }}
+								1 = { carrier_event = { id = ef_trade.30 }}
+								1 = { carrier_event = { id = ef_trade.40 }}
+								1 = { carrier_event = { id = ef_trade.60 }}
+								1 = { carrier_event = { id = ef_trade.70 }}
 							}
 						}
 					}
@@ -74,20 +74,20 @@ planet_event = {
 			}
 		}
 		# Loop the event
-		planet_event = { id = ef_flavour.0 days = 360 }
+		carrier_event = { id = ef_flavour.0 days = 360 }
 		# Planet specialisations become available
 		random_list = {
 			# ~1 in 20 chance of firing
 			95 = { }
 			# This only needs to fire once, if it fires again it will have no effect
-			5 = { planet_event = { id = ef_path.0 } }
+			5 = { carrier_event = { id = ef_path.0 } }
 		}
 	}
 
 }
 
 # Check if a planet has changed to become a city world and apply the flavour modifier. I don't really care if we double apply it.
-planet_event = {
+carrier_event = {
 	id = ef_flavour.1
 	hide_window = yes
 	is_triggered_only = yes
@@ -99,7 +99,7 @@ planet_event = {
 			remove_modifier = ef_urban_level_1
 			remove_modifier = ef_urban_level_2
 			remove_modifier = ef_urban_level_3
-			planet_event = { id = ef_flavour.0 days = 360}
+			carrier_event = { id = ef_flavour.0 days = 360}
 		}
 	}
 }
@@ -113,7 +113,7 @@ event = {
 }
 
 # Deep Levels Survey
-planet_event = {
+carrier_event = {
 	id = ef_flavour.10
 	title = ef_flavour.10.name
 	desc = "ef_flavour.10.desc"
@@ -153,9 +153,9 @@ planet_event = {
 
 		hidden_effect = {
             random_list = {
-                10 = { planet_event = { id = ef_flavour.11 days = 180 }} # New levels found
-                10 = { planet_event = { id = ef_flavour.12 days = 180 }} # Party wipe
-                10 = { planet_event = { id = ef_flavour.13 days = 180 }} # Tunnels cut off
+                10 = { carrier_event = { id = ef_flavour.11 days = 180 }} # New levels found
+                10 = { carrier_event = { id = ef_flavour.12 days = 180 }} # Party wipe
+                10 = { carrier_event = { id = ef_flavour.13 days = 180 }} # Tunnels cut off
             }
         }
 	}
@@ -165,7 +165,7 @@ planet_event = {
 }
 
 # Deep Levels follow up option A: New levels discovered.
-planet_event = {
+carrier_event = {
 	id = ef_flavour.11
 	title = ef_flavour.11.name
 	desc = "ef_flavour.11.desc"
@@ -184,7 +184,7 @@ planet_event = {
 }
 
 # Deep Levels follow up option B: Party Wipe
-planet_event = {
+carrier_event = {
 	id = ef_flavour.12
 	title = ef_flavour.12.name
 	desc = "ef_flavour.12.desc"
@@ -198,7 +198,7 @@ planet_event = {
 }
 
 # Deep Levels follow up option C: Tunnels cut off
-planet_event = {
+carrier_event = {
 	id = ef_flavour.13
 	title = ef_flavour.13.name
 	desc = "ef_flavour.13.desc"
@@ -223,7 +223,7 @@ planet_event = {
 }
 
 # Freighter Accident
-planet_event = {
+carrier_event = {
 	id = ef_flavour.20
 	title = ef_flavour.20.name
 	desc = "ef_flavour.20.desc"
@@ -242,8 +242,8 @@ planet_event = {
 	immediate = {
 		owner = { set_country_flag = ef_freighter_crash_has_happened }
 		random_list = {
-			75 = { planet_event = { id = ef_flavour.21 days = 720 }} # Mutants
-			25 = { planet_event = { id = ef_flavour.22 days = 720 }} # Psionics
+			75 = { carrier_event = { id = ef_flavour.21 days = 720 }} # Mutants
+			25 = { carrier_event = { id = ef_flavour.22 days = 720 }} # Psionics
 		}
 
 	}
@@ -263,7 +263,7 @@ planet_event = {
 }
 
 # Mutants Emerge
-planet_event = {
+carrier_event = {
 	id = ef_flavour.21
 	title = ef_flavour.21.name
 	desc = "ef_flavour.21.desc"
@@ -290,7 +290,7 @@ planet_event = {
 }
 
 # Psionics Emerge
-planet_event = {
+carrier_event = {
 	id = ef_flavour.22
 	title = ef_flavour.22.name
 	desc = "ef_flavour.22.desc"
@@ -345,7 +345,7 @@ planet_event = {
 }
 
 # Escaped Primitive Slaves
-planet_event = {
+carrier_event = {
 	id = ef_flavour.30
 	title = ef_flavour.30.name
 	desc = "ef_flavour.30.desc"
@@ -406,7 +406,7 @@ planet_event = {
 }
 
 # Financial Hub
-planet_event = {
+carrier_event = {
 	id = ef_flavour.40
 	title = ef_flavour.40.name
 	desc = "ef_flavour.40.desc"
@@ -432,7 +432,7 @@ planet_event = {
 	}
 }
 # Universal Marketplace
-planet_event = {
+carrier_event = {
 	id = ef_flavour.50
 	title = ef_flavour.50.name
 	desc = "ef_flavour.50.desc"
@@ -462,7 +462,7 @@ planet_event = {
 }
 
 # Illegal AI Core
-planet_event = {
+carrier_event = {
 	id = ef_flavour.60
 	title = ef_flavour.60.name
 	desc = "ef_flavour.60.desc"
@@ -494,7 +494,7 @@ planet_event = {
 		}
 		add_modifier = { modifier = ef_glitchy_machines days = 270 }
 		hidden_effect = {
-			planet_event = {
+			carrier_event = {
 				id = ef_flavour.61
 				days = 270
 			}
@@ -505,7 +505,7 @@ planet_event = {
 		name = ef_flavour.60.b
 		add_modifier = { modifier = ef_glitchy_machines days = 270 }
 		hidden_effect = {
-			planet_event = {
+			carrier_event = {
 				id = ef_flavour.62
 				days = 270
 			}
@@ -514,7 +514,7 @@ planet_event = {
 }
 
 # Bad outcome
-planet_event = {
+carrier_event = {
 	id = ef_flavour.61
 	title = ef_flavour.61.name
 	desc = "ef_flavour.61.desc"
@@ -533,7 +533,7 @@ planet_event = {
 }
 
 # Investigation conclusion
-planet_event = {
+carrier_event = {
 	id = ef_flavour.62
 	title = ef_flavour.62.name
 	desc = "ef_flavour.62.desc"
@@ -558,7 +558,7 @@ planet_event = {
 
 # Property bought up by rivals
 # TODO
-#planet_event = {
+#carrier_event = {
 #	id = ef_flavour.70
 #	title = ef_flavour.70.name
 #	desc = "ef_flavour.70.desc"
@@ -581,7 +581,7 @@ planet_event = {
 #}
 
 # Archaeological Dig # TODO
-#planet_event = {
+#carrier_event = {
 #	id = ef_flavour.1
 #	title = ef_flavour.1.name
 #	desc = "ef_flavour.1.desc"
