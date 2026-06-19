@@ -35,6 +35,7 @@ ef_set_deep_levels_modifier = {
     
     if = {
         limit = {
+            is_variable_set = ef_deep_level_count
             check_variable_arithmetic = {
                 which = ef_deep_level_count
                 divide = trigger:planet_size
